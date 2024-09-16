@@ -46,14 +46,14 @@
 
     <!-- Navbar -->
     <nav
-        class="absolute z-10 w-full flex justify-between items-center px-6 py-4 bg-gradient-to-b from-stone-900/50 to-transparent hidden md:flex">
+        class="absolute z-10 w-full flex justify-between items-center px-6 py-4 bg-gradient-to-b from-stone-900/50 to-transparent ">
         <!-- Logo -->
         <div class="flex items-center">
             <img src="/src/img/pupuksementara.png" alt="Logo" class="h-10 max-w-xs">
         </div>
 
         <!-- Menu -->
-        <ul class="flex space-x-6 text-gray-100 font-sans font-bold text-xl ">
+        <ul class="flex space-x-6 text-gray-100 font-sans font-bold text-xl hidden md:flex ">
             <li><a href="#" class="hover:text-green-600">HOME</a></li>
             <li><a href="#" class="hover:text-green-600">ABOUT US</a></li>
             <li><a href="#" class="hover:text-green-600">PRODUK</a></li>
@@ -61,22 +61,48 @@
             <li><a href="#" class="hover:text-green-600">ARTIKEL</a></li>
             <li><a href="#" class="hover:text-green-600">KONTAK</a></li>
         </ul>
+        <div class="md:hidden flex items-center mr-4"></div>
+        <button id="mobile-menu-toggle" class="text-white focus:outline-none relative z-30 md:hidden">
+            <!-- Icon for mobile menu -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+        </div>
+
+        <div id="mobile-menu"
+            class="fixed top-0 right-0 h-full w-2/5 bg-stone-100/90 text-black z-999 transform translate-x-full transition-transform duration-300 ease-in-out">
+            <div class="flex flex-col items-end p-4 space-y-4 pt-20 pr-4 font-semibold z-999">
+                <a href="/" class="text-lg">HOME</a>
+                <a href="#" class="text-lg">ABOUT US</a>
+                <a href="#" class="text-lg">PRODUCT</a>
+                <a href="#" class="text-lg">BROSUR</a>
+                <a href="#" class="text-lg">ARTIKEL</a>
+                <a href="#" class="text-lg">KONTAK</a>
+            </div>
+        </div>
     </nav>
+
+
+
     <section
-        class="relative min-h-screen flex items-center justify-between px-10 py-20 overflow-hidden bg-cover bg-center"
+        class="relative min-h-screen flex flex-col md:flex-row items-center justify-between px-6 sm:px-10 py-20 overflow-hidden bg-cover bg-center"
         style="background-image: url('/src/img/sawah.jpg');">
 
         <!-- Triangle Overlay -->
-        <div class="absolute inset-0 triangle-bg"></div>
+        <div class="absolute inset-0 triangle-bg hidden md:block"></div>
 
-        <div class="w-1/3">
-            <img src="/src/img/pupuksementara.png" alt="Fertilizer Bag" class="w-5/6 h-auto">
+        <!-- Gambar Pupuk di Kiri -->
+        <div class="w-2/3 md:w-1/3 mb-10 md:mb-0 z-10">
+            <img src="/src/img/pupuksementara.png" alt="Fertilizer Bag" class="w-5/6 mx-auto md:w-full h-auto">
         </div>
 
-        <!-- Text and button on the right -->
-        <div class="w-2/3 text-right mt-32 z-10">
-            <h1 class="text-7xl font-bold text-white">PT AGRITANIMAS</h1>
-            <p class="text-lg font-sans font-semibold text-gray-100 mt-4">PRODUSEN PUPUK TERBAIK DI SUMATERA UTARA</p>
+        <!-- Teks dan Tombol di Kanan -->
+        <div class="w-full md:w-2/3 text-center md:text-right mt-10 md:mt-32 z-10">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white">PT AGRITANIMAS</h1>
+            <p class="text-sm sm:text-lg font-sans font-semibold text-gray-100 mt-4">PRODUSEN PUPUK TERBAIK DI SUMATERA
+                UTARA</p>
             <a href="https://wa.me/your-number" target="_blank"
                 class="inline-block mt-6 px-6 py-3 bg-green-600 text-white font-sans font-bold rounded-lg hover:bg-green-700 transition duration-300">
                 Hubungi Sekarang
@@ -85,39 +111,39 @@
 
     </section>
 
-    <section class="max-w-7xl mx-auto p-8"></section>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <!-- Text Content -->
-        <div class="text-left mx-4">
-            <h3 class="text-lg font-bold text-gray-600 mb-2">TENTANG KAMI</h3>
-            <div class="w-20 h-1 bg-gray-900 mb-4"></div>
-            <h1 class="text-3xl font-bold text-gray-900 mb-4">PIONIR PUPUK TERJANGKAU</h1>
-            <p class="text-gray-700 mb-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
-            </p>
-            <a href="#"
-                class="inline-block px-6 py-3 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
-                Learn more >
-            </a>
-        </div>
-        <!-- Image -->
-        <div>
-            <img src="https://via.placeholder.com/500" alt="Farmer Image" class="w-full h-auto rounded-lg shadow-lg">
-        </div>
-    </div>
-    </section>
-    <section class="max-w-7xl mx-auto p-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <section class="w-full mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-0 items-center min-h-screen">
+            <!-- Text Content -->
+            <div class="text-left p-8 md:p-16 order-2 md:order-1">
+                <h3 class="text-lg font-bold text-gray-600 mb-2">TENTANG KAMI</h3>
+                <div class="w-20 h-1 bg-gray-900 mb-4"></div>
+                <h1 class="text-3xl font-bold text-gray-900 mb-4">PIONIR PUPUK TERJANGKAU</h1>
+                <p class="text-gray-700 mb-6">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                </p>
+                <a href="#"
+                    class="inline-block px-6 py-3 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
+                    Learn more >
+                </a>
+            </div>
             <!-- Image -->
-            <div>
-                <img src="https://via.placeholder.com/500" alt="Farmer Image"
-                    class="w-full h-auto rounded-lg shadow-lg">
+            <div class="w-full h-full order-1 md:order-2">
+                <img src="/src/img/petani1.jpeg" alt="Farmer Image" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-0 items-center min-h-screen">
+            <!-- Image -->
+            <div class="w-full h-full">
+                <img src="src/img/petani2.jpg" alt="Farmer Image" class="w-full h-full object-cover">
             </div>
             <!-- Text Content -->
-            <div class="text-left">
+            <div class="text-left p-8 md:p-16">
                 <h3 class="text-lg font-bold text-gray-600 mb-2">VISI & MISI</h3>
                 <div class="w-20 h-1 bg-gray-900 mb-4"></div>
                 <h1 class="text-2xl font-bold text-gray-900 mb-4">Menyediakan pupuk terbaik</h1>
@@ -135,88 +161,89 @@
             </div>
         </div>
     </section>
-
-    <section class="max-w-7xl mx-auto p-8">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8">PRODUK KAMI</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <section class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
+        <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">PRODUK KAMI</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8">
             <!-- Repeated Product Card -->
             <div class="bg-white shadow-md rounded-lg p-4 text-center">
-                <img src="https://via.placeholder.com/150" alt="Pupuk Cabai" class="mx-auto mb-4">
-                <h3 class="text-xl font-bold text-gray-900">Pupuk cabai</h3>
-                <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <img src="src/img/pupuksementara.png" alt="Pupuk Cabai" class="mx-auto mb-4">
+                <h3 class="text-lg sm:text-xl font-bold text-gray-900">Pupuk cabai</h3>
+                <p class="text-gray-700 mb-4 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <a href="#"
-                    class="inline-block px-4 py-2 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
+                    class="inline-block px-4 py-2 bg-green-600 text-white text-xs font-bold rounded-full hover:bg-green-700 transition duration-300">
                     Lihat selengkapnya
                 </a>
             </div>
-            <!-- Duplicate the above block 7 more times for 8 products -->
+            <!-- Duplicate Product Cards (7 more) -->
             <div class="bg-white shadow-md rounded-lg p-4 text-center">
-                <img src="https://via.placeholder.com/150" alt="Pupuk Cabai" class="mx-auto mb-4">
-                <h3 class="text-xl font-bold text-gray-900">Pupuk cabai</h3>
-                <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <img src="src/img/pupuksementara.png" alt="Pupuk Cabai" class="mx-auto mb-4">
+                <h3 class="text-lg sm:text-xl font-bold text-gray-900">Pupuk cabai</h3>
+                <p class="text-gray-700 mb-4 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <a href="#"
-                    class="inline-block px-4 py-2 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
-                    Lihat selengkapnya
-                </a>
-            </div>
-            <div class="bg-white shadow-md rounded-lg p-4 text-center">
-                <img src="https://via.placeholder.com/150" alt="Pupuk Cabai" class="mx-auto mb-4">
-                <h3 class="text-xl font-bold text-gray-900">Pupuk cabai</h3>
-                <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#"
-                    class="inline-block px-4 py-2 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
+                    class="inline-block px-4 py-2 bg-green-600 text-white text-xs font-bold rounded-full hover:bg-green-700 transition duration-300">
                     Lihat selengkapnya
                 </a>
             </div>
             <div class="bg-white shadow-md rounded-lg p-4 text-center">
-                <img src="https://via.placeholder.com/150" alt="Pupuk Cabai" class="mx-auto mb-4">
-                <h3 class="text-xl font-bold text-gray-900">Pupuk cabai</h3>
-                <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <img src="src/img/pupuksementara.png" alt="Pupuk Cabai" class="mx-auto mb-4">
+                <h3 class="text-lg sm:text-xl font-bold text-gray-900">Pupuk cabai</h3>
+                <p class="text-gray-700 mb-4 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <a href="#"
-                    class="inline-block px-4 py-2 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
+                    class="inline-block px-4 py-2 bg-green-600 text-white text-xs font-bold rounded-full hover:bg-green-700 transition duration-300">
                     Lihat selengkapnya
                 </a>
             </div>
             <div class="bg-white shadow-md rounded-lg p-4 text-center">
-                <img src="https://via.placeholder.com/150" alt="Pupuk Cabai" class="mx-auto mb-4">
-                <h3 class="text-xl font-bold text-gray-900">Pupuk cabai</h3>
-                <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <img src="src/img/pupuksementara.png" alt="Pupuk Cabai" class="mx-auto mb-4">
+                <h3 class="text-lg sm:text-xl font-bold text-gray-900">Pupuk cabai</h3>
+                <p class="text-gray-700 mb-4 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <a href="#"
-                    class="inline-block px-4 py-2 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
+                    class="inline-block px-4 py-2 bg-green-600 text-white text-xs font-bold rounded-full hover:bg-green-700 transition duration-300">
                     Lihat selengkapnya
                 </a>
             </div>
             <div class="bg-white shadow-md rounded-lg p-4 text-center">
-                <img src="https://via.placeholder.com/150" alt="Pupuk Cabai" class="mx-auto mb-4">
-                <h3 class="text-xl font-bold text-gray-900">Pupuk cabai</h3>
-                <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <img src="src/img/pupuksementara.png" alt="Pupuk Cabai" class="mx-auto mb-4">
+                <h3 class="text-lg sm:text-xl font-bold text-gray-900">Pupuk cabai</h3>
+                <p class="text-gray-700 mb-4  text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <a href="#"
-                    class="inline-block px-4 py-2 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
+                    class="inline-block px-4 py-2 bg-green-600 text-white text-xs font-bold rounded-full hover:bg-green-700 transition duration-300">
                     Lihat selengkapnya
                 </a>
             </div>
             <div class="bg-white shadow-md rounded-lg p-4 text-center">
-                <img src="https://via.placeholder.com/150" alt="Pupuk Cabai" class="mx-auto mb-4">
-                <h3 class="text-xl font-bold text-gray-900">Pupuk cabai</h3>
-                <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <img src="src/img/pupuksementara.png" alt="Pupuk Cabai" class="mx-auto mb-4">
+                <h3 class="text-lg sm:text-xl font-bold text-gray-900">Pupuk cabai</h3>
+                <p class="text-gray-700 mb-4  text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <a href="#"
-                    class="inline-block px-4 py-2 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
+                    class="inline-block px-4 py-2 bg-green-600 text-white text-xs font-bold rounded-full hover:bg-green-700 transition duration-300">
                     Lihat selengkapnya
                 </a>
             </div>
             <div class="bg-white shadow-md rounded-lg p-4 text-center">
-                <img src="https://via.placeholder.com/150" alt="Pupuk Cabai" class="mx-auto mb-4">
-                <h3 class="text-xl font-bold text-gray-900">Pupuk cabai</h3>
-                <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <img src="src/img/pupuksementara.png" alt="Pupuk Cabai" class="mx-auto mb-4">
+                <h3 class="text-lg sm:text-xl font-bold text-gray-900">Pupuk cabai</h3>
+                <p class="text-gray-700 mb-4 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <a href="#"
-                    class="inline-block px-4 py-2 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
+                    class="inline-block px-4 py-2 bg-green-600 text-white text-xs font-bold rounded-full hover:bg-green-700 transition duration-300">
+                    Lihat selengkapnya
+                </a>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-4 text-center">
+                <img src="src/img/pupuksementara.png" alt="Pupuk Cabai" class="mx-auto mb-4">
+                <h3 class="text-lg sm:text-xl font-bold text-gray-900">Pupuk cabai</h3>
+                <p class="text-gray-700 mb-4 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#"
+                    class="inline-block px-4 py-2 bg-green-600 text-white text-xs font-bold rounded-full hover:bg-green-700 transition duration-300">
                     Lihat selengkapnya
                 </a>
             </div>
         </div>
-        <div class="text-center mt-16">
-            <p class="text-gray-700 mb-4">Tidak menemukan yang anda cari?</p>
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">RACIK PUPUK ANDA SECARA GRATIS</h2>
+
+        <!-- Konsultasi Section -->
+        <div class="text-center mt-12 sm:mt-16">
+            <p class="text-sm sm:text-base text-gray-700 mb-4">Tidak menemukan yang anda cari?</p>
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">RACIK PUPUK ANDA SECARA GRATIS</h2>
             <a href="#"
                 class="inline-block px-6 py-3 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
                 Konsultasikan segera!
@@ -224,12 +251,12 @@
         </div>
     </section>
 
-    <section class="max-w-7xl mx-auto p-8">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8">PRODUK KAMI</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <section class="max-w-7xl mx-auto p-8 mt-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8">UNGGULAN KAMI</h2>
+        <div class="grid grid-cols-2 md:grid-cols-2 gap-8 items-center">
             <!-- Gambar Produk -->
             <div class="text-center">
-                <img src="https://via.placeholder.com/250" alt="Pupuk Cabai" class="mx-auto w-64 h-auto">
+                <img src="src/img/pupuksementara.png" alt="Pupuk Cabai" class="mx-auto w-64 h-auto">
             </div>
             <!-- Deskripsi Produk -->
             <div class="text-left">
@@ -248,16 +275,128 @@
         </div>
     </section>
 
-    <section class="max-w-7xl mx-auto p-8 text-center">
+    <section class="max-w-7xl mx-auto pl-4 text-center mt-20"></section>
+        <!-- Judul Section -->
+        <h2 class="text-3xl font-bold text-gray-900 mb-8 pl-8">IMPLEMENTASI PRODUK</h2>
+
+        <!-- Grid produk yang dapat di-scroll ke kanan -->
+        <div class="flex space-x-6 overflow-x-auto snap-x snap-mandatory no-scrollbar">
+            <!-- Kartu Produk 1 -->
+            <div class="bg-white shadow-md rounded-lg p-4 text-center snap-center flex-shrink-0 w-80">
+                <img src="src/img/pupuksementara.png" alt="Pupuk Buah" class="w-full h-auto rounded-lg mb-4">
+                <h3 class="text-lg sm:text-xl font-bold text-gray-900">tanaman agrikultura</h3>
+                <p class="text-gray-700 mb-4 text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.
+                </p>
+                <a href="#"
+                    class="inline-block px-4 py-2 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
+                    Details
+                </a>
+            </div>
+
+            <!-- Kartu Produk 2 -->
+            <div class="bg-white shadow-md rounded-lg p-4 text-center snap-center flex-shrink-0 w-80">
+                <img src="src/img/pupuksementara.png" alt="Pupuk Buah" class="w-full h-auto rounded-lg mb-4">
+                <h3 class="text-lg sm:text-xl font-bold text-gray-900">tanaman sawit</h3>
+                <p class="text-gray-700 mb-4 text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.
+                </p>
+                <a href="#"
+                    class="inline-block px-4 py-2 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
+                    Details
+                </a>
+            </div>
+
+            <!-- Kartu Produk 3 -->
+            <div class="bg-white shadow-md rounded-lg p-4 text-center snap-center flex-shrink-0 w-80">
+                <img src="/src/img/pupuksementara.png" alt="Pupuk Buah" class="w-full h-auto rounded-lg mb-4">
+                <h3 class="text-lg sm:text-xl font-bold text-gray-900">tanaman buah</h3>
+                <p class="text-gray-700 mb-4 text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.
+                </p>
+                <a href="#"
+                    class="inline-block px-4 py-2 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
+                    Details
+                </a>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-4 text-center snap-center flex-shrink-0 w-80">
+                <img src="/src/img/pupuksementara.png" alt="Pupuk Buah" class="w-full h-auto rounded-lg mb-4">
+                <h3 class="text-lg sm:text-xl font-bold text-gray-900">tanaman buah</h3>
+                <p class="text-gray-700 mb-4 text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.
+                </p>
+                <a href="#"
+                    class="inline-block px-4 py-2 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
+                    Details
+                </a>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-4 text-center snap-center flex-shrink-0 w-80">
+                <img src="/src/img/pupuksementara.png" alt="Pupuk Buah" class="w-full h-auto rounded-lg mb-4">
+                <h3 class="text-lg sm:text-xl font-bold text-gray-900">tanaman buah</h3>
+                <p class="text-gray-700 mb-4 text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.
+                </p>
+                <a href="#"
+                    class="inline-block px-4 py-2 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
+                    Details
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto p-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <!-- Gambar Utama dengan Keunggulan Satu -->
+            <div class="relative md:col-span-2">
+                <img src="/src/img/petani2.jpg" alt="Keunggulan Satu"
+                    class="w-full h-auto rounded-lg shadow-lg object-cover">
+                <div class="absolute bottom-4 left-4 bg-green-500 text-black font-bold px-4 py-2 rounded-lg">
+                    Petani Pasti Senang
+                </div>
+            </div>
+            <!-- Kolom untuk Keunggulan Dua dan Tiga -->
+            <div class="grid grid-cols-1 gap-4">
+                <!-- Gambar Keunggulan Dua -->
+                <div class="relative">
+                    <img src="/src/img/petani2.jpg" alt="Keunggulan Dua"
+                        class="w-full h-auto rounded-lg shadow-lg object-cover">
+                    <div class="absolute bottom-4 left-4 bg-green-500 text-black font-bold px-4 py-2 rounded-lg">
+                        Hasil Pasti Memuaskan
+                    </div>
+                </div>
+                <!-- Gambar Keunggulan Tiga -->
+                <div class="relative">
+                    <img src="/src/img/petani2.jpg" alt="Keunggulan Tiga"
+                        class="w-full h-auto rounded-lg shadow-lg object-cover">
+                    <div class="absolute bottom-4 left-4 bg-green-500 text-black font-bold px-4 py-2 rounded-lg">
+                        Tim Teknis Lapangan Profesional
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+
+
+    <section class="max-w-7xl mx-auto pl-4 text-center mt-20">
         <!-- Judul Section -->
         <h2 class="text-3xl font-bold text-gray-900 mb-8">OUR HAPPY CUSTOMER</h2>
 
         <!-- Testimoni Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div
+            class="flex space-x-6 overflow-x-auto snap-x snap-mandatory sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-8 sm:overflow-visible no-scrollbar sm:snap-none">
             <!-- Card Testimoni 1 -->
-            <div class="bg-green-200 p-6 rounded-lg shadow-md">
+            <div class="bg-green-200 p-6 rounded-lg shadow-md snap-center flex-shrink-0 w-80 sm:w-auto">
                 <div class="mb-4">
-                    <img src="https://via.placeholder.com/100" alt="Customer Photo" class="mx-auto rounded-full">
+                    <img src="/src/img/avatan.png" alt="Customer Photo" class="mx-auto rounded-full">
                 </div>
                 <p class="text-gray-600 italic mb-4">
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -267,9 +406,9 @@
             </div>
 
             <!-- Card Testimoni 2 -->
-            <div class="bg-green-200 p-6 rounded-lg shadow-md">
+            <div class="bg-green-200 p-6 rounded-lg shadow-md snap-center flex-shrink-0 w-80 sm:w-auto">
                 <div class="mb-4">
-                    <img src="https://via.placeholder.com/100" alt="Customer Photo" class="mx-auto rounded-full">
+                    <img src="/src/img/avatan.png" alt="Customer Photo" class="mx-auto rounded-full">
                 </div>
                 <p class="text-gray-600 italic mb-4">
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -279,9 +418,9 @@
             </div>
 
             <!-- Card Testimoni 3 -->
-            <div class="bg-green-200 p-6 rounded-lg shadow-md">
+            <div class="bg-green-200 p-6 rounded-lg shadow-md snap-center flex-shrink-0 w-80 sm:w-auto">
                 <div class="mb-4">
-                    <img src="https://via.placeholder.com/100" alt="Customer Photo" class="mx-auto rounded-full">
+                    <img src="/src/img/avatan.png" alt="Customer Photo" class="mx-auto rounded-full">
                 </div>
                 <p class="text-gray-600 italic mb-4">
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -292,129 +431,96 @@
         </div>
     </section>
 
-    <section class="max-w-7xl mx-auto p-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <!-- Gambar Utama dengan Keunggulan Satu -->
-            <div class="relative">
-                <img src="https://via.placeholder.com/600x400" alt="Keunggulan Satu"
-                    class="w-full h-auto rounded-lg shadow-lg">
-                <div class="absolute bottom-4 left-4 bg-green-500 text-black font-bold px-4 py-2 rounded-lg">
-                    KEUNGGULAN SATU
-                </div>
-            </div>
-            <!-- Kolom untuk Keunggulan Dua dan Tiga -->
-            <div class="grid grid-cols-1 gap-4">
-                <!-- Gambar Keunggulan Dua -->
-                <div class="relative">
-                    <img src="https://via.placeholder.com/300x200" alt="Keunggulan Dua"
-                        class="w-full h-auto rounded-lg shadow-lg">
-                    <div class="absolute bottom-4 left-4 bg-green-500 text-black font-bold px-4 py-2 rounded-lg">
-                        KEUNGGULAN DUA
-                    </div>
-                </div>
-                <!-- Gambar Keunggulan Tiga -->
-                <div class="relative">
-                    <img src="https://via.placeholder.com/300x200" alt="Keunggulan Tiga"
-                        class="w-full h-auto rounded-lg shadow-lg">
-                    <div class="absolute bottom-4 left-4 bg-green-500 text-black font-bold px-4 py-2 rounded-lg">
-                        KEUNGGULAN TIGA
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="max-w-7xl mx-auto p-8">
-        <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">IMPLEMENTASI PRODUK</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <!-- Kartu Produk -->
-            <div class="bg-white shadow-md rounded-lg p-4 text-center">
-                <img src="https://via.placeholder.com/300x300" alt="Pupuk Buah" class="w-full h-auto rounded-lg mb-4">
-                <h3 class="text-lg font-bold text-gray-900">PUPUK BUAH</h3>
-                <p class="text-gray-700 mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit.
-                </p>
-                <a href="#"
-                    class="inline-block px-4 py-2 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
-                    Details
-                </a>
-            </div>
-            <!-- Ulangi Kartu Produk untuk total 3 kali -->
-            <div class="bg-white shadow-md rounded-lg p-4 text-center">
-                <img src="https://via.placeholder.com/300x300" alt="Pupuk Buah" class="w-full h-auto rounded-lg mb-4">
-                <h3 class="text-lg font-bold text-gray-900">PUPUK BUAH</h3>
-                <p class="text-gray-700 mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit.
-                </p>
-                <a href="#"
-                    class="inline-block px-4 py-2 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
-                    Details
-                </a>
-            </div>
-            <div class="bg-white shadow-md rounded-lg p-4 text-center">
-                <img src="https://via.placeholder.com/300x300" alt="Pupuk Buah" class="w-full h-auto rounded-lg mb-4">
-                <h3 class="text-lg font-bold text-gray-900">PUPUK BUAH</h3>
-                <p class="text-gray-700 mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit.
-                </p>
-                <a href="#"
-                    class="inline-block px-4 py-2 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
-                    Details
-                </a>
-            </div>
-        </div>
-    </section>
-
     <section class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
         <h2 class="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-6 sm:mb-8">ARTIKEL</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            <!-- Artikel 1 -->
-            <div class="bg-white shadow-md rounded-lg p-4">
-                <img src="https://via.placeholder.com/400x200" alt="Artikel 1" class="w-full h-auto rounded-lg mb-4">
-                <p class="text-sm text-gray-500">5 Agustus 2020</p>
-                <h3 class="text-lg font-bold text-gray-900 mb-2">
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        
+            <div class="bg-white shadow-md rounded-lg">
+                <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
+                <p class="text-sm text-gray-500 pl-2">5 Agustus 2020</p>
+                <h3 class="text-md md:text-lg font-bold text-gray-900 mb-2 pl-2">
                     berita terbaru ini bikin heboh rakyat yang membaca
                 </h3>
-                <hr class="mb-4">
-                <div class="flex items-center">
-                    <img src="https://via.placeholder.com/40" alt="Author" class="w-10 h-10 rounded-full mr-4">
-                    <div>
-                        <p class="font-bold text-gray-900">Agung Pratama</p>
+                <hr class="mb-2">
+                <div class="flex items-center p-2 mb-4">
+                    <img src="/src/img/avavava.jpeg" alt="Author" class="w-10 h-10 rounded-full mr-2">
+                    <div >
+                        <p class="text-sm font-bold text-gray-900">Agung Pratama</p>
                         <p class="text-sm text-gray-500">AUTHOR</p>
                     </div>
                 </div>
             </div>
-            <!-- Artikel 2 -->
-            <div class="bg-white shadow-md rounded-lg p-4">
-                <img src="https://via.placeholder.com/400x200" alt="Artikel 2" class="w-full h-auto rounded-lg mb-4">
-                <p class="text-sm text-gray-500">5 Agustus 2020</p>
-                <h3 class="text-lg font-bold text-gray-900 mb-2">
+            <div class="bg-white shadow-md rounded-lg">
+                <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
+                <p class="text-sm text-gray-500 pl-2">5 Agustus 2020</p>
+                <h3 class="text-md md:text-lg font-bold text-gray-900 mb-2 pl-2">
                     berita terbaru ini bikin heboh rakyat yang membaca
                 </h3>
-                <hr class="mb-4">
-                <div class="flex items-center">
-                    <img src="https://via.placeholder.com/40" alt="Author" class="w-10 h-10 rounded-full mr-4">
-                    <div>
-                        <p class="font-bold text-gray-900">Agung Pratama</p>
+                <hr class="mb-2">
+                <div class="flex items-center p-2 mb-4">
+                    <img src="/src/img/avavava.jpeg" alt="Author" class="w-10 h-10 rounded-full mr-2">
+                    <div >
+                        <p class="text-sm font-bold text-gray-900">Agung Pratama</p>
                         <p class="text-sm text-gray-500">AUTHOR</p>
                     </div>
                 </div>
             </div>
-            <!-- Artikel 3 -->
-            <div class="bg-white shadow-md rounded-lg p-4">
-                <img src="https://via.placeholder.com/400x200" alt="Artikel 3" class="w-full h-auto rounded-lg mb-4">
-                <p class="text-sm text-gray-500">5 Agustus 2020</p>
-                <h3 class="text-lg font-bold text-gray-900 mb-2">
+            <div class="bg-white shadow-md rounded-lg">
+                <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
+                <p class="text-sm text-gray-500 pl-2">5 Agustus 2020</p>
+                <h3 class="text-md md:text-lg font-bold text-gray-900 mb-2 pl-2">
                     berita terbaru ini bikin heboh rakyat yang membaca
                 </h3>
-                <hr class="mb-4">
-                <div class="flex items-center">
-                    <img src="https://via.placeholder.com/40" alt="Author" class="w-10 h-10 rounded-full mr-4">
-                    <div>
-                        <p class="font-bold text-gray-900">Agung Pratama</p>
+                <hr class="mb-2">
+                <div class="flex items-center p-2 mb-4">
+                    <img src="/src/img/avavava.jpeg" alt="Author" class="w-10 h-10 rounded-full mr-2">
+                    <div >
+                        <p class="text-sm font-bold text-gray-900">Agung Pratama</p>
+                        <p class="text-sm text-gray-500">AUTHOR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg">
+                <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
+                <p class="text-sm text-gray-500 pl-2">5 Agustus 2020</p>
+                <h3 class="text-md md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                    berita terbaru ini bikin heboh rakyat yang membaca
+                </h3>
+                <hr class="mb-2">
+                <div class="flex items-center p-2 mb-4">
+                    <img src="/src/img/avavava.jpeg" alt="Author" class="w-10 h-10 rounded-full mr-2">
+                    <div >
+                        <p class="text-sm font-bold text-gray-900">Agung Pratama</p>
+                        <p class="text-sm text-gray-500">AUTHOR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg">
+                <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
+                <p class="text-sm text-gray-500 pl-2">5 Agustus 2020</p>
+                <h3 class="text-md md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                    berita terbaru ini bikin heboh rakyat yang membaca
+                </h3>
+                <hr class="mb-2">
+                <div class="flex items-center p-2 mb-4">
+                    <img src="/src/img/avavava.jpeg" alt="Author" class="w-10 h-10 rounded-full mr-2">
+                    <div >
+                        <p class="text-sm font-bold text-gray-900">Agung Pratama</p>
+                        <p class="text-sm text-gray-500">AUTHOR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg">
+                <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
+                <p class="text-sm text-gray-500 pl-2">5 Agustus 2020</p>
+                <h3 class="text-md md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                    berita terbaru ini bikin heboh rakyat yang membaca
+                </h3>
+                <hr class="mb-2">
+                <div class="flex items-center p-2 mb-4">
+                    <img src="/src/img/avavava.jpeg" alt="Author" class="w-10 h-10 rounded-full mr-2">
+                    <div >
+                        <p class="text-sm font-bold text-gray-900">Agung Pratama</p>
                         <p class="text-sm text-gray-500">AUTHOR</p>
                     </div>
                 </div>
@@ -424,58 +530,63 @@
         <!-- Tombol Lihat Artikel Lainnya -->
         <div class="text-right mt-6">
             <a href="#"
-                class="inline-block px-6 py-3 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
+                class="inline-block px-6 py-3 bg-gray-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
                 Lihat Artikel Lainnya
             </a>
         </div>
     </section>
 
 
-    <footer class="bg-gray-300 py-8">
+    <footer class="bg-gray-900 py-10 text-white">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
             <!-- Logo and Address -->
             <div class="text-center md:text-left">
-                <div class="bg-green-500 w-32 h-32 rounded-full flex items-center justify-center mx-auto md:mx-0">
-                    <span class="text-black font-bold">logo</span>
+                <div class="bg-green-500 w-32 h-32 rounded-full flex items-center justify-center mx-auto md:mx-0 shadow-lg">
+                    <img src="/src/img/pupuksementara.png" alt="Logo" class="w-24 h-24 object-contain">
                 </div>
-                <!-- <p class="mt-4 text-gray-700">jalan medan, sumatera utara. 20989</p> -->
+                <p class="mt-4 text-gray-400 text-sm">Jalan Medan, Sumatera Utara, Indonesia, 20989</p>
             </div>
-
+    
             <!-- Sitemap -->
             <div class="text-center">
-                <h3 class="font-bold text-gray-900 mb-4">SITEMAP</h3>
-                <ul class="space-y-2 text-gray-700">
-                    <li><a href="#" class="hover:text-gray-900">HOME</a></li>
-                    <li><a href="#" class="hover:text-gray-900">ABOUT US</a></li>
-                    <li><a href="#" class="hover:text-gray-900">PRODUK</a></li>
-                    <li><a href="#" class="hover:text-gray-900">BROWSUR</a></li>
-                    <li><a href="#" class="hover:text-gray-900">ARTIKEL</a></li>
-                    <li><a href="#" class="hover:text-gray-900">KONTAK</a></li>
+                <h3 class="font-bold text-lg text-white mb-4">SITEMAP</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-green-400 transition duration-300">HOME</a></li>
+                    <li><a href="#" class="hover:text-green-400 transition duration-300">ABOUT US</a></li>
+                    <li><a href="#" class="hover:text-green-400 transition duration-300">PRODUK</a></li>
+                    <li><a href="#" class="hover:text-green-400 transition duration-300">BROWSUR</a></li>
+                    <li><a href="#" class="hover:text-green-400 transition duration-300">ARTIKEL</a></li>
+                    <li><a href="#" class="hover:text-green-400 transition duration-300">KONTAK</a></li>
                 </ul>
             </div>
-
+    
             <!-- Contact Info -->
             <div class="text-center md:text-right">
-                <h3 class="font-bold text-gray-900 mb-4">HUBUNGI KAMI</h3>
-                <p class="text-gray-700 mb-2">
+                <h3 class="font-bold text-lg text-white mb-4">HUBUNGI KAMI</h3>
+                <p class="text-gray-400 text-sm mb-2">
                     <i class="fas fa-phone"></i> +62 822 9090 9090
                 </p>
-                <p class="text-gray-700 mb-4">
+                <p class="text-gray-400 text-sm mb-4">
                     <i class="fas fa-envelope"></i> agritanimas@gmail.com
                 </p>
                 <!-- Social Media Icons -->
                 <div class="flex justify-center md:justify-end space-x-4">
-                    <a href="#"><img src="https://via.placeholder.com/30" alt="Instagram" class="w-8 h-8"></a>
-                    <a href="#"><img src="https://via.placeholder.com/30" alt="TikTok" class="w-8 h-8"></a>
+                    <a href="#" class="hover:text-green-400 transition duration-300">
+                        <img src="https://via.placeholder.com/30" alt="Instagram" class="w-8 h-8">
+                    </a>
+                    <a href="#" class="hover:text-green-400 transition duration-300">
+                        <img src="https://via.placeholder.com/30" alt="TikTok" class="w-8 h-8">
+                    </a>
                 </div>
             </div>
         </div>
-
+    
         <!-- Bottom Footer -->
-        <div class="text-center text-gray-600 mt-8 border-t border-gray-400 pt-4">
-            <p>made with passion. copyright © PT AGRITANIMAS</p>
+        <div class="text-center text-gray-500 mt-8 border-t border-gray-600 pt-4">
+            <p class="text-sm">Made with passion. Copyright © PT AGRITANIMAS 2024</p>
         </div>
     </footer>
+    
 
     <!-- Mobile Menu (Hidden by default, shown on small screens) -->
     <div class="md:hidden flex items-center mr-4">
