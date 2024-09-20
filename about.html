@@ -30,7 +30,7 @@
         </ul>
     </nav>
     <!-- Header Section -->
-    <header class="bg-gray-800 text-white py-16 min-h-screen flex justify-center items-center">
+    <header  class="bg-gray-800 text-white py-16 min-h-screen flex justify-center items-center">
         <div class="max-w-7xl mx-auto text-center justify-center items-center">
             <h1 class="text-5xl font-bold">Tentang Kami</h1>
             <p class="text-lg mt-4">Kami berdedikasi menyediakan pupuk terbaik untuk pertanian berkelanjutan.</p>
@@ -38,7 +38,7 @@
     </header>
 
     <!-- Main Section -->
-    <main class="py-12">
+    <main class="py-12" id="section-2">
         <!-- Introduction Section -->
         <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -118,51 +118,131 @@
 
     </main>
 
-    <footer class="bg-gray-300 py-8">
+    <footer class="bg-gray-900 py-10 text-white">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
             <!-- Logo and Address -->
-            <div class="text-center md:text-left">
-                <div class="bg-green-500 w-32 h-32 rounded-full flex items-center justify-center mx-auto md:mx-0">
-                    <span class="text-black font-bold">logo</span>
-                </div>
-                <!-- <p class="mt-4 text-gray-700">jalan medan, sumatera utara. 20989</p> -->
-            </div>
-
             <!-- Sitemap -->
-            <div class="text-center">
-                <h3 class="font-bold text-gray-900 mb-4">SITEMAP</h3>
-                <ul class="space-y-2 text-gray-700">
-                    <li><a href="#" class="hover:text-gray-900">HOME</a></li>
-                    <li><a href="#" class="hover:text-gray-900">ABOUT US</a></li>
-                    <li><a href="#" class="hover:text-gray-900">PRODUK</a></li>
-                    <li><a href="#" class="hover:text-gray-900">BROWSUR</a></li>
-                    <li><a href="#" class="hover:text-gray-900">ARTIKEL</a></li>
-                    <li><a href="#" class="hover:text-gray-900">KONTAK</a></li>
+            <div class="text-left">
+                <h3 class="font-bold text-lg text-white mb-4">SITEMAP</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-green-400 transition duration-300">HOME</a></li>
+                    <li><a href="#" class="hover:text-green-400 transition duration-300">ABOUT US</a></li>
+                    <li><a href="#" class="hover:text-green-400 transition duration-300">PRODUK</a></li>
+                    <li><a href="#" class="hover:text-green-400 transition duration-300">BROWSUR</a></li>
+                    <li><a href="#" class="hover:text-green-400 transition duration-300">ARTIKEL</a></li>
+                    <li><a href="#" class="hover:text-green-400 transition duration-300">KONTAK</a></li>
                 </ul>
             </div>
+            <div class="text-center flex flex-col items-center">
+                <div
+                    class="bg-green-500 w-32 h-32 rounded-full flex items-center justify-center mx-auto md:mx-0 shadow-lg">
+                    <img src="/src/img/pupuksementara.png" alt="Logo" class="w-24 h-24 object-contain">
+                </div>
+
+            </div>
+
+
 
             <!-- Contact Info -->
             <div class="text-center md:text-right">
-                <h3 class="font-bold text-gray-900 mb-4">HUBUNGI KAMI</h3>
-                <p class="text-gray-700 mb-2">
+                <h3 class="font-bold text-lg text-white mb-4">HUBUNGI KAMI</h3>
+                <p class="text-gray-400 text-sm mb-2">
                     <i class="fas fa-phone"></i> +62 822 9090 9090
                 </p>
-                <p class="text-gray-700 mb-4">
+                <p class="text-gray-400 text-sm mb-4">
                     <i class="fas fa-envelope"></i> agritanimas@gmail.com
                 </p>
                 <!-- Social Media Icons -->
-                <div class="flex justify-center md:justify-end space-x-4">
-                    <a href="#"><img src="https://via.placeholder.com/30" alt="Instagram" class="w-8 h-8"></a>
-                    <a href="#"><img src="https://via.placeholder.com/30" alt="TikTok" class="w-8 h-8"></a>
-                </div>
+
             </div>
         </div>
 
         <!-- Bottom Footer -->
-        <div class="text-center text-gray-600 mt-8 border-t border-gray-400 pt-4">
-            <p>made with passion. copyright © PT AGRITANIMAS</p>
+        <div class="text-center text-gray-500 mt-8 border-t border-gray-600 pt-4">
+            <p class="text-sm">Made with passion. Copyright © PT AGRITANIMAS 2024</p>
         </div>
     </footer>
+
+    <div class="fixed bottom-4 right-4 flex flex-col items-end z-[999999999] transition-opacity duration-500 opacity-0 transform translate-y-4"
+        id="whatsappIcon">
+        <div id="whatsappForm"
+            class="hidden ml-4 mb-2 bg-white p-4 rounded-lg shadow-lg max-w-xs md:max-w-64  opacity-0 transform transition-all duration-300 ">
+            <h2 class="mb-4 font-semibold text-md  ">Halo, Ada yang bisa kami bantu?</h2>
+            <textarea id="message"
+                class=" p-2 border border-gray-300 rounded resize-none overflow-auto no-scrollbar sm:w-full sm:h-32 md:w-56 md:h-40"
+                placeholder="Tulis pesan Anda..."></textarea>
+
+            <button id="sendButton"
+                class="mt-2 w-full bg-green-500 hover:bg-green-600 text-white p-2 rounded sm:py-1">Kirim</button>
+        </div>
+        <button id="whatsappButton"
+            class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg focus:outline-none sm:p-3">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48"
+                class="sm:w-12  sm:h-12 md:w-16  md:h-16">
+                <path fill="#fff"
+                    d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z">
+                </path>
+                <path fill="#fff"
+                    d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z">
+                </path>
+                <path fill="#cfd8dc"
+                    d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z">
+                </path>
+                <path fill="#40c351"
+                    d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z">
+                </path>
+                <path fill="#fff" fill-rule="evenodd"
+                    d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </button>
+    </div>
+
+    <script>
+        document.getElementById('whatsappButton').addEventListener('click', function () {
+            var form = document.getElementById('whatsappForm');
+            if (form.classList.contains('hidden')) {
+                form.classList.remove('hidden');
+                setTimeout(function () {
+                    form.classList.remove('opacity-0', 'transform', 'translate-y-4');
+                }, 10); // Add a slight delay to trigger the animation
+            } else {
+                form.classList.add('opacity-0', 'transform', 'translate-y-4');
+                setTimeout(function () {
+                    form.classList.add('hidden');
+                }, 300); // Matches the transition duration
+            }
+        });
+
+        document.getElementById('sendButton').addEventListener('click', function () {
+            var message = document.getElementById('message').value;
+            if (message.trim() !== '') {
+                var whatsappURL = 'https://api.whatsapp.com/send?phone=6285260460580&text=' + encodeURIComponent(message);
+                window.open(whatsappURL, '_blank');
+            } else {
+                alert('Pesan tidak boleh kosong');
+            }
+        });
+
+        window.addEventListener('scroll', function () {
+            var section2 = document.getElementById('section-2');
+            var whatsappIcon = document.getElementById('whatsappIcon');
+
+            // Hitung posisi setengah dari section 2
+            var section2Start = section2.offsetTop;
+            var section2Half = section2Start + (section2.offsetHeight / 2);
+
+            // Posisi scroll saat ini
+            var scrollPos = window.scrollY + window.innerHeight;
+
+            // Munculkan ikon saat setengah dari section 2 mulai terlihat
+            if (scrollPos > section2Half) {
+                whatsappIcon.classList.remove('opacity-0', 'translate-y-4');
+            } else {
+                whatsappIcon.classList.add('opacity-0', 'translate-y-4');
+            }
+        });
+    </script>
 
 </body>
 
