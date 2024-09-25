@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./index.html', './about.html', './brosur.html', './produk.html', './artikel.html', './detail-artikel.html'
+  content: ['./index.html', './about.html', './brosur.html', './produk.html', './artikel.html', './detail-artikel.html', './produk-detail.html', './kontak.html'
   ],
   theme: {
     extend: {
@@ -8,7 +8,7 @@ module.exports = {
         
       },
       fontFamily: {
-        sans: ['Poppins', 'sans-serif'], // Replace 'sans' with your preferred key if needed
+        sans: ['Poppins', 'sans-serif'], 
       },
     },
   },
