@@ -1,17 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PRODUK DETAIL</title>
+    <link href="/src/output.css" rel="stylesheet">
+
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+    <style>
+        .header-bg {
+            background: url('/src/img/sawah.jpg') center/cover no-repeat;
+            height: 50vh;
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 50vh;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 </head>
-<body>
-    
+
+<body class="font-sans bg-white">
+
+    <!-- Navbar -->
+    <nav
+        class="absolute z-10 w-full flex justify-between items-center px-6 py-4 bg-gradient-to-b from-stone-900/50 to-transparent ">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <img src="/src/img/pupuksementara.png" alt="Logo" class="h-10 max-w-xs">
+        </div>
+
+        <!-- Menu -->
+        <ul class="flex space-x-6 text-gray-100 font-sans font-bold text-xl hidden md:flex ">
+            <li><a href=" " class="hover:text-green-600">HOME</a></li>
+            <li><a href="about.html" class="hover:text-green-600">ABOUT US</a></li>
+            <li><a href="produk.html" class="hover:text-green-600">PRODUK</a></li>
+            <li><a href="brosur.html" class="hover:text-green-600">BROSUR</a></li>
+            <li><a href="artikel.html" class="hover:text-green-600">ARTIKEL</a></li>
+            <li><a href="kontak.html" class="hover:text-green-600">KONTAK</a></li>
+        </ul>
+        <div class="md:hidden flex items-center mr-4"></div>
+        <button id="mobile-menu-toggle" class="text-white focus:outline-none relative z-30 md:hidden">
+            <!-- Icon for mobile menu -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+        </div>
+
+        <div id="mobile-menu"
+            class="fixed top-0 right-0 h-full w-2/5 bg-stone-100/90 text-black z-999 transform translate-x-full transition-transform duration-300 ease-in-out">
+            <div class="flex flex-col items-end p-4 space-y-4 pt-20 pr-4 font-semibold z-999">
+                <a href="index.html" class="text-lg">HOME</a>
+                <a href="about.html" class="text-lg">ABOUT US</a>
+                <a href="produk.html" class="text-lg">PRODUCT</a>
+                <a href="brosur.html" class="text-lg">BROSUR</a>
+                <a href="artikel.html" class="text-lg">ARTIKEL</a>
+                <a href="kontak.html" class="text-lg">KONTAK</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="  relative flex justify-center items-center text-center text-white">
 
 
-    <footer class="bg-[#008352] py-10 text-white"></footer>
+    </section>
+
+    <section class="py-10 px-4 md:px-10 lg:px-20 mt-32">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Image Section -->
+            <div>
+                <!-- Main Image -->
+                <div class="flex justify-center ">
+                    <img id="mainImage" src="src/img/pupukcontoh.jpeg" alt="MerokeSOP KALI" class="w-96 h-96">
+                </div>
+
+                <!-- Thumbnails for smaller images -->
+                <div class="flex justify-center   mt-4 space-x-4">
+                    <img src="src/img/caracabe.jpg" alt="Small Image 1" class="w-16 h-auto cursor-pointer"
+                        onclick="changeImage('/src/img/caracabe.jpg')">
+                    <img src="/src/img/petani2.jpg" alt="Small Image 2" class="w-16 h-auto cursor-pointer"
+                        onclick="changeImage('/src/img/petani2.jpg')">
+                    <img src="src/img/caracabe.jpg" alt="Small Image 1" class="w-16 h-auto cursor-pointer"
+                        onclick="changeImage('/src/img/caracabe.jpg')">
+                    <img src="/src/img/petani2.jpg" alt="Small Image 2" class="w-16 h-16 cursor-pointer"
+                        onclick="changeImage('/src/img/petani2.jpg')">
+                    <img src="src/img/caracabe.jpg" alt="Small Image 1" class="w-16 h-auto cursor-pointer"
+                        onclick="changeImage('/src/img/caracabe.jpg')">
+                </div>
+            </div>
+
+            <!-- Content Section -->
+            <div>
+                <h4 class="text-gray-600 text-lg font-medium">Pupuk NP</h4>
+                <hr class="w-12 h-1 bg-green-600 mt-1 mb-4">
+                <h2 class="text-3xl font-bold text-gray-800 mt-2">NP MANTAP KALI</h2>
+                <p class="text-gray-500 mt-4">
+                    Pupuk NP adalah pupuk majemuk pemberi unsur S tinggi (selain Kalium) yang sangat cocok untuk
+                    tanaman keluarga Brassicaceae (Kubis, Brokoli), dan bawang-bawangan (bawang merah, bawang prei)
+                    serta tanaman lainnya yang menghasilkan minyak atsiri.
+                </p>
+
+                <!-- Manfaat Section -->
+                <div class="mt-6">
+                    <h3 class="text-lg font-semibold text-gray-800">Manfaat:</h3>
+                    <ul class="list-disc list-inside text-gray-600 mt-2 space-y-2">
+                        <li>Tanaman tumbuh dengan sehat dan memaksimalkan produktivitas jangka panjang.</li>
+                        <li>Hasil produksi meningkat dengan meningkatkan jumlah dan juga ukuran buah atau umbi.</li>
+                        <li>Meningkatkan kualitas, rasa, warna kesegaran dan daya simpan buah atau umbi.</li>
+                    </ul>
+                </div>
+
+                <!-- Keuntungan Section -->
+                <div class="mt-6">
+                    <h3 class="text-lg font-semibold text-gray-800">Keuntungan:</h3>
+                    <p class="text-gray-500 mt-2">
+                        Mengandung Kalium (K) yang tinggi dan Sulfat (S) menjadi pilihan yang sesuai untuk tanaman
+                        hortikultura secara luas.
+                        Kandungan rasio Kalium dan Sulfur yang seimbang dapat meningkatkan fungsi enzim, sintesa protein
+                        dan pembentukan umbi sehingga hasil panen dan kualitas meningkat serta memperkaya rasa dan
+                        warna.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function changeImage(newSrc) {
+            document.getElementById('mainImage').src = newSrc;
+        }
+    </script>
+
+    <section class="py-10 px-4 md:px-10 lg:px-20 relative overflow-hidden">
+        <h2 class="text-center text-2xl font-bold mb-6">Produk Lainnya</h2>
+        <div class="relative">
+            <!-- Left Scroll Button -->
+            <button onclick="scrollLeftAction()"
+                class="absolute left-0 md:left-[-4rem] top-1/2 transform -translate-y-1/2 bg-green-300 hover:bg-green-400 text-white py-2 px-4 rounded-full z-10 shadow-lg">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <!-- Scrollable Product Container -->
+            <div id="productContainer" class="flex overflow-x-scroll no-scrollbar space-x-6 scroll-smooth">
+                <!-- Product 1 -->
+                <a href="/produkdetail.html" >
+                    <div class="w-[200px] md:w-[250px] flex-shrink-0 border p-4 rounded-lg hover:shadow-lg transition-shadow">
+                        <img src="/src/img/pupukcontoh.jpeg" alt="Product 1" class="w-full h-auto">
+                        <h3 class="text-sm text-gray-500 mt-4">Pupuk Majemuk</h3>
+                        <h2 class="text-lg font-bold">NPK MUTIARA</h2>
+                    </div>
+                </a>
+                <a href="/produkdetail.html">
+                    <div class="w-[250px] md:w-[250px]  flex-shrink-0 border p-4 rounded-lg hover:shadow-lg transition-shadow">
+                        <img src="/src/img/pupukcontoh.jpeg" alt="Product 1" class="w-full h-auto">
+                        <h3 class="text-sm text-gray-500 mt-4">Pupuk Majemuk</h3>
+                        <h2 class="text-lg font-bold">MerokeFOSFAT</h2>
+                    </div>
+                </a>
+                <a href="/produkdetail.html">
+                    <div class="w-[250px] md:w-[250px]  flex-shrink-0 border p-4 rounded-lg hover:shadow-lg transition-shadow">
+                        <img src="/src/img/pupukcontoh.jpeg" alt="Product 1" class="w-full h-auto">
+                        <h3 class="text-sm text-gray-500 mt-4">Pupuk Majemuk</h3>
+                        <h2 class="text-lg font-bold">NPK MUTIARA</h2>
+                    </div>
+                </a>
+                <a href="/produkdetail.html">
+                    <div class="w-[250px] md:w-[250px]  flex-shrink-0 border p-4 rounded-lg hover:shadow-lg transition-shadow">
+                        <img src="/src/img/pupukcontoh.jpeg" alt="Product 1" class="w-full h-auto">
+                        <h3 class="text-sm text-gray-500 mt-4">Pupuk Majemuk</h3>
+                        <h2 class="text-lg font-bold">MerokeFOSFAT</h2>
+                    </div>
+                </a>
+                <a href="/produkdetail.html">
+                    <div class="w-[250px] md:w-[250px]  flex-shrink-0 border p-4 rounded-lg hover:shadow-lg transition-shadow">
+                        <img src="/src/img/pupukcontoh.jpeg" alt="Product 1" class="w-full h-auto">
+                        <h3 class="text-sm text-gray-500 mt-4">Pupuk Majemuk</h3>
+                        <h2 class="text-lg font-bold">NPK MUTIARA</h2>
+                    </div>
+                </a>
+                <a href="/produkdetail.html">
+                    <div class="w-[250px] md:w-[250px]  flex-shrink-0 border p-4 rounded-lg hover:shadow-lg transition-shadow">
+                        <img src="/src/img/pupukcontoh.jpeg" alt="Product 1" class="w-full h-auto">
+                        <h3 class="text-sm text-gray-500 mt-4">Pupuk Majemuk</h3>
+                        <h2 class="text-lg font-bold">MerokeFOSFAT</h2>
+                    </div>
+                </a>
+                <a href="/produkdetail.html">
+                    <div class="w-[250px] md:w-[250px]  flex-shrink-0 border p-4 rounded-lg hover:shadow-lg transition-shadow">
+                        <img src="/src/img/pupukcontoh.jpeg" alt="Product 1" class="w-full h-auto">
+                        <h3 class="text-sm text-gray-500 mt-4">Pupuk Majemuk</h3>
+                        <h2 class="text-lg font-bold">NPK MUTIARA</h2>
+                    </div>
+                </a>
+                
+            </div>
+
+            <!-- Right Scroll Button -->
+            <button onclick="scrollRightAction()"
+                class="absolute right-0  md:right-[-4rem] top-1/2 transform -translate-y-1/2 bg-green-300 hover:bg-green-400 text-white py-2 px-4 rounded-full z-10 shadow-lg">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+    <script>
+        // Scroll the container to the left
+        function scrollLeftAction() {
+            var container = document.getElementById('productContainer');
+            if (container.scrollLeft > 0) {
+                container.scrollBy({
+                    left: -300, // Adjust scroll distance as needed
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // Scroll the container to the right
+        function scrollRightAction() {
+            var container = document.getElementById('productContainer');
+            var maxScrollLeft = container.scrollWidth - container.clientWidth;
+            if (container.scrollLeft < maxScrollLeft) {
+                container.scrollBy({
+                    left: 300, // Adjust scroll distance as needed
+                    behavior: 'smooth'
+                });
+            }
+        }
+    </script>
+
+
+
+
+    <footer class="bg-[#008352] py-10 text-white">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
-            <div class="text-left">
+            <!-- Logo and Address -->
+            <!-- Sitemap -->
+            <div class="text-left hidden md:block">
                 <h3 class="font-bold text-lg md:text-2xl text-white mb-4">SITEMAP</h3>
                 <ul class="space-y-2 text-gray-300">
                     <li><a href="#" class="hover:text-green-400 transition duration-300">HOME</a></li>
@@ -30,23 +268,79 @@
 
             </div>
 
+            <!-- Contact Info -->
             <div class="text-center md:text-right">
                 <h3 class="font-bold text-lg md:text-2xl text-white mb-4">HUBUNGI KAMI</h3>
-                <p class="text-gray-300 text-sm mb-2">
-                    <i class="fas fa-phone"></i> +62 822 9090 9090
-                </p>
-                <p class="text-gray-300 text-sm mb-4">
-                    <i class="fas fa-envelope"></i> agritanimas@gmail.com
-                </p>
-                <!-- Social Media Icons -->
+                <a href="tel:+6282290909090" class="text-gray-300 text-sm mb-2 flex justify-center md:justify-end ">
+                    +62 822 9090 9090
+                    <i class="fas fa-phone ml-2"></i>
+                </a>
+                <a href="mailto:agritanimas@gmail.com" class="text-gray-300 text-sm mb-2 flex justify-center md:justify-end">
+                    agritanimas@gmail.com
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+
 
             </div>
         </div>
+        <div class="flex justify-center space-x-6 mt-8 md:mt-0">
+            <!-- Instagram Icon -->
+            <a href="https://www.instagram.com" target="_blank"
+                class="text-gray-100 hover:text-pink-500 transition transform hover:scale-110">
+                <i class="fab fa-instagram text-xl sm:text-3xl"></i>
+            </a>
+            <!-- Facebook Icon -->
+            <a href="https://www.facebook.com" target="_blank"
+                class="text-gray-100 hover:text-blue-500 transition transform hover:scale-110">
+                <i class="fab fa-facebook text-xl sm:text-3xl"></i>
+            </a>
+            <!-- TikTok Icon -->
+            <a href="https://www.tiktok.com" target="_blank"
+                class="text-gray-100 hover:text-black transition transform hover:scale-110">
+                <i class="fab fa-tiktok text-xl sm:text-3xl"></i>
+            </a>
+        </div>
+
 
         <!-- Bottom Footer -->
         <div class="text-center text-gray-100 mt-8 border-t border-gray-100 pt-4">
             <p class="text-sm">Made with passion. Copyright © PT AGRITANIMAS 2024</p>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleButton = document.getElementById('mobile-menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuLinks = mobileMenu.querySelectorAll('a');
+
+            // Function to toggle the mobile menu
+            function toggleMenu() {
+                mobileMenu.classList.toggle('translate-x-full');
+                mobileMenu.classList.toggle('translate-x-0');
+
+                // Toggle the color of the button between white and black
+                if (toggleButton.classList.contains('text-white')) {
+                    toggleButton.classList.remove('text-white');
+                    toggleButton.classList.add('text-black');
+                } else {
+                    toggleButton.classList.remove('text-black');
+                    toggleButton.classList.add('text-white');
+                }
+            }
+
+            toggleButton.addEventListener('click', toggleMenu);
+
+            // Add event listeners to each link in the mobile menu
+            menuLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    // Close the mobile menu when a link is clicked
+                    toggleMenu();
+                });
+            });
+        });
+    </script>
 </body>
+
 </html>

@@ -23,7 +23,7 @@
         }
 
         .contact-bg {
-            background: url('/static/img/sawah.jpg') center/cover no-repeat;
+            background: url('/src/img/kontak.jpg') center/cover no-repeat;
             height: 300px;
             position: relative;
             z-index: 1;
@@ -112,25 +112,44 @@
 
 <body class="font-sans bg-white">
 
-    <!-- Navbar -->
     <nav
-        class="absolute z-10 w-full flex justify-between items-center px-6 py-4 bg-gradient-to-b from-stone-900/50 to-transparent">
+        class="absolute z-10 w-full flex justify-between items-center px-6 py-4 bg-gradient-to-b from-stone-900/50 to-transparent ">
         <!-- Logo -->
         <div class="flex items-center">
-            <img src="/static/img/pupuksementara.png" alt="Logo" class="h-10 max-w-xs">
+            <img src="/src/img/pupuksementara.png" alt="Logo" class="h-10 max-w-xs">
         </div>
 
         <!-- Menu -->
-        <ul class="flex space-x-6 text-gray-100 font-sans font-bold text-xl">
-            <li><a href="#" class="hover:text-green-600">HOME</a></li>
-            <li><a href="#" class="hover:text-green-600">ABOUT US</a></li>
-            <li><a href="#" class="hover:text-green-600">PRODUK</a></li>
-            <li><a href="#" class="hover:text-green-600">BROSUR</a></li>
-            <li><a href="#" class="hover:text-green-600">ARTIKEL</a></li>
-            <li><a href="#" class="hover:text-green-600">KONTAK</a></li>
+        <ul class="flex space-x-6 text-gray-100 font-sans font-bold text-xl hidden md:flex ">
+            <li><a href=" " class="hover:text-green-600">HOME</a></li>
+            <li><a href="about.html" class="hover:text-green-600">ABOUT US</a></li>
+            <li><a href="produk.html" class="hover:text-green-600">PRODUK</a></li>
+            <li><a href="brosur.html" class="hover:text-green-600">BROSUR</a></li>
+            <li><a href="artikel.html" class="hover:text-green-600">ARTIKEL</a></li>
+            <li><a href="kontak.html" class="hover:text-green-600">KONTAK</a></li>
         </ul>
-    </nav>
+        <div class="md:hidden flex items-center mr-4"></div>
+        <button id="mobile-menu-toggle" class="text-white focus:outline-none relative z-30 md:hidden">
+            <!-- Icon for mobile menu -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+        </div>
 
+        <div id="mobile-menu"
+            class="fixed top-0 right-0 h-full w-2/5 bg-stone-100/90 text-black z-999 transform translate-x-full transition-transform duration-300 ease-in-out">
+            <div class="flex flex-col items-end p-4 space-y-4 pt-20 pr-4 font-semibold z-999">
+                <a href="index.html" class="text-lg">HOME</a>
+                <a href="about.html" class="text-lg">ABOUT US</a>
+                <a href="produk.html" class="text-lg">PRODUCT</a>
+                <a href="brosur.html" class="text-lg">BROSUR</a>
+                <a href="artikel.html" class="text-lg">ARTIKEL</a>
+                <a href="kontak.html" class="text-lg">KONTAK</a>
+            </div>
+        </div>
+    </nav>
     <!-- Hero Section Contact -->
     <section class="contact-bg">
         <div class="contact-heading">
@@ -143,82 +162,122 @@
     <section class="max-w-7xl mx-auto p-8 bg-white mt-8">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <!-- Contact Card 1 -->
+
+
+
             <div class="contact-card">
-                <img src="/src/img/avatan.png" alt="Budi Santoso">
-                <h3>Budi Santoso</h3>
-                <p>CEO</p>
-                <p>+62 822 9090 9090</p>
-                <div class="social-icons">
-                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <!-- Main content (image and details) in a row -->
+                <div class="flex flex-row gap-4 items-center">
+                    <div>
+                        <img src="/src/img/avatan.png" alt="Budi Santoso" class="w-16 h-16 rounded-full">
+                    </div>
+                    <div class="text-left">
+                        <h3 class="text-lg font-bold">Budi Santoso</h3>
+                        <p class="text-sm text-gray-600">CEO</p>
+                    </div>
+                </div>
+
+                <!-- Social icons in a separate column, centered below the row -->
+                <div class="flex justify-center space-x-4">
+                    <a href="https://instagram.com" target="_blank" class="text-gray-600 hover:text-black">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="text-gray-600 hover:text-black">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://whatsapp.com" target="_blank" class="text-gray-600 hover:text-black">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
                 </div>
             </div>
 
-
-                <div class="contact-card">
-                    <!-- Main content (image and details) in a row -->
-                    <div class="flex flex-row gap-4 items-center">
-                        <div>
-                            <img src="/src/img/avatan.png" alt="Budi Santoso" class="w-16 h-16 rounded-full">
-                        </div>
-                        <div class="text-left">
-                            <h3 class="text-lg font-bold">Budi Santoso</h3>
-                            <p class="text-sm text-gray-600">CEO</p>
-                        </div>
+            <div class="contact-card">
+                <!-- Main content (image and details) in a row -->
+                <div class="flex flex-row gap-4 items-center">
+                    <div>
+                        <img src="/src/img/avatan.png" alt="Budi Santoso" class="w-16 h-16 rounded-full">
                     </div>
-                    
-                    <!-- Social icons in a separate column, centered below the row -->
-                    <div class="flex justify-center space-x-4">
-                        <a href="https://instagram.com" target="_blank" class="text-gray-600 hover:text-black">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://linkedin.com" target="_blank" class="text-gray-600 hover:text-black">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://whatsapp.com" target="_blank" class="text-gray-600 hover:text-black">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
+                    <div class="text-left">
+                        <h3 class="text-lg font-bold">Agus jaya</h3>
+                        <p class="text-sm text-gray-600">Customer Service</p>
                     </div>
                 </div>
-            
 
-
-            <!-- Contact Card 2 -->
-            <div class="contact-card">
-                <img src="/src/img/avatan.png" alt="Rini Suryani">
-                <h3>Rini Suryani</h3>
-                <p>Marketing Manager</p>
-                <p>+62 822 9090 9091</p>
-                <div class="social-icons">
-                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <!-- Social icons in a separate column, centered below the row -->
+                <div class="flex justify-center space-x-4">
+                    <a href="https://instagram.com" target="_blank" class="text-gray-600 hover:text-black">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="text-gray-600 hover:text-black">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://whatsapp.com" target="_blank" class="text-gray-600 hover:text-black">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
                 </div>
             </div>
 
-            <!-- Contact Card 3 -->
             <div class="contact-card">
-                <img src="/src/img/avatan.png" alt="Ahmad Fajar">
-                <h3>Ahmad Fajar</h3>
-                <p>Customer Service</p>
-                <p>+62 822 9090 9092</p>
-                <div class="social-icons">
-                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <!-- Main content (image and details) in a row -->
+                <div class="flex flex-row gap-4 items-center">
+                    <div>
+                        <img src="/src/img/avatan.png" alt="Budi Santoso" class="w-16 h-16 rounded-full">
+                    </div>
+                    <div class="text-left">
+                        <h3 class="text-lg font-bold">Rini Andini</h3>
+                        <p class="text-sm text-gray-600">Manager</p>
+                    </div>
+                </div>
+
+                <!-- Social icons in a separate column, centered below the row -->
+                <div class="flex justify-center space-x-4">
+                    <a href="https://instagram.com" target="_blank" class="text-gray-600 hover:text-black">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="text-gray-600 hover:text-black">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://whatsapp.com" target="_blank" class="text-gray-600 hover:text-black">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-card">
+                <!-- Main content (image and details) in a row -->
+                <div class="flex flex-row gap-4 items-center">
+                    <div>
+                        <img src="/src/img/avatan.png" alt="Budi Santoso" class="w-16 h-16 rounded-full">
+                    </div>
+                    <div class="text-left">
+                        <h3 class="text-lg font-bold">Dahlan</h3>
+                        <p class="text-sm text-gray-600">Tim Lapangan</p>
+                    </div>
+                </div>
+
+                <!-- Social icons in a separate column, centered below the row -->
+                <div class="flex justify-center space-x-4">
+                    <a href="https://instagram.com" target="_blank" class="text-gray-600 hover:text-black">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="text-gray-600 hover:text-black">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://whatsapp.com" target="_blank" class="text-gray-600 hover:text-black">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-[#008352] py-10 text-white">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
             <!-- Logo and Address -->
             <!-- Sitemap -->
-            <div class="text-left">
-                <h3 class="font-bold text-lg text-white mb-4">SITEMAP</h3>
-                <ul class="space-y-2 text-gray-400">
+            <div class="text-left hidden md:block">
+                <h3 class="font-bold text-lg md:text-2xl text-white mb-4">SITEMAP</h3>
+                <ul class="space-y-2 text-gray-300">
                     <li><a href="#" class="hover:text-green-400 transition duration-300">HOME</a></li>
                     <li><a href="#" class="hover:text-green-400 transition duration-300">ABOUT US</a></li>
                     <li><a href="#" class="hover:text-green-400 transition duration-300">PRODUK</a></li>
@@ -235,29 +294,117 @@
 
             </div>
 
-
-
             <!-- Contact Info -->
             <div class="text-center md:text-right">
-                <h3 class="font-bold text-lg text-white mb-4">HUBUNGI KAMI</h3>
-                <p class="text-gray-400 text-sm mb-2">
-                    <i class="fas fa-phone"></i> +62 822 9090 9090
-                </p>
-                <p class="text-gray-400 text-sm mb-4">
-                    <i class="fas fa-envelope"></i> agritanimas@gmail.com
-                </p>
-                <!-- Social Media Icons -->
+                <h3 class="font-bold text-lg md:text-2xl text-white mb-4">HUBUNGI KAMI</h3>
+                <a href="tel:+6282290909090" class="text-gray-300 text-sm mb-2 flex justify-center md:justify-end ">
+                    +62 822 9090 9090
+                    <i class="fas fa-phone ml-2"></i>
+                </a>
+                <a href="mailto:agritanimas@gmail.com"
+                    class="text-gray-300 text-sm mb-2 flex justify-center md:justify-end">
+                    agritanimas@gmail.com
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+
 
             </div>
         </div>
+        <div class="flex justify-center space-x-6">
+            <!-- Instagram Icon -->
+            <a href="https://www.instagram.com" target="_blank"
+                class="text-gray-100 hover:text-pink-500 transition transform hover:scale-110">
+                <i class="fab fa-instagram text-xl sm:text-3xl"></i>
+            </a>
+            <!-- Facebook Icon -->
+            <a href="https://www.facebook.com" target="_blank"
+                class="text-gray-100 hover:text-blue-500 transition transform hover:scale-110">
+                <i class="fab fa-facebook text-xl sm:text-3xl"></i>
+            </a>
+            <!-- TikTok Icon -->
+            <a href="https://www.tiktok.com" target="_blank"
+                class="text-gray-100 hover:text-black transition transform hover:scale-110">
+                <i class="fab fa-tiktok text-xl sm:text-3xl"></i>
+            </a>
+        </div>
+
 
         <!-- Bottom Footer -->
-        <div class="text-center text-gray-500 mt-8 border-t border-gray-600 pt-4">
+        <div class="text-center text-gray-100 mt-8 border-t border-gray-100 pt-4">
             <p class="text-sm">Made with passion. Copyright © PT AGRITANIMAS 2024</p>
         </div>
     </footer>
+
+    <!-- skrip untuk hamburger -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleButton = document.getElementById('mobile-menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuLinks = mobileMenu.querySelectorAll('a');
+
+            // Function to toggle the mobile menu
+            function toggleMenu() {
+                mobileMenu.classList.toggle('translate-x-full');
+                mobileMenu.classList.toggle('translate-x-0');
+
+                // Toggle the color of the button between white and black
+                if (toggleButton.classList.contains('text-white')) {
+                    toggleButton.classList.remove('text-white');
+                    toggleButton.classList.add('text-black');
+                } else {
+                    toggleButton.classList.remove('text-black');
+                    toggleButton.classList.add('text-white');
+                }
+            }
+
+            toggleButton.addEventListener('click', toggleMenu);
+
+            // Add event listeners to each link in the mobile menu
+            menuLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    // Close the mobile menu when a link is clicked
+                    toggleMenu();
+                });
+            });
+        });
+    </script>
+
     <script>
         new WOW().init();
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleButton = document.getElementById('mobile-menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuLinks = mobileMenu.querySelectorAll('a');
+
+            // Function to toggle the mobile menu
+            function toggleMenu() {
+                mobileMenu.classList.toggle('translate-x-full');
+                mobileMenu.classList.toggle('translate-x-0');
+
+                // Toggle the color of the button between white and black
+                if (toggleButton.classList.contains('text-white')) {
+                    toggleButton.classList.remove('text-white');
+                    toggleButton.classList.add('text-black');
+                } else {
+                    toggleButton.classList.remove('text-black');
+                    toggleButton.classList.add('text-white');
+                }
+            }
+
+            toggleButton.addEventListener('click', toggleMenu);
+
+            // Add event listeners to each link in the mobile menu
+            menuLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    // Close the mobile menu when a link is clicked
+                    toggleMenu();
+                });
+            });
+        });
     </script>
 </body>
 

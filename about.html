@@ -4,28 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tentang Kami - AGRITANIMAS, produsen pupuk berkualitas di Sumatera Utara. Temukan alasan kenapa harus memilih produk kami.">
+    <meta name="description"
+        content="Tentang Kami - AGRITANIMAS, produsen pupuk berkualitas di Sumatera Utara. Temukan alasan kenapa harus memilih produk kami.">
     <title>Tentang Kami | AGRITANIMAS</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="/src/output.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
 </head>
 
 <body class="font-sans antialiased bg-gray-100">
 
-    <!-- Navbar -->
-    <nav class="absolute w-full flex justify-between items-center px-6 py-4 md:flex md:space-x-8 md:py-6">
+    <nav
+        class="absolute z-10 w-full flex justify-between items-center px-6 py-4 bg-gradient-to-b from-stone-900/50 to-transparent ">
         <!-- Logo -->
         <div class="flex items-center">
             <img src="/src/img/pupuksementara.png" alt="Logo" class="h-10 max-w-xs">
         </div>
 
         <!-- Menu -->
-        <button id="menuToggle" class="md:hidden text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-        </button>
-
-        <ul id="menu" class="hidden md:flex space-x-6 text-gray-100 font-sans font-bold text-xl md:space-y-0 space-y-4 flex-col md:flex-row">
+        <ul class="flex space-x-6 text-gray-100 font-sans font-bold text-xl hidden md:flex ">
             <li><a href="/" class="hover:text-green-600">HOME</a></li>
             <li><a href="about.html" class="hover:text-green-600">ABOUT US</a></li>
             <li><a href="produk.html" class="hover:text-green-600">PRODUK</a></li>
@@ -33,15 +35,36 @@
             <li><a href="artikel.html" class="hover:text-green-600">ARTIKEL</a></li>
             <li><a href="kontak.html" class="hover:text-green-600">KONTAK</a></li>
         </ul>
-    </nav>
+        <div class="md:hidden flex items-center mr-4"></div>
+        <button id="mobile-menu-toggle" class="text-white focus:outline-none relative z-30 md:hidden">
+            <!-- Icon for mobile menu -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+        </div>
 
+        <div id="mobile-menu"
+            class="fixed top-0 right-0 h-full w-2/5 bg-stone-100/90 text-black z-999 transform translate-x-full transition-transform duration-300 ease-in-out">
+            <div class="flex flex-col items-end p-4 space-y-4 pt-20 pr-4 font-semibold z-999">
+                <a href="index.html" class="text-lg">HOME</a>
+                <a href="about.html" class="text-lg">ABOUT US</a>
+                <a href="produk.html" class="text-lg">PRODUCT</a>
+                <a href="brosur.html" class="text-lg">BROSUR</a>
+                <a href="artikel.html" class="text-lg">ARTIKEL</a>
+                <a href="kontak.html" class="text-lg">KONTAK</a>
+            </div>
+        </div>
+    </nav>
     <!-- Header Section -->
-    <header class="bg-gray-800 text-white py-16 min-h-screen flex justify-center items-center">
+    <header class="bg-[url('/src/img/petani4.jpg')] bg-cover bg-center text-white py-16 min-h-screen flex justify-center items-center">
         <div class="max-w-7xl mx-auto text-center px-4 sm:px-6">
             <h1 class="text-3xl sm:text-5xl font-bold">Tentang Kami</h1>
             <p class="text-base sm:text-lg mt-4">Kami berdedikasi menyediakan pupuk terbaik untuk pertanian berkelanjutan.</p>
         </div>
     </header>
+    
 
     <!-- Main Section -->
     <main class="py-12" id="section-2">
@@ -50,7 +73,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <!-- Image -->
                 <div class="w-full h-full">
-                    <img src="https://via.placeholder.com/600x400" alt="Pupuk Kami" class="rounded-lg shadow-lg w-full">
+                    <img src="/src/img/petani1.jpeg" alt="Pupuk Kami" class="rounded-lg shadow-lg w-full">
                 </div>
                 <!-- Text Content -->
                 <div class="text-left">
@@ -79,53 +102,30 @@
         </section>
 
 
-        <section class="w-full mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-0 items-center min-h-screen">
-                <div class="w-full h-full">
-                    <img src="src/img/petani2.jpg" alt="Farmer Image" class="w-full h-full object-cover">
-                </div>
-                <div class="text-left p-8 md:p-16">
-                    <hr class="w-12 h-1 bg-green-600 mb-2">
-                    <h3 class="text-lg font-bold text-gray-600 mb-2">VISI & MISI</h3>
-                    <div class="h-16"> </div>
-                    <h1 class="text-2xl font-bold text-gray-900 mb-4">Menyediakan pupuk terbaik</h1>
-                    <p class="text-gray-700 mb-6">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua.
-                        Ut enim ad minim.
-                    </p>
-                    <h1 class="text-2xl font-bold text-gray-900 mb-4">Menyediakan pupuk terbaik</h1>
-                    <p class="text-gray-700 mb-6">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua.
-                        Ut enim ad minim.
-                    </p>
-                </div>
-            </div>
-        </section>
         
         <!-- Why Choose Us Section -->
         <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div class="text-center mb-12">
                 <h2 class="text-3xl sm:text-4xl font-bold text-gray-800">Kenapa Harus Memilih Pupuk Kami?</h2>
-                <p class="text-lg mt-4 text-gray-600">Inilah beberapa alasan kenapa pupuk kami adalah pilihan terbaik untuk Anda.</p>
+                <p class="text-lg mt-4 text-gray-600">Inilah beberapa alasan kenapa pupuk kami adalah pilihan terbaik
+                    untuk Anda.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Benefit 1 -->
                 <div class="bg-white shadow-lg rounded-lg p-6 text-center">
                     <div class="mb-4">
-                        <img src="https://via.placeholder.com/100" alt="Keunggulan 1" class="mx-auto w-24 h-24">
+                        <i class="fas fa-check-circle text-4xl sm:text-5xl md:text-6xl mb-4 "></i>
                     </div>
                     <h3 class="text-xl sm:text-2xl font-bold text-gray-800">Kualitas Terbaik</h3>
                     <p class="mt-4 text-gray-600">
                         Kami hanya menggunakan bahan-bahan terbaik dalam produksi pupuk kami, memastikan hasil maksimal
-                        untuk pertanian Anda.
+                        untuk pertanian anda.
                     </p>
                 </div>
                 <!-- Benefit 2 -->
                 <div class="bg-white shadow-lg rounded-lg p-6 text-center">
                     <div class="mb-4">
-                        <img src="https://via.placeholder.com/100" alt="Keunggulan 2" class="mx-auto w-24 h-24">
+                        <i class="fas fa-flask text-4xl sm:text-5xl md:text-6xl mb-4"></i>
                     </div>
                     <h3 class="text-xl sm:text-2xl font-bold text-gray-800">Ramah Lingkungan</h3>
                     <p class="mt-4 text-gray-600">
@@ -136,7 +136,7 @@
                 <!-- Benefit 3 -->
                 <div class="bg-white shadow-lg rounded-lg p-6 text-center">
                     <div class="mb-4">
-                        <img src="https://via.placeholder.com/100" alt="Keunggulan 3" class="mx-auto w-24 h-24">
+                        <i class="fas fa-coins text-4xl sm:text-5xl md:text-6xl mb-4"></i>
                     </div>
                     <h3 class="text-xl sm:text-2xl font-bold text-gray-800">Harga Terjangkau</h3>
                     <p class="mt-4 text-gray-600">
@@ -148,59 +148,101 @@
         </section>
     </main>
 
-    <footer class="bg-[#058743] py-10 text-white">
+    <footer class="bg-[#008352] py-10 text-white">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
+            <!-- Logo and Address -->
             <!-- Sitemap -->
-            <div class="text-left">
-                <h3 class="font-bold text-lg text-white mb-4">SITEMAP</h3>
-                <ul class="space-y-2 text-gray-400">
+            <div class="text-left hidden md:block">
+                <h3 class="font-bold text-lg md:text-2xl text-white mb-4">SITEMAP</h3>
+                <ul class="space-y-2 text-gray-300">
                     <li><a href="#" class="hover:text-green-400 transition duration-300">HOME</a></li>
                     <li><a href="#" class="hover:text-green-400 transition duration-300">ABOUT US</a></li>
                     <li><a href="#" class="hover:text-green-400 transition duration-300">PRODUK</a></li>
-                    <li><a href="#" class="hover:text-green-400 transition duration-300">BROSUR</a></li>
+                    <li><a href="#" class="hover:text-green-400 transition duration-300">BROWSUR</a></li>
                     <li><a href="#" class="hover:text-green-400 transition duration-300">ARTIKEL</a></li>
                     <li><a href="#" class="hover:text-green-400 transition duration-300">KONTAK</a></li>
                 </ul>
             </div>
-
-            <!-- Logo -->
             <div class="text-center flex flex-col items-center">
-                <div class="bg-green-500 w-32 h-32 rounded-full flex items-center justify-center mx-auto md:mx-0 shadow-lg">
+                <div
+                    class="bg-green-500 w-32 h-32 rounded-full flex items-center justify-center mx-auto md:mx-0 shadow-lg">
                     <img src="/src/img/pupuksementara.png" alt="Logo" class="w-24 h-24 object-contain">
                 </div>
+
             </div>
 
             <!-- Contact Info -->
             <div class="text-center md:text-right">
-                <h3 class="font-bold text-lg text-white mb-4">HUBUNGI KAMI</h3>
-                <p class="text-gray-400 text-sm mb-2">
-                    <i class="fas fa-phone"></i> +62 822 9090 9090
-                </p>
-                <p class="text-gray-400 text-sm mb-4">
-                    <i class="fas fa-envelope"></i> agritanimas@gmail.com
-                </p>
+                <h3 class="font-bold text-lg md:text-2xl text-white mb-4">HUBUNGI KAMI</h3>
+                <a href="tel:+6282290909090" class="text-gray-300 text-sm mb-2 flex justify-center md:justify-end ">
+                    +62 822 9090 9090
+                    <i class="fas fa-phone ml-2"></i>
+                </a>
+                <a href="mailto:agritanimas@gmail.com"
+                    class="text-gray-300 text-sm mb-2 flex justify-center md:justify-end">
+                    agritanimas@gmail.com
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+
+
             </div>
         </div>
+        <div class="flex justify-center space-x-6">
+            <!-- Instagram Icon -->
+            <a href="https://www.instagram.com" target="_blank"
+                class="text-gray-100 hover:text-pink-500 transition transform hover:scale-110">
+                <i class="fab fa-instagram text-xl sm:text-3xl"></i>
+            </a>
+            <!-- Facebook Icon -->
+            <a href="https://www.facebook.com" target="_blank"
+                class="text-gray-100 hover:text-blue-500 transition transform hover:scale-110">
+                <i class="fab fa-facebook text-xl sm:text-3xl"></i>
+            </a>
+            <!-- TikTok Icon -->
+            <a href="https://www.tiktok.com" target="_blank"
+                class="text-gray-100 hover:text-black transition transform hover:scale-110">
+                <i class="fab fa-tiktok text-xl sm:text-3xl"></i>
+            </a>
+        </div>
+
 
         <!-- Bottom Footer -->
-        <div class="text-center text-gray-500 mt-8 border-t border-gray-600 pt-4">
+        <div class="text-center text-gray-100 mt-8 border-t border-gray-100 pt-4">
             <p class="text-sm">Made with passion. Copyright © PT AGRITANIMAS 2024</p>
         </div>
     </footer>
 
-    <div class="fixed bottom-4 right-4 flex flex-col items-end z-[999999999] transition-opacity duration-500 opacity-0 transform translate-y-4" id="whatsappIcon">
-        <div id="whatsappForm" class="hidden ml-4 mb-2 bg-white p-4 rounded-lg shadow-lg max-w-xs md:max-w-64 opacity-0 transform transition-all duration-300">
+    <div class="fixed bottom-4 right-4 flex flex-col items-end z-[999999999] transition-opacity duration-500 opacity-0 transform translate-y-4"
+        id="whatsappIcon">
+        <div id="whatsappForm"
+            class="hidden ml-4 mb-2 bg-white p-4 rounded-lg shadow-lg max-w-xs md:max-w-64 opacity-0 transform transition-all duration-300">
             <h2 class="mb-4 font-semibold text-md">Halo, Ada yang bisa kami bantu?</h2>
-            <textarea id="message" class="p-2 border border-gray-300 rounded resize-none overflow-auto no-scrollbar sm:w-full sm:h-32 md:w-56 md:h-40" placeholder="Tulis pesan Anda..."></textarea>
-            <button id="sendButton" class="mt-2 w-full bg-green-500 hover:bg-green-600 text-white p-2 rounded sm:py-1">Kirim</button>
+            <textarea id="message"
+                class="p-2 border border-gray-300 rounded resize-none overflow-auto no-scrollbar sm:w-full sm:h-32 md:w-56 md:h-40"
+                placeholder="Tulis pesan Anda..."></textarea>
+            <button id="sendButton"
+                class="mt-2 w-full bg-green-500 hover:bg-green-600 text-white p-2 rounded sm:py-1">Kirim</button>
         </div>
-        <button id="whatsappButton" class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg focus:outline-none sm:p-3">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48" class="sm:w-12 sm:h-12 md:w-16 md:h-16">
-                <path fill="#fff" d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z"></path>
-                <path fill="#fff" d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z"></path>
-                <path fill="#cfd8dc" d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z"></path>
-                <path fill="#40c351" d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z"></path>
-                <path fill="#fff" fill-rule="evenodd" d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z" clip-rule="evenodd"></path>
+        <button id="whatsappButton"
+            class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg focus:outline-none sm:p-3">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48"
+                class="sm:w-12 sm:h-12 md:w-16 md:h-16">
+                <path fill="#fff"
+                    d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z">
+                </path>
+                <path fill="#fff"
+                    d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z">
+                </path>
+                <path fill="#cfd8dc"
+                    d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z">
+                </path>
+                <path fill="#40c351"
+                    d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z">
+                </path>
+                <path fill="#fff" fill-rule="evenodd"
+                    d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z"
+                    clip-rule="evenodd"></path>
             </svg>
         </button>
     </div>
@@ -249,6 +291,39 @@
             }
         });
     </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const toggleButton = document.getElementById('mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuLinks = mobileMenu.querySelectorAll('a');
+
+        // Function to toggle the mobile menu
+        function toggleMenu() {
+            mobileMenu.classList.toggle('translate-x-full');
+            mobileMenu.classList.toggle('translate-x-0');
+
+            // Toggle the color of the button between white and black
+            if (toggleButton.classList.contains('text-white')) {
+                toggleButton.classList.remove('text-white');
+                toggleButton.classList.add('text-black');
+            } else {
+                toggleButton.classList.remove('text-black');
+                toggleButton.classList.add('text-white');
+            }
+        }
+
+        toggleButton.addEventListener('click', toggleMenu);
+
+        // Add event listeners to each link in the mobile menu
+        menuLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                // Close the mobile menu when a link is clicked
+                toggleMenu();
+            });
+        });
+    });
+</script>
 </body>
 
 </html>

@@ -22,7 +22,7 @@
 
     <style>
         .header-bg {
-            background: url('/static/img/sawah.jpg') center/cover no-repeat;
+            background: url('/src/img/sawah.jpg') center/cover no-repeat;
             height: 50vh;
         }
 
@@ -41,25 +41,44 @@
 
 <body class="font-sans bg-white">
 
-    <!-- Navbar -->
     <nav
-        class="absolute z-10 w-full flex justify-between items-center px-6 py-4 bg-gradient-to-b from-stone-900/50 to-transparent">
+        class="absolute z-10 w-full flex justify-between items-center px-6 py-4 bg-gradient-to-b from-stone-900/50 to-transparent ">
         <!-- Logo -->
         <div class="flex items-center">
-            <img src="/static/img/pupuksementara.png" alt="Logo" class="h-10 max-w-xs">
+            <img src="/src/img/pupuksementara.png" alt="Logo" class="h-10 max-w-xs">
         </div>
 
         <!-- Menu -->
-        <ul class="flex space-x-6 text-gray-100 font-sans font-bold text-xl">
-            <li><a href="#" class="hover:text-green-600">HOME</a></li>
-            <li><a href="#" class="hover:text-green-600">ABOUT US</a></li>
-            <li><a href="#" class="hover:text-green-600">PRODUK</a></li>
-            <li><a href="#" class="hover:text-green-600">BROSUR</a></li>
-            <li><a href="#" class="hover:text-green-600">ARTIKEL</a></li>
-            <li><a href="#" class="hover:text-green-600">KONTAK</a></li>
+        <ul class="flex space-x-6 text-gray-100 font-sans font-bold text-xl hidden md:flex ">
+            <li><a href=" " class="hover:text-green-600">HOME</a></li>
+            <li><a href="about.html" class="hover:text-green-600">ABOUT US</a></li>
+            <li><a href="produk.html" class="hover:text-green-600">PRODUK</a></li>
+            <li><a href="brosur.html" class="hover:text-green-600">BROSUR</a></li>
+            <li><a href="artikel.html" class="hover:text-green-600">ARTIKEL</a></li>
+            <li><a href="kontak.html" class="hover:text-green-600">KONTAK</a></li>
         </ul>
-    </nav>
+        <div class="md:hidden flex items-center mr-4"></div>
+        <button id="mobile-menu-toggle" class="text-white focus:outline-none relative z-30 md:hidden">
+            <!-- Icon for mobile menu -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+        </div>
 
+        <div id="mobile-menu"
+            class="fixed top-0 right-0 h-full w-2/5 bg-stone-100/90 text-black z-999 transform translate-x-full transition-transform duration-300 ease-in-out">
+            <div class="flex flex-col items-end p-4 space-y-4 pt-20 pr-4 font-semibold z-999">
+                <a href="index.html" class="text-lg">HOME</a>
+                <a href="about.html" class="text-lg">ABOUT US</a>
+                <a href="produk.html" class="text-lg">PRODUCT</a>
+                <a href="brosur.html" class="text-lg">BROSUR</a>
+                <a href="artikel.html" class="text-lg">ARTIKEL</a>
+                <a href="kontak.html" class="text-lg">KONTAK</a>
+            </div>
+        </div>
+    </nav>
     <!-- Hero Section -->
     <section class="header-bg relative flex justify-center items-center text-center text-white">
         <div class="overlay absolute inset-0"></div>
@@ -71,18 +90,18 @@
     </section>
 
     <section class="max-w-7xl mx-auto p-8">
-        <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">PRODUK TERBAIK KAMI</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">PRODUK TERBAIK KAMI</h2>
+        <div class="grid grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Pupuk Buah -->
             <div
                 class="bg-white shadow-md rounded-lg p-4 text-center transform hover:scale-105 transition duration-300 ease-in-out relative">
-                <img src="/static/img/pupuksementara.png" alt="Pupuk Buah"
+                <img src="/src/img/pupukcontoh.jpeg" alt="Pupuk Buah"
                     class="mx-auto mb-4 rounded-md shadow-lg transform -translate-y-8 relative z-10">
-                <div class="relative -mt-16 bg-white p-4 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-bold text-gray-900">Pupuk Buah</h3>
+                <div class="relative -mt-16 bg-white pt-4">
+                    <h3 class="text-xl font-bold text-gray-900 mt-4">Pupuk Buah</h3>
                     <p class="text-gray-700 mb-4">Nutrisi seimbang untuk hasil buah yang berkualitas.</p>
                     <a href="#"
-                        class="inline-block px-4 py-2 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
+                        class="inline-block px-3 py-2 text-[10px] sm:text-base lg:text-lg bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
                         Lihat selengkapnya
                     </a>
                 </div>
@@ -90,38 +109,45 @@
 
             <!-- Pupuk Padi -->
             <div
-                class="bg-white shadow-md rounded-lg p-4 text-center transform hover:scale-105 transition duration-300 ease-in-out relative">
-                <img src="/static/img/pupuksementara.png" alt="Pupuk Padi"
+                class="bg-white shadow-md rounded-lg p-4 text-center transform hover:scale-105 transition duration-300 ease-in-out relative ">
+                <img src="/src/img/pupukcontoh.jpeg" alt="Pupuk Padi"
                     class="mx-auto mb-4 rounded-md shadow-lg transform -translate-y-8 relative z-10">
-                <div class="relative -mt-16 bg-white p-4 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-bold text-gray-900">Pupuk Padi</h3>
+                <div class="relative -mt-16 bg-white pt-4 ">
+                    <h3 class="text-xl font-bold text-gray-900 mt-4">Pupuk Padi</h3>
                     <p class="text-gray-700 mb-4">Meningkatkan produktivitas dan kualitas padi Anda.</p>
                     <a href="#"
-                        class="inline-block px-4 py-2 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
+                        class="inline-block px-3 py-2 text-[10px] sm:text-base lg:text-lg bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
                         Lihat selengkapnya
                     </a>
                 </div>
             </div>
-
-            <!-- Pupuk Organik -->
             <div
-                class="bg-white rounded-lg text-center relative transform hover:scale-105 transition duration-300 ease-in-out">
-                <!-- Gambar produk melewati box -->
-                <div class="relative">
-                    <img src="/static/img/pupuksementara.png" alt="Pupuk Organik" class="mx-auto mt-20 z-10"
-                        style="width: 120px; height: auto;">
-                </div>
-
-                <!-- Konten box -->
-                <div class="bg-gray-300 pt-20 pb-4 rounded-lg shadow-md relative z-0">
-                    <h3 class="text-xl font-bold text-gray-900">Pupuk Organik</h3>
-                    <p class="text-gray-700 mb-4">Solusi alami untuk pertumbuhan tanaman yang sehat.</p>
+                class="bg-white shadow-md rounded-lg p-4 text-center transform hover:scale-105 transition duration-300 ease-in-out relative">
+                <img src="/src/img/pupukcontoh.jpeg" alt="Pupuk Padi"
+                    class="mx-auto mb-4 rounded-md shadow-lg transform -translate-y-8 relative z-10">
+                <div class="relative -mt-16 bg-white pt-4">
+                    <h3 class="text-xl font-bold text-gray-900 mt-4">Pupuk Padi</h3>
+                    <p class="text-gray-700 mb-4">Meningkatkan produktivitas dan kualitas padi Anda.</p>
                     <a href="#"
-                        class="inline-block px-4 py-2 mb-8 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
+                        class="inline-block px-3 py-2 text-[10px] sm:text-base lg:text-lg bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
                         Lihat selengkapnya
                     </a>
                 </div>
             </div>
+            <div
+                class="bg-white shadow-md rounded-lg p-4 text-center transform hover:scale-105 transition duration-300 ease-in-out relative">
+                <img src="/src/img/pupukcontoh.jpeg" alt="Pupuk Padi"
+                    class="mx-auto mb-4 rounded-md shadow-lg transform -translate-y-8 relative z-10">
+                <div class="relative -mt-16 bg-white pt-4">
+                    <h3 class="text-xl font-bold text-gray-900 mt-4">Pupuk Padi</h3>
+                    <p class="text-gray-700 mb-4">Meningkatkan produktivitas dan kualitas padi Anda.</p>
+                    <a href="#"
+                        class="inline-block px-3 py-2 text-[10px] sm:text-base lg:text-lg bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
+                        Lihat selengkapnya
+                    </a>
+                </div>
+            </div>
+
 
         </div>
     </section>
@@ -129,86 +155,94 @@
     <!-- Produk Section -->
     <section class="max-w-7xl mx-auto p-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">PRODUK KAMI</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- Repeated Product Card -->
             <div
                 class="bg-white shadow-md rounded-lg p-4 text-center transform hover:scale-105 transition duration-300 ease-in-out">
-                <img src="/static/img/pupuksementara.png" alt="Pupuk Cabai" class="mx-auto mb-4 mt-20">
+                <img src="/src/img/pupukcontoh.jpeg" alt="Pupuk Cabai" class="mx-auto mb-4 rounded-md shadow-lg">
                 <h3 class="text-xl font-bold text-gray-900">Pupuk Cabai</h3>
                 <p class="text-gray-700 mb-4">Pupuk berkualitas untuk hasil tanaman cabai yang maksimal.</p>
                 <a href="#"
-                    class="inline-block px-4 py-2 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
-                    Lihat selengkapnya
-                </a>
+                        class="inline-block px-3 py-2 text-[10px] sm:text-base   bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
+                        Lihat selengkapnya
+                    </a>
+                
             </div>
             <!-- Repeat the block above for additional products -->
             <div
                 class="bg-white shadow-md rounded-lg p-4 text-center transform hover:scale-105 transition duration-300 ease-in-out">
-                <img src="https://via.placeholder.com/200" alt="Pupuk Buah" class="mx-auto mb-4 rounded-md shadow-lg">
+                <img src="/src/img/pupukcontoh.jpeg" alt="Pupuk Buah" class="mx-auto mb-4 rounded-md shadow-lg">
                 <h3 class="text-xl font-bold text-gray-900">Pupuk Buah</h3>
                 <p class="text-gray-700 mb-4">Nutrisi seimbang untuk hasil buah yang berkualitas.</p>
                 <a href="#"
-                    class="inline-block px-4 py-2 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
-                    Lihat selengkapnya
-                </a>
+                        class="inline-block px-3 py-2 text-[10px] sm:text-base bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
+                        Lihat selengkapnya
+                    </a>
             </div>
             <div
                 class="bg-white shadow-md rounded-lg p-4 text-center transform hover:scale-105 transition duration-300 ease-in-out">
-                <img src="https://via.placeholder.com/200" alt="Pupuk Padi" class="mx-auto mb-4 rounded-md shadow-lg">
+                <img src="/src/img/pupukcontoh.jpeg" alt="Pupuk Padi" class="mx-auto mb-4 rounded-md shadow-lg">
                 <h3 class="text-xl font-bold text-gray-900">Pupuk Padi</h3>
                 <p class="text-gray-700 mb-4">Meningkatkan produktivitas dan kualitas padi Anda.</p>
                 <a href="#"
-                    class="inline-block px-4 py-2 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
-                    Lihat selengkapnya
-                </a>
+                        class="inline-block px-3 py-2 text-[10px] sm:text-base bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
+                        Lihat selengkapnya
+                    </a>
             </div>
             <div
                 class="bg-white shadow-md rounded-lg p-4 text-center transform hover:scale-105 transition duration-300 ease-in-out">
-                <img src="https://via.placeholder.com/200" alt="Pupuk Organik"
-                    class="mx-auto mb-4 rounded-md shadow-lg">
+                <img src="/src/img/pupukcontoh.jpeg" alt="Pupuk Organik" class="mx-auto mb-4 rounded-md shadow-lg">
                 <h3 class="text-xl font-bold text-gray-900">Pupuk Organik</h3>
                 <p class="text-gray-700 mb-4">Solusi alami untuk pertumbuhan tanaman yang sehat.</p>
                 <a href="#"
-                    class="inline-block px-4 py-2 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
-                    Lihat selengkapnya
-                </a>
+                        class="inline-block px-3 py-2 text-[10px] sm:text-base bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
+                        Lihat selengkapnya
+                    </a>
             </div>
         </div>
     </section>
 
     <!-- Keunggulan Produk -->
-    <section class="max-w-7xl mx-auto p-8 bg-gray-100">
+    <section class="max-w-screen mx-auto p-8 bg-gray-100">
         <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Keunggulan Produk Kami</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-3 gap-2 md:gap-8">
             <div
                 class="text-center p-4 bg-white shadow-lg rounded-lg transform hover:scale-105 transition duration-300">
-                <img src="https://via.placeholder.com/80" alt="Keunggulan 1" class="mx-auto mb-4">
-                <h3 class="text-xl font-bold text-gray-900">Ramah Lingkungan</h3>
-                <p class="text-gray-700">Semua produk kami diformulasikan untuk tidak merusak lingkungan.</p>
+                <div class="mb-4">
+                    <i class="fas fa-leaf text-4xl sm:text-5xl md:text-6xl mb-4"></i>
+                </div>
+                <h3 class="text-xs md:text-xl font-bold text-gray-900">Ramah Lingkungan</h3>
+                <p class="text-gray-700 text-[8px] md:text-base">Semua produk kami diformulasikan untuk tidak merusak
+                    lingkungan.</p>
             </div>
             <div
                 class="text-center p-4 bg-white shadow-lg rounded-lg transform hover:scale-105 transition duration-300">
-                <img src="https://via.placeholder.com/80" alt="Keunggulan 2" class="mx-auto mb-4">
-                <h3 class="text-xl font-bold text-gray-900">Harga Terjangkau</h3>
-                <p class="text-gray-700">Produk kami dapat diakses dengan harga yang terjangkau oleh para petani.</p>
+                <div class="mb-4">
+                    <i class="fas fa-coins text-4xl sm:text-5xl md:text-6xl mb-4"></i>
+                </div>
+                <h3 class="text-xs md:text-xl font-bold text-gray-900">Harga Terjangkau</h3>
+                <p class="text-gray-700 text-[8px] md:text-base">Produk kami dapat diakses dengan harga yang terjangkau
+                    oleh para petani.</p>
             </div>
             <div
                 class="text-center p-4 bg-white shadow-lg rounded-lg transform hover:scale-105 transition duration-300">
-                <img src="https://via.placeholder.com/80" alt="Keunggulan 3" class="mx-auto mb-4">
-                <h3 class="text-xl font-bold text-gray-900">Hasil Maksimal</h3>
-                <p class="text-gray-700">Pupuk kami mampu memberikan hasil panen yang lebih berkualitas.</p>
+                <div class="mb-4">
+                    <i class="fas fa-chart-line text-4xl sm:text-5xl md:text-6xl mb-4"></i>
+                </div>
+                <h3 class="text-xs md:text-xl font-bold text-gray-900">Hasil Maksimal</h3>
+                <p class="text-gray-700 text-[8px] md:text-base">Pupuk kami mampu memberikan hasil panen yang lebih
+                    berkualitas.</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 py-10 text-white">
+    <footer class="bg-[#008352] py-10 text-white">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
             <!-- Logo and Address -->
-             <!-- Sitemap -->
-            <div class="text-left">
-                <h3 class="font-bold text-lg text-white mb-4">SITEMAP</h3>
-                <ul class="space-y-2 text-gray-400">
+            <!-- Sitemap -->
+            <div class="text-left hidden md:block">
+                <h3 class="font-bold text-lg md:text-2xl text-white mb-4">SITEMAP</h3>
+                <ul class="space-y-2 text-gray-300">
                     <li><a href="#" class="hover:text-green-400 transition duration-300">HOME</a></li>
                     <li><a href="#" class="hover:text-green-400 transition duration-300">ABOUT US</a></li>
                     <li><a href="#" class="hover:text-green-400 transition duration-300">PRODUK</a></li>
@@ -217,32 +251,52 @@
                     <li><a href="#" class="hover:text-green-400 transition duration-300">KONTAK</a></li>
                 </ul>
             </div>
-            <div class="text-center flex flex-col items-center" >
+            <div class="text-center flex flex-col items-center">
                 <div
                     class="bg-green-500 w-32 h-32 rounded-full flex items-center justify-center mx-auto md:mx-0 shadow-lg">
                     <img src="/src/img/pupuksementara.png" alt="Logo" class="w-24 h-24 object-contain">
                 </div>
-                
-            </div>
 
-            
+            </div>
 
             <!-- Contact Info -->
             <div class="text-center md:text-right">
-                <h3 class="font-bold text-lg text-white mb-4">HUBUNGI KAMI</h3>
-                <p class="text-gray-400 text-sm mb-2">
-                    <i class="fas fa-phone"></i> +62 822 9090 9090
-                </p>
-                <p class="text-gray-400 text-sm mb-4">
-                    <i class="fas fa-envelope"></i> agritanimas@gmail.com
-                </p>
-                <!-- Social Media Icons -->
-                
+                <h3 class="font-bold text-lg md:text-2xl text-white mb-4">HUBUNGI KAMI</h3>
+                <a href="tel:+6282290909090" class="text-gray-300 text-sm mb-2 flex justify-center md:justify-end">
+                    +62 822 9090 9090
+                    <i class="fas fa-phone ml-2"></i>
+                </a>
+                <a href="mailto:agritanimas@gmail.com"
+                    class="text-gray-300 text-sm mb-2 flex justify-center md:justify-end">
+                    agritanimas@gmail.com
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+
+
             </div>
         </div>
+        <div class="flex justify-center space-x-6">
+            <!-- Instagram Icon -->
+            <a href="https://www.instagram.com" target="_blank"
+                class="text-gray-100 hover:text-pink-500 transition transform hover:scale-110">
+                <i class="fab fa-instagram text-xl sm:text-3xl"></i>
+            </a>
+            <!-- Facebook Icon -->
+            <a href="https://www.facebook.com" target="_blank"
+                class="text-gray-100 hover:text-blue-500 transition transform hover:scale-110">
+                <i class="fab fa-facebook text-xl sm:text-3xl"></i>
+            </a>
+            <!-- TikTok Icon -->
+            <a href="https://www.tiktok.com" target="_blank"
+                class="text-gray-100 hover:text-black transition transform hover:scale-110">
+                <i class="fab fa-tiktok text-xl sm:text-3xl"></i>
+            </a>
+        </div>
+
 
         <!-- Bottom Footer -->
-        <div class="text-center text-gray-500 mt-8 border-t border-gray-600 pt-4">
+        <div class="text-center text-gray-100 mt-8 border-t border-gray-100 pt-4">
             <p class="text-sm">Made with passion. Copyright © PT AGRITANIMAS 2024</p>
         </div>
     </footer>
@@ -254,6 +308,38 @@
         new WOW().init();
     </script>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleButton = document.getElementById('mobile-menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuLinks = mobileMenu.querySelectorAll('a');
+
+            // Function to toggle the mobile menu
+            function toggleMenu() {
+                mobileMenu.classList.toggle('translate-x-full');
+                mobileMenu.classList.toggle('translate-x-0');
+
+                // Toggle the color of the button between white and black
+                if (toggleButton.classList.contains('text-white')) {
+                    toggleButton.classList.remove('text-white');
+                    toggleButton.classList.add('text-black');
+                } else {
+                    toggleButton.classList.remove('text-black');
+                    toggleButton.classList.add('text-white');
+                }
+            }
+
+            toggleButton.addEventListener('click', toggleMenu);
+
+            // Add event listeners to each link in the mobile menu
+            menuLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    // Close the mobile menu when a link is clicked
+                    toggleMenu();
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
