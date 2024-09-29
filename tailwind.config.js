@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        
+        'custom-green': '#273913',
       },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'], 
