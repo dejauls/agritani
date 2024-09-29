@@ -6,6 +6,8 @@ module.exports = {
     extend: {
       colors: {
         'custom-green': '#273913',
+        'greeno': '#008000',
+        'putih': '#fffef4', 
       },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'], 
