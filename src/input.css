@@ -16,3 +16,17 @@
         scrollbar-width: none;  /* Firefox */
   }
 }
+
+@keyframes bounceRight {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(10px); /* Bounce 10px to the right */
+    }
+  }
+  
+  .bounce-right-infinite {
+    animation: bounceRight 1.5s infinite; /* 1 second duration, infinite loop */
+  }
+  

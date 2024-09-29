@@ -35,15 +35,12 @@
 
 <body class="font-sans bg-white">
 
-    <!-- Navbar -->
     <nav
         class="absolute z-10 w-full flex justify-between items-center px-6 py-4 bg-gradient-to-b from-stone-900/50 to-transparent ">
-        <!-- Logo -->
         <div class="flex items-center">
             <img src="/src/img/pupuksementara.png" alt="Logo" class="h-10 max-w-xs">
         </div>
 
-        <!-- Menu -->
         <ul class="flex space-x-6 text-gray-100 font-sans font-bold text-xl hidden md:flex ">
             <li><a href=" " class="hover:text-green-600">HOME</a></li>
             <li><a href="about.html" class="hover:text-green-600">ABOUT US</a></li>
@@ -54,7 +51,6 @@
         </ul>
         <div class="md:hidden flex items-center mr-4"></div>
         <button id="mobile-menu-toggle" class="text-white focus:outline-none relative z-30 md:hidden">
-            <!-- Icon for mobile menu -->
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -74,7 +70,6 @@
             </div>
         </div>
     </nav>
-    <!-- Hero Section -->
     <section class="  relative flex justify-center items-center text-center text-white">
 
 
@@ -82,14 +77,11 @@
 
     <section class="py-10 px-4 md:px-10 lg:px-20 mt-32">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <!-- Image Section -->
             <div>
-                <!-- Main Image -->
                 <div class="flex justify-center ">
                     <img id="mainImage" src="src/img/pupukcontoh.jpeg" alt="MerokeSOP KALI" class="w-96 h-96">
                 </div>
 
-                <!-- Thumbnails for smaller images -->
                 <div class="flex justify-center   mt-4 space-x-4">
                     <img src="src/img/caracabe.jpg" alt="Small Image 1" class="w-16 h-auto cursor-pointer"
                         onclick="changeImage('/src/img/caracabe.jpg')">
@@ -104,7 +96,6 @@
                 </div>
             </div>
 
-            <!-- Content Section -->
             <div>
                 <h4 class="text-gray-600 text-lg font-medium">Pupuk NP</h4>
                 <hr class="w-12 h-1 bg-green-600 mt-1 mb-4">
@@ -115,7 +106,6 @@
                     serta tanaman lainnya yang menghasilkan minyak atsiri.
                 </p>
 
-                <!-- Manfaat Section -->
                 <div class="mt-6">
                     <h3 class="text-lg font-semibold text-gray-800">Manfaat:</h3>
                     <ul class="list-disc list-inside text-gray-600 mt-2 space-y-2">
@@ -125,7 +115,6 @@
                     </ul>
                 </div>
 
-                <!-- Keuntungan Section -->
                 <div class="mt-6">
                     <h3 class="text-lg font-semibold text-gray-800">Keuntungan:</h3>
                     <p class="text-gray-500 mt-2">
@@ -149,15 +138,12 @@
     <section class="py-10 px-4 md:px-10 lg:px-20 relative overflow-hidden">
         <h2 class="text-center text-2xl font-bold mb-6">Produk Lainnya</h2>
         <div class="relative">
-            <!-- Left Scroll Button -->
             <button onclick="scrollLeftAction()"
                 class="absolute left-0 md:left-[-4rem] top-1/2 transform -translate-y-1/2 bg-green-300 hover:bg-green-400 text-white py-2 px-4 rounded-full z-10 shadow-lg">
                 <i class="fas fa-chevron-left"></i>
             </button>
 
-            <!-- Scrollable Product Container -->
             <div id="productContainer" class="flex overflow-x-scroll no-scrollbar space-x-6 scroll-smooth">
-                <!-- Product 1 -->
                 <a href="/produkdetail.html" >
                     <div class="w-[200px] md:w-[250px] flex-shrink-0 border p-4 rounded-lg hover:shadow-lg transition-shadow">
                         <img src="/src/img/pupukcontoh.jpeg" alt="Product 1" class="w-full h-auto">
@@ -210,7 +196,6 @@
                 
             </div>
 
-            <!-- Right Scroll Button -->
             <button onclick="scrollRightAction()"
                 class="absolute right-0  md:right-[-4rem] top-1/2 transform -translate-y-1/2 bg-green-300 hover:bg-green-400 text-white py-2 px-4 rounded-full z-10 shadow-lg">
                 <i class="fas fa-chevron-right"></i>
@@ -218,24 +203,22 @@
         </div>
     </section>
     <script>
-        // Scroll the container to the left
         function scrollLeftAction() {
             var container = document.getElementById('productContainer');
             if (container.scrollLeft > 0) {
                 container.scrollBy({
-                    left: -300, // Adjust scroll distance as needed
+                    left: -300, 
                     behavior: 'smooth'
                 });
             }
         }
 
-        // Scroll the container to the right
         function scrollRightAction() {
             var container = document.getElementById('productContainer');
             var maxScrollLeft = container.scrollWidth - container.clientWidth;
             if (container.scrollLeft < maxScrollLeft) {
                 container.scrollBy({
-                    left: 300, // Adjust scroll distance as needed
+                    left: 300, 
                     behavior: 'smooth'
                 });
             }
@@ -247,8 +230,6 @@
 
     <footer class="bg-[#008352] py-10 text-white">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
-            <!-- Logo and Address -->
-            <!-- Sitemap -->
             <div class="text-left hidden md:block">
                 <h3 class="font-bold text-lg md:text-2xl text-white mb-4">SITEMAP</h3>
                 <ul class="space-y-2 text-gray-300">
@@ -268,7 +249,6 @@
 
             </div>
 
-            <!-- Contact Info -->
             <div class="text-center md:text-right">
                 <h3 class="font-bold text-lg md:text-2xl text-white mb-4">HUBUNGI KAMI</h3>
                 <a href="tel:+6282290909090" class="text-gray-300 text-sm mb-2 flex justify-center md:justify-end ">
@@ -285,17 +265,14 @@
             </div>
         </div>
         <div class="flex justify-center space-x-6 mt-8 md:mt-0">
-            <!-- Instagram Icon -->
             <a href="https://www.instagram.com" target="_blank"
                 class="text-gray-100 hover:text-pink-500 transition transform hover:scale-110">
                 <i class="fab fa-instagram text-xl sm:text-3xl"></i>
             </a>
-            <!-- Facebook Icon -->
             <a href="https://www.facebook.com" target="_blank"
                 class="text-gray-100 hover:text-blue-500 transition transform hover:scale-110">
                 <i class="fab fa-facebook text-xl sm:text-3xl"></i>
             </a>
-            <!-- TikTok Icon -->
             <a href="https://www.tiktok.com" target="_blank"
                 class="text-gray-100 hover:text-black transition transform hover:scale-110">
                 <i class="fab fa-tiktok text-xl sm:text-3xl"></i>
@@ -303,7 +280,6 @@
         </div>
 
 
-        <!-- Bottom Footer -->
         <div class="text-center text-gray-100 mt-8 border-t border-gray-100 pt-4">
             <p class="text-sm">Made with passion. Copyright © PT AGRITANIMAS 2024</p>
         </div>
@@ -315,12 +291,10 @@
             const mobileMenu = document.getElementById('mobile-menu');
             const menuLinks = mobileMenu.querySelectorAll('a');
 
-            // Function to toggle the mobile menu
             function toggleMenu() {
                 mobileMenu.classList.toggle('translate-x-full');
                 mobileMenu.classList.toggle('translate-x-0');
 
-                // Toggle the color of the button between white and black
                 if (toggleButton.classList.contains('text-white')) {
                     toggleButton.classList.remove('text-white');
                     toggleButton.classList.add('text-black');
@@ -332,10 +306,8 @@
 
             toggleButton.addEventListener('click', toggleMenu);
 
-            // Add event listeners to each link in the mobile menu
             menuLinks.forEach(function (link) {
                 link.addEventListener('click', function () {
-                    // Close the mobile menu when a link is clicked
                     toggleMenu();
                 });
             });

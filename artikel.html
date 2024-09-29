@@ -19,12 +19,10 @@
 
     <nav
         class="absolute z-10 w-full flex justify-between items-center px-6 py-4 bg-gradient-to-b from-stone-900/50 to-transparent ">
-        <!-- Logo -->
         <div class="flex items-center">
             <img src="/src/img/pupuksementara.png" alt="Logo" class="h-10 max-w-xs">
         </div>
 
-        <!-- Menu -->
         <ul class="flex space-x-6 text-gray-100 font-sans font-bold text-xl hidden md:flex ">
             <li><a href="/" class="hover:text-green-600">HOME</a></li>
             <li><a href="about.html" class="hover:text-green-600">ABOUT US</a></li>
@@ -35,7 +33,6 @@
         </ul>
         <div class="md:hidden flex items-center mr-4"></div>
         <button id="mobile-menu-toggle" class="text-white focus:outline-none relative z-30 md:hidden">
-            <!-- Icon for mobile menu -->
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -178,8 +175,6 @@
 
     <footer class="bg-[#008352] py-10 text-white">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
-            <!-- Logo and Address -->
-            <!-- Sitemap -->
             <div class="text-left hidden md:block">
                 <h3 class="font-bold text-lg md:text-2xl text-white mb-4">SITEMAP</h3>
                 <ul class="space-y-2 text-gray-300">
@@ -199,7 +194,6 @@
 
             </div>
 
-            <!-- Contact Info -->
             <div class="text-center md:text-right">
                 <h3 class="font-bold text-lg md:text-2xl text-white mb-4">HUBUNGI KAMI</h3>
                 <a href="tel:+6282290909090" class="text-gray-300 text-sm mb-2 flex justify-center md:justify-end ">
@@ -217,17 +211,14 @@
             </div>
         </div>
         <div class="flex justify-center space-x-6">
-            <!-- Instagram Icon -->
             <a href="https://www.instagram.com" target="_blank"
                 class="text-gray-100 hover:text-pink-500 transition transform hover:scale-110">
                 <i class="fab fa-instagram text-xl sm:text-3xl"></i>
             </a>
-            <!-- Facebook Icon -->
             <a href="https://www.facebook.com" target="_blank"
                 class="text-gray-100 hover:text-blue-500 transition transform hover:scale-110">
                 <i class="fab fa-facebook text-xl sm:text-3xl"></i>
             </a>
-            <!-- TikTok Icon -->
             <a href="https://www.tiktok.com" target="_blank"
                 class="text-gray-100 hover:text-black transition transform hover:scale-110">
                 <i class="fab fa-tiktok text-xl sm:text-3xl"></i>
@@ -235,7 +226,6 @@
         </div>
 
 
-        <!-- Bottom Footer -->
         <div class="text-center text-gray-100 mt-8 border-t border-gray-100 pt-4">
             <p class="text-sm">Made with passion. Copyright © PT AGRITANIMAS 2024</p>
         </div>
@@ -326,12 +316,10 @@
         const mobileMenu = document.getElementById('mobile-menu');
         const menuLinks = mobileMenu.querySelectorAll('a');
 
-        // Function to toggle the mobile menu
         function toggleMenu() {
             mobileMenu.classList.toggle('translate-x-full');
             mobileMenu.classList.toggle('translate-x-0');
 
-            // Toggle the color of the button between white and black
             if (toggleButton.classList.contains('text-white')) {
                 toggleButton.classList.remove('text-white');
                 toggleButton.classList.add('text-black');
@@ -343,10 +331,8 @@
 
         toggleButton.addEventListener('click', toggleMenu);
 
-        // Add event listeners to each link in the mobile menu
         menuLinks.forEach(function (link) {
             link.addEventListener('click', function () {
-                // Close the mobile menu when a link is clicked
                 toggleMenu();
             });
         });
