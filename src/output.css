@@ -698,10 +698,6 @@ video {
   grid-column: span 2 / span 2;
 }
 
-.m-0{
-  margin: 0px;
-}
-
 .m-12{
   margin: 3rem;
 }
@@ -720,14 +716,14 @@ video {
   margin-right: auto;
 }
 
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .my-8{
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-.my-\[3px\]{
-  margin-top: 3px;
-  margin-bottom: 3px;
 }
 
 .-mt-16{
@@ -736,6 +732,10 @@ video {
 
 .mb-0{
   margin-bottom: 0px;
+}
+
+.mb-1{
+  margin-bottom: 0.25rem;
 }
 
 .mb-10{
@@ -862,10 +862,6 @@ video {
   height: 2.5rem;
 }
 
-.h-12{
-  height: 3rem;
-}
-
 .h-16{
   height: 4rem;
 }
@@ -898,12 +894,16 @@ video {
   height: 1.5rem;
 }
 
+.h-8{
+  height: 2rem;
+}
+
 .h-96{
   height: 24rem;
 }
 
-.h-\[3\.5px\]{
-  height: 3.5px;
+.h-\[300px\]{
+  height: 300px;
 }
 
 .h-auto{
@@ -918,24 +918,12 @@ video {
   height: 100svh;
 }
 
-.h-screen{
-  height: 100vh;
-}
-
-.h-2\/3{
-  height: 66.666667%;
-}
-
-.h-60{
-  height: 15rem;
+.h-3{
+  height: 0.75rem;
 }
 
 .max-h-96{
   max-height: 24rem;
-}
-
-.max-h-screen{
-  max-height: 100vh;
 }
 
 .min-h-screen{
@@ -944,10 +932,6 @@ video {
 
 .w-0{
   width: 0px;
-}
-
-.w-1\/2{
-  width: 50%;
 }
 
 .w-10{
@@ -974,10 +958,6 @@ video {
   width: 6rem;
 }
 
-.w-3\/4{
-  width: 75%;
-}
-
 .w-32{
   width: 8rem;
 }
@@ -996,6 +976,10 @@ video {
 
 .w-64{
   width: 16rem;
+}
+
+.w-8{
+  width: 2rem;
 }
 
 .w-96{
@@ -1020,6 +1004,10 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-3{
+  width: 0.75rem;
 }
 
 .min-w-10{
@@ -1261,6 +1249,12 @@ video {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
+.space-x-2 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .divide-y > :not([hidden]) ~ :not([hidden]){
   --tw-divide-y-reverse: 0;
   border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
@@ -1294,10 +1288,6 @@ video {
 
 .rounded{
   border-radius: 0.25rem;
-}
-
-.rounded-\[10px\]{
-  border-radius: 10px;
 }
 
 .rounded-full{
@@ -1340,6 +1330,10 @@ video {
 
 .border{
   border-width: 1px;
+}
+
+.border-0{
+  border-width: 0px;
 }
 
 .border-b{
@@ -1392,6 +1386,11 @@ video {
 
 .bg-gray-100\/30{
   background-color: rgb(243 244 246 / 0.3);
+}
+
+.bg-gray-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 .bg-green-100{
@@ -1458,16 +1457,18 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-gray-100\/20{
-  background-color: rgb(243 244 246 / 0.2);
+.bg-gray-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
 
-.bg-gray-100\/5{
-  background-color: rgb(243 244 246 / 0.05);
+.bg-gray-800{
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
-.bg-gray-100\/50{
-  background-color: rgb(243 244 246 / 0.5);
+.bg-opacity-80{
+  --tw-bg-opacity: 0.8;
 }
 
 .bg-\[url\(\'\/src\/img\/kebun3\.jpg\'\)\]{
@@ -1898,6 +1899,12 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-colors{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-150{
   transition-duration: 150ms;
 }
@@ -1908,10 +1915,6 @@ video {
 
 .duration-500{
   transition-duration: 500ms;
-}
-
-.duration-\[0\.4s\]{
-  transition-duration: 0.4s;
 }
 
 .ease-in-out{
@@ -2054,51 +2057,13 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.peer:checked ~ .peer-checked\:w-1\/2{
-  width: 50%;
-}
-
-.peer:checked ~ .peer-checked\:origin-bottom{
-  transform-origin: bottom;
-}
-
-.peer:checked ~ .peer-checked\:origin-top{
-  transform-origin: top;
-}
-
-.peer:checked ~ .peer-checked\:-translate-y-\[11px\]{
-  --tw-translate-y: -11px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.peer:checked ~ .peer-checked\:translate-x-\[30px\]{
-  --tw-translate-x: 30px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.peer:checked ~ .peer-checked\:translate-x-\[8px\]{
-  --tw-translate-x: 8px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.peer:checked ~ .peer-checked\:-rotate-45{
-  --tw-rotate: -45deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.peer:checked ~ .peer-checked\:rotate-45{
-  --tw-rotate: 45deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 @media (min-width: 640px){
-  .sm\:my-\[5px\]{
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-
   .sm\:mb-0{
     margin-bottom: 0px;
+  }
+
+  .sm\:mb-2{
+    margin-bottom: 0.5rem;
   }
 
   .sm\:mb-8{
@@ -2117,8 +2082,8 @@ video {
     height: 8rem;
   }
 
-  .sm\:h-\[5px\]{
-    height: 5px;
+  .sm\:h-\[400px\]{
+    height: 400px;
   }
 
   .sm\:w-12{
@@ -2184,6 +2149,11 @@ video {
     padding-bottom: 0.25rem;
   }
 
+  .sm\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .sm\:text-left{
     text-align: left;
   }
@@ -2218,6 +2188,11 @@ video {
     line-height: 1.75rem;
   }
 
+  .sm\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
   .sm\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -2231,6 +2206,10 @@ video {
 
   .md\:bottom-4{
     bottom: 1rem;
+  }
+
+  .md\:bottom-8{
+    bottom: 2rem;
   }
 
   .md\:left-4{
@@ -2255,10 +2234,6 @@ video {
 
   .md\:order-2{
     order: 2;
-  }
-
-  .md\:m-12{
-    margin: 3rem;
   }
 
   .md\:mx-0{
@@ -2335,6 +2310,10 @@ video {
     height: 2.5rem;
   }
 
+  .md\:h-12{
+    height: 3rem;
+  }
+
   .md\:h-14{
     height: 3.5rem;
   }
@@ -2355,12 +2334,20 @@ video {
     height: 18rem;
   }
 
+  .md\:h-\[500px\]{
+    height: 500px;
+  }
+
   .md\:w-1\/3{
     width: 33.333333%;
   }
 
   .md\:w-10{
     width: 2.5rem;
+  }
+
+  .md\:w-12{
+    width: 3rem;
   }
 
   .md\:w-14{
