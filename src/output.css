@@ -1572,6 +1572,11 @@ video {
   padding-right: 2.5rem;
 }
 
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1632,9 +1637,9 @@ video {
   padding-bottom: 1rem;
 }
 
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-4{
@@ -2342,10 +2347,6 @@ video {
 
   .md\:h-40{
     height: 10rem;
-  }
-
-  .md\:h-72{
-    height: 18rem;
   }
 
   .md\:h-\[500px\]{

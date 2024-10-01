@@ -35,46 +35,124 @@
 
 <body class="font-sans bg-white">
 
-    <nav
-        class="absolute z-10 w-full flex justify-between items-center px-6 py-4 bg-gradient-to-b from-stone-900/50 to-transparent ">
-        <div class="flex items-center">
-            <img src="/src/img/pupuksementara.png" alt="Logo" class="h-10 max-w-xs">
-        </div>
+    <div class="absolute top-0 left-0 w-full h-full  ">
+        <nav class="fixed z-50 md:z-auto bg-gradient-to-b from-black via-gray-800/60 to-transparent md:static flex p-5 justify-between items-center w-full gap-5 overflow-hidden"
+            data-aos="zoom-y-out">
+            <!-- Hamburger Icon for toggling navbar -->
+            <label for="check-mobilenav" class="flex flex-col min-w-10 max-w-20 cursor-pointer md:hidden z-[999999]">
+                <input type="checkbox" id="check-mobilenav" class="peer hidden" />
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </label>
 
-        <ul class="flex space-x-6 text-gray-100 font-sans font-bold text-xl hidden md:flex ">
-            <li><a href=" " class="hover:text-green-600">HOME</a></li>
-            <li><a href="about.html" class="hover:text-green-600">ABOUT US</a></li>
-            <li><a href="produk.html" class="hover:text-green-600">PRODUK</a></li>
-            <li><a href="brosur.html" class="hover:text-green-600">BROSUR</a></li>
-            <li><a href="artikel.html" class="hover:text-green-600">ARTIKEL</a></li>
-            <li><a href="kontak.html" class="hover:text-green-600">KONTAK</a></li>
-        </ul>
-        <div class="md:hidden flex items-center mr-4"></div>
-        <button id="mobile-menu-toggle" class="text-white focus:outline-none relative z-30 md:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-        </button>
-        </div>
-
-        <div id="mobile-menu"
-            class="fixed top-0 right-0 h-full w-2/5 bg-stone-100/90 text-black z-999 transform translate-x-full transition-transform duration-300 ease-in-out">
-            <div class="flex flex-col items-end p-4 space-y-4 pt-20 pr-4 font-semibold z-999">
-                <a href="index.html" class="text-lg">HOME</a>
-                <a href="about.html" class="text-lg">ABOUT US</a>
-                <a href="produk.html" class="text-lg">PRODUCT</a>
-                <a href="brosur.html" class="text-lg">BROSUR</a>
-                <a href="artikel.html" class="text-lg">ARTIKEL</a>
-                <a href="kontak.html" class="text-lg">KONTAK</a>
+            <!-- Off-screen Mobile Navbar -->
+            <div id="mobile-menu"
+                class="fixed top-0 left-0 w-full h-3/5 bg-custom-green text-white z-[9999] transform -translate-y-full transition-transform duration-300 ease-in-out">
+                <div class="flex flex-col items-center space-y-4 font-semibold pt-16 pb-4">
+                    <div class="relative group">
+                        <a href="index.html" class="font-semibold text-stone-100 text-xl duration-500">
+                            HOME
+                        </a>
+                        <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="about.html" class="font-semibold text-stone-100 text-xl duration-500">
+                            ABOUT US
+                        </a>
+                        <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="produk.html" class="font-semibold text-stone-100 text-xl duration-500">
+                            PRODUK
+                        </a>
+                        <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="brosur.html" class="font-semibold text-stone-100 text-xl duration-500">
+                            BROSUR
+                        </a>
+                        <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="artikel.html" class="font-semibold text-stone-100 text-xl duration-500">
+                            ARTIKEL
+                        </a>
+                        <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="kontak.html" class="font-semibold text-stone-100 text-xl duration-500">
+                            KONTAK
+                        </a>
+                        <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </nav>
-    <section class="  relative flex justify-center items-center text-center text-white">
 
+            <!-- Brand Logo -->
+            <div id="brand"
+                class="text-3xl font-bold font-montserrat text-stone-900 flex items-center transform transition duration-300 ease-in-out hover:scale-110 z-[9999]">
+                <a href="/" class="flex items-center">
+                    <img src="/src/img/logoagri.png" alt="PT AGRITANIMAS Logo"
+                        class="max-w-24 sm:max-w-32 shadow-lg ml-4" />
+                    <span class="sr-only">PT AGRITANIMAS</span>
+                </a>
+            </div>
 
-    </section>
+            <!-- Desktop Navigation Links -->
+            <ul class="hidden md:flex justify-start md:gap-5 lg:gap-7">
+                <li class="relative group">
+                    <a href="/" class="font-semibold text-stone-100 text-xl duration-500">HOME</a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100"></div>
+                </li>
+                <li class="relative group">
+                    <a href="about.html" class="font-semibold text-stone-100 text-xl duration-500">ABOUT US</a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100"></div>
+                </li>
+                <li class="relative group">
+                    <a href="produk.html" class="font-semibold text-stone-100 text-xl duration-500">PRODUK</a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100"></div>
+                </li>
+                <li class="relative group">
+                    <a href="brosur.html" class="font-semibold text-stone-100 text-xl duration-500">BROSUR</a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100"></div>
+                </li>
+                <li class="relative group">
+                    <a href="artikel.html" class="font-semibold text-stone-100 text-xl duration-500">ARTIKEL</a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100"></div>
+                </li>
+                <li class="relative group">
+                    <a href="kontak.html" class="font-semibold text-stone-100 text-xl duration-500">KONTAK</a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100"></div>
+                </li>
+            </ul>
 
+        </nav>
+
+        <script>
+            const menuCheckbox = document.getElementById('check-mobilenav');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            // Listen for checkbox change to trigger the slide effect
+            menuCheckbox.addEventListener('change', function () {
+                if (this.checked) {
+                    mobileMenu.classList.remove('-translate-y-full');
+                    mobileMenu.classList.add('translate-y-0');
+                } else {
+                    mobileMenu.classList.remove('translate-y-0');
+                    mobileMenu.classList.add('-translate-y-full');
+                }
+            });
+        </script>
+    </div>
+
+    <section class="  relative flex justify-center items-center text-center text-white"></section>
     <section class="py-10 px-4 md:px-10 lg:px-20 mt-32">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
