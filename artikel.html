@@ -19,44 +19,138 @@
 
 <body class="font-sans antialiased bg-gray-100">
 
-    <nav
-        class="absolute z-10 w-full flex justify-between items-center px-6 py-4 bg-gradient-to-b from-stone-900/50 to-transparent ">
-        <div class="flex items-center">
-            <img src="/src/img/pupuksementara.png" alt="Logo" class="h-10 max-w-xs">
-        </div>
-
-        <ul class="flex space-x-6 text-gray-100 font-sans font-bold text-xl hidden md:flex ">
-            <li><a href="/" class="hover:text-green-600">HOME</a></li>
-            <li><a href="about.html" class="hover:text-green-600">ABOUT US</a></li>
-            <li><a href="produk.html" class="hover:text-green-600">PRODUK</a></li>
-            <li><a href="brosur.html" class="hover:text-green-600">BROSUR</a></li>
-            <li><a href="artikel.html" class="hover:text-green-600">ARTIKEL</a></li>
-            <li><a href="kontak.html" class="hover:text-green-600">KONTAK</a></li>
-        </ul>
-        <div class="md:hidden flex items-center mr-4"></div>
-        <button id="mobile-menu-toggle" class="text-white focus:outline-none relative z-30 md:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
+    <nav class="fixed z-50 md:z-auto bg-gradient-to-b from-black via-gray-800/60 to-transparent md:static flex p-5  justify-between items-center w-full gap-5 overflow-hidden "
+        data-aos="zoom-y-out">
+        <!-- Hamburger Icon for toggling navbar -->
+        <label for="check-mobilenav" class="flex flex-col min-w-10 max-w-20 cursor-pointer md:hidden z-[999999]">
+            <input type="checkbox" id="check-mobilenav" class="peer hidden" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
-        </button>
-        </div>
+        </label>
 
+        <!-- Off-screen Mobile Navbar -->
         <div id="mobile-menu"
-            class="fixed top-0 right-0 h-full w-2/5 bg-stone-100/90 text-black z-999 transform translate-x-full transition-transform duration-300 ease-in-out">
-            <div class="flex flex-col items-end p-4 space-y-4 pt-20 pr-4 font-semibold z-999">
-                <a href="index.html" class="text-lg">HOME</a>
-                <a href="about.html" class="text-lg">ABOUT US</a>
-                <a href="produk.html" class="text-lg">PRODUCT</a>
-                <a href="brosur.html" class="text-lg">BROSUR</a>
-                <a href="artikel.html" class="text-lg">ARTIKEL</a>
-                <a href="kontak.html" class="text-lg">KONTAK</a>
+            class="fixed top-0 left-0 w-full h-3/5 bg-custom-green text-white z-[9999] transform -translate-y-full transition-transform duration-300 ease-in-out">
+            <div class="flex flex-col items-center space-y-4 font-semibold pt-16 pb-4">
+                <div href="javascript:void(0)" class="relative group">
+                    <a href="index.html" class="font-semibold text-stone-100 text-xl duration-500">
+                        HOME
+                    </a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                    </div>
+                </div>
+                <div href="javascript:void(0)" class="relative group">
+                    <a href="about.html" class="font-semibold text-stone-100 text-xl duration-500">
+                        ABOUT US
+                    </a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                    </div>
+                </div>
+                <div href="javascript:void(0)" class="relative group">
+                    <a href="produk.html" class="font-semibold text-stone-100 text-xl duration-500">
+                        PRODUK
+                    </a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                    </div>
+                </div>
+                <div href="javascript:void(0)" class="relative group">
+                    <a href="brosur.html" class="font-semibold text-stone-100 text-xl duration-500">
+                        BROSUR
+                    </a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                    </div>
+                </div>
+                <div href="javascript:void(0)" class="relative group">
+                    <a href="artikel.html" class="font-semibold text-stone-100 text-xl duration-500">
+                        ARTIKEL
+                    </a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                    </div>
+                </div>
+                <div href="javascript:void(0)" class="relative group">
+                    <a href="kontak.html" class="font-semibold text-stone-100 text-xl duration-500">
+                        KONTAK
+                    </a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                    </div>
+                </div>
+
             </div>
         </div>
+
+        <div id="brand"
+            class="text-3xl font-bold font-montserrat text-stone-900 flex items-center transform transition duration-300 ease-in-out hover:scale-110 z-[9999]">
+            <a href="/" class="flex items-center">
+                <img src="/src/img/logoagri.png" alt="PT AGRITANIMAS Logo"
+                    class="max-w-24 sm:max-w-32 shadow-lg ml-4" />
+                <span class="sr-only"></span>
+            </a>
+        </div>
+        <ul class="hidden md:flex justify-start md:gap-5 lg:gap-7 ">
+            <li href="javascript:void(0)" class="relative group">
+                <a href="/" class="font-semibold text-stone-100 text-xl duration-500">
+                    HOME
+                </a>
+                <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                </div>
+            </li>
+            <li href="javascript:void(0)" class="relative group">
+                <a href="about.html" class="font-semibold text-stone-100 text-xl duration-500">
+                    ABOUT US
+                </a>
+                <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                </div>
+            </li>
+            <li href="javascript:void(0)" class="relative group">
+                <a href="produk.html" class="font-semibold text-stone-100 text-xl duration-500">
+                    PRODUK
+                </a>
+                <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                </div>
+            </li>
+            <li href="javascript:void(0)" class="relative group">
+                <a href="brosur.html" class="font-semibold text-stone-100 text-xl duration-500">
+                    BROSUR
+                </a>
+                <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                </div>
+            </li>
+            <li href="javascript:void(0)" class="relative group">
+                <a href="artikel.html" class="font-semibold text-stone-100 text-xl duration-500">
+                    ARTIKEL
+                </a>
+                <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                </div>
+            </li>
+            <li href="javascript:void(0)" class="relative group">
+                <a href="kontak.html" class="font-semibold text-stone-100 text-xl duration-500">
+                    KONTAK
+                </a>
+                <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                </div>
+            </li>
+        </ul>
+
     </nav>
+    <script>
+        const menuCheckbox = document.getElementById('check-mobilenav');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // Listen for checkbox change to trigger the slide effect
+        menuCheckbox.addEventListener('change', function () {
+            if (this.checked) {
+                mobileMenu.classList.remove('-translate-y-full');
+                mobileMenu.classList.add('translate-y-0');
+            } else {
+                mobileMenu.classList.remove('translate-y-0');
+                mobileMenu.classList.add('-translate-y-full');
+            }
+        });
+    </script>
 
     <section class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
-        <h2 class="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-6 sm:mb-8 mt-20">ARTIKEL</h2>
+
         <div id="article-carousel" class="relative max-w-5xl mx-auto pt-4 mb-12">
             <!-- Article 1 -->
             <div class="article-slide">
@@ -89,13 +183,23 @@
                     <p class="text-[10px] sm:text-sm text-gray-500">19 Sep 2024</p>
                 </div>
             </div>
+            <div class="article-slide hidden">
+                <img src="src/img/petani2.jpg" alt="Article Image"
+                    class="w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover rounded-lg shadow-lg">
+                <div class="absolute bottom-0 left-0 bg-white bg-opacity-80 text-black px-4 sm:px-6 py-2 sm:py-4 w-2/3">
+                    <h2 class="text-xs sm:text-lg md:text-xl font-bold mb-1 sm:mb-2">Judul Artikel Ketiga</h2>
+                    <p class="text-[10px] sm:text-sm text-gray-500">19 Sep 2024</p>
+                </div>
+            </div>
         </div>
+
 
         <!-- Dots navigation -->
         <div class="flex justify-center space-x-2 mt-4">
             <div class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer" data-slide="0"></div>
             <div class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer" data-slide="1"></div>
             <div class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer" data-slide="2"></div>
+            <div class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer" data-slide="3"></div>
         </div>
     </section>
 
@@ -230,41 +334,38 @@
         </div>
     </section>
 
-    <footer class="bg-[#008352] py-10 text-white">
+    <hr class="h-2">
+
+    <footer class="bg-custom-green pb-4 pt-8 text-white mt-8">
+
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
             <div class="text-left hidden md:block">
                 <h3 class="font-bold text-lg md:text-2xl text-white mb-4">SITEMAP</h3>
                 <ul class="space-y-2 text-gray-300">
-                    <li><a href="#" class="hover:text-green-400 transition duration-300">HOME</a></li>
-                    <li><a href="#" class="hover:text-green-400 transition duration-300">ABOUT US</a></li>
-                    <li><a href="#" class="hover:text-green-400 transition duration-300">PRODUK</a></li>
-                    <li><a href="#" class="hover:text-green-400 transition duration-300">BROWSUR</a></li>
-                    <li><a href="#" class="hover:text-green-400 transition duration-300">ARTIKEL</a></li>
-                    <li><a href="#" class="hover:text-green-400 transition duration-300">KONTAK</a></li>
+                    <li><a href="/" class="hover:text-green-400 transition duration-300">HOME</a></li>
+                    <li><a href="about.html" class="hover:text-green-400 transition duration-300">ABOUT US</a></li>
+                    <li><a href="produk.html" class="hover:text-green-400 transition duration-300">PRODUK</a></li>
+                    <li><a href="brosur.html" class="hover:text-green-400 transition duration-300">BROWSUR</a></li>
+                    <li><a href="artikel.html" class="hover:text-green-400 transition duration-300">ARTIKEL</a></li>
+                    <li><a href="kontak.html" class="hover:text-green-400 transition duration-300">KONTAK</a></li>
                 </ul>
             </div>
             <div class="text-center flex flex-col items-center">
-                <div
-                    class="bg-green-500 w-32 h-32 rounded-full flex items-center justify-center mx-auto md:mx-0 shadow-lg">
-                    <img src="/src/img/pupuksementara.png" alt="Logo" class="w-24 h-24 object-contain">
+                <div class="w-60 h-40 rounded-full flex items-center justify-center mx-auto md:mx-0">
+                    <img src="/src/img/logoagri.png" alt="Logo" class="w-60 h-60 object-contain">
                 </div>
-
             </div>
-
             <div class="text-center md:text-right">
                 <h3 class="font-bold text-lg md:text-2xl text-white mb-4">HUBUNGI KAMI</h3>
-                <a href="tel:+6282290909090" class="text-gray-300 text-sm mb-2 flex justify-center md:justify-end ">
+                <a href="tel:+6282290909090" class="text-gray-300 text-sm mb-2 flex justify-center md:justify-end">
+                    <i class="fas fa-phone mr-2"></i>
                     +62 822 9090 9090
-                    <i class="fas fa-phone ml-2"></i>
                 </a>
                 <a href="mailto:agritanimas@gmail.com"
-                    class="text-gray-300 text-sm mb-2 flex justify-center md:justify-end">
+                    class="text-gray-300 text-sm mb-8 flex justify-center md:justify-end">
+                    <i class="fas fa-envelope mr-2"></i>
                     agritanimas@gmail.com
-                    <i class="fas fa-envelope"></i>
                 </a>
-
-
-
             </div>
         </div>
         <div class="flex justify-center space-x-6">
@@ -283,8 +384,8 @@
         </div>
 
 
-        <div class="text-center text-gray-100 mt-8 border-t border-gray-100 pt-4">
-            <p class="text-sm">Made with passion. Copyright © PT AGRITANIMAS 2024</p>
+        <div class="text-center text-gray-100 mt-4 border-t border-gray-100 pt-4">
+            <p class="text-xs md:text-sm">Made with passion. Copyright © PT AGRITANIMAS 2024</p>
         </div>
     </footer>
 
@@ -396,10 +497,11 @@
         });
     </script>
 
-
     <script>
         const slides = document.querySelectorAll('.article-slide');
         const dots = document.querySelectorAll('.dot');
+        let currentSlide = 0;
+        const slideIntervalTime = 5000; // 5 seconds
 
         function showSlide(slideIndex) {
             // Hide all slides
@@ -410,18 +512,39 @@
             // Update dot styles
             dots.forEach((dot) => dot.classList.remove('bg-gray-800'));
             dots[slideIndex].classList.add('bg-gray-800');
+
+            // Update the current slide index
+            currentSlide = slideIndex;
         }
 
         // Set up dot click events
         dots.forEach((dot, index) => {
             dot.addEventListener('click', () => {
                 showSlide(index);  // Show corresponding slide
+                resetSlideInterval();  // Reset the interval when user manually changes the slide
             });
         });
 
+        // Function to auto-switch slides every 5 seconds
+        function autoSwitchSlides() {
+            currentSlide = (currentSlide + 1) % slides.length; // Move to the next slide, loop back if at the end
+            showSlide(currentSlide);
+        }
+
         // Initialize by showing the first slide
         showSlide(0);
+
+        // Set up automatic slide transition
+        let slideInterval = setInterval(autoSwitchSlides, slideIntervalTime);
+
+        // Reset the interval when a slide is changed manually
+        function resetSlideInterval() {
+            clearInterval(slideInterval);
+            slideInterval = setInterval(autoSwitchSlides, slideIntervalTime);
+        }
     </script>
+
+
 
 
 </body>

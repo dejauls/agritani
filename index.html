@@ -76,7 +76,7 @@
         </div>
 
         <div id="mobile-menu"
-            class="fixed top-0 right-0 h-full w-2/5 bg-stone-100/90 text-black z-[9999] transform translate-x-full transition-transform duration-300 ease-in-out">
+            class="fixed top-0 right-0 w-full h-2/5 bg-stone-100/90 text-black z-[9999] transform translate-x-full transition-transform duration-300 ease-in-out">
             <div class="flex flex-col items-end p-4 space-y-4 pt-20 pr-4 font-semibold z-999">
                 <a href="index.html" class="text-lg">HOME</a>
                 <a href="about.html" class="text-lg">ABOUT US</a>
@@ -94,18 +94,72 @@
         <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/50 to-transparent">
             <nav class="fixed z-50 md:z-auto bg-gradient-to-b from-black via-gray-800/60 to-transparent md:static flex p-5  justify-between items-center w-full gap-5 overflow-hidden "
                 data-aos="zoom-y-out">
-                <label for="check-mobilenav" class="flex flex-col min-w-10 max-w-20 cursor-pointer md:hidden">
+                <!-- Hamburger Icon for toggling navbar -->
+                <label for="check-mobilenav"
+                    class="flex flex-col min-w-10 max-w-20 cursor-pointer md:hidden z-[999999]">
                     <input type="checkbox" id="check-mobilenav" class="peer hidden" />
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                    stroke="white">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
+                        stroke="white">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
                 </label>
+
+                <!-- Off-screen Mobile Navbar -->
+                <div id="mobile-menu"
+                    class="fixed top-0 left-0 w-full h-3/5 bg-custom-green text-white z-[9999] transform -translate-y-full transition-transform duration-300 ease-in-out">
+                    <div class="flex flex-col items-center space-y-4 font-semibold pt-16 pb-4">
+                        <div href="javascript:void(0)" class="relative group">
+                            <a href="index.html" class="font-semibold text-stone-100 text-xl duration-500">
+                                HOME
+                            </a>
+                            <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                            </div>
+                        </div>
+                        <div href="javascript:void(0)" class="relative group">
+                            <a href="about.html" class="font-semibold text-stone-100 text-xl duration-500">
+                                ABOUT US
+                            </a>
+                            <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                            </div>
+                        </div>
+                        <div href="javascript:void(0)" class="relative group">
+                            <a href="produk.html" class="font-semibold text-stone-100 text-xl duration-500">
+                                PRODUK
+                            </a>
+                            <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                            </div>
+                        </div>
+                        <div href="javascript:void(0)" class="relative group">
+                            <a href="brosur.html" class="font-semibold text-stone-100 text-xl duration-500">
+                                BROSUR
+                            </a>
+                            <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                            </div>
+                        </div>
+                        <div href="javascript:void(0)" class="relative group">
+                            <a href="artikel.html" class="font-semibold text-stone-100 text-xl duration-500">
+                                ARTIKEL
+                            </a>
+                            <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                            </div>
+                        </div>
+                        <div href="javascript:void(0)" class="relative group">
+                            <a href="kontak.html" class="font-semibold text-stone-100 text-xl duration-500">
+                                KONTAK
+                            </a>
+                            <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
                 <div id="brand"
-                    class="text-3xl font-bold font-montserrat text-stone-900 flex items-center transform transition duration-300 ease-in-out hover:scale-110">
+                    class="text-3xl font-bold font-montserrat text-stone-900 flex items-center transform transition duration-300 ease-in-out hover:scale-110 z-[9999]">
                     <a href="/" class="flex items-center">
-                        <img src="/src/img/pupuksementara.png" alt="Reclea Brick Logo"
-                            class="max-w-12 sm:max-w-20 shadow-lg ml-4" />
+                        <img src="/src/img/logoagri.png" alt="PT AGRITANIMAS Logo"
+                            class="max-w-24 sm:max-w-32 shadow-lg ml-4" />
                         <span class="sr-only"></span>
                     </a>
                 </div>
@@ -156,18 +210,18 @@
 
             </nav>
             <div
-                class="px-10 md:px-20 text-right absolute top-1/2 right-0 -translate-y-1/2 md:text-right grid grid-cols-1 gap-3 mt-20">
-                <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold font-montserrat text-white" data-aos="zoom-y-out"
-                    data-aos-delay="150">
-                    <div>PT AGRITANIMAS<span class="align-top font-light text-sm" style="font-size: 1rem;">®</span>
+                class="px-10 md:px-20 text-center absolute top-1/2 right-0 -translate-y-1/2 md:text-right grid grid-cols-1 gap-3 mt-20">
+                <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold md:font-bold font-montserrat text-white mb-4"
+                    data-aos="zoom-y-out" data-aos-delay="150">
+                    <div>PT AGRITANIMAS
                     </div>
                 </h1>
                 <p class="text-stone-100 md:max-w-xl text-sm sm:text-base mb-5 font-montserrat" data-aos="zoom-y-out"
                     data-aos-delay="300">
-                    Bersama kita jaga pertahanan pangan Indonesia. <br>
+                    Bersama Kita Jaga Pertahanan Pangan Indonesia. <br>
                     Pupuk Terbaik Demi Hasil Terbaik.
                 </p>
-                <div class="flex justify-end z-999999999" data-aos="zoom-y-out" data-aos-delay="450">
+                <div class="flex justify-center md:justify-end z-999999999" data-aos="zoom-y-out" data-aos-delay="450">
                     <a href="https://wa.me/your-number" target="_blank"
                         class="inline-block mt-6 px-6 py-3 bg-green-600 text-white font-sans font-bold rounded-lg hover:bg-green-700 transition duration-300">
                         Hubungi Sekarang
@@ -263,96 +317,61 @@
 
     </section> -->
 
-
-    <section class="max-w-4xl mx-auto p-6 rounded-lg shadow-lg m-12 bg-gray-100/30">
-        <h2 class="text-2xl font-bold text-center text-green-700 mb-6">Harga Komoditas Hari Ini</h2>
-
+    <section class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg my-8">
+        <h2 class="text-2xl font-bold text-center text-green-800 mb-6 pt-6">Harga Komoditas Hari Ini</h2>
+    
         <!-- Table Header -->
-        <div class="grid grid-cols-5 bg-green-500 rounded-t-lg text-center text-white">
-            <div class="py-3 font-bold text-lg bg-green-600 rounded-tl-lg">Komoditas</div>
-            <div class="py-3 font-bold text-lg">Harga Medan (Hari Ini)</div>
-            <div class="py-3 font-bold text-lg">Harga Medan (Kemarin)</div>
-            <div class="py-3 font-bold text-lg">Harga Binjai (Hari Ini)</div>
-            <div class="py-3 font-bold text-lg rounded-tr-lg">Harga Binjai (Kemarin)</div>
-        </div>
-
-        <div class="divide-y divide-green-200 gap-4">
-            <div class="grid grid-cols-5">
-                <div class="py-3 px-4 font-bold text-green-800 text-center bg-green-100">Jagung</div>
-                <div class="py-3 px-4 text-center bg-amber-50">Rp 4,700</div>
-                <div class="py-3 px-4 text-center bg-amber-50">Rp 4,500</div>
-                <div class="py-3 px-4 text-center bg-amber-50">Rp 4,600</div>
-                <div class="py-3 px-4 text-center bg-amber-50">Rp 4,400</div>
-            </div>
-
-            <div class="grid grid-cols-5">
-                <div class="py-3 px-4 font-bold text-green-800 text-center bg-green-100">Cabe</div>
-                <div class="py-3 px-4 text-center bg-white">Rp 36,000</div>
-                <div class="py-3 px-4 text-center bg-white">Rp 35,000</div>
-                <div class="py-3 px-4 text-center bg-white">Rp 35,500</div>
-                <div class="py-3 px-4 text-center bg-white">Rp 34,500</div>
-            </div>
-
-            <div class="grid grid-cols-5">
-                <div class="py-3 px-4 font-bold text-green-800 text-center bg-green-100">Bawang</div>
-                <div class="py-3 px-4 text-center bg-amber-50">Rp 21,000</div>
-                <div class="py-3 px-4 text-center bg-amber-50">Rp 20,000</div>
-                <div class="py-3 px-4 text-center bg-amber-50">Rp 20,500</div>
-                <div class="py-3 px-4 text-center bg-amber-50">Rp 19,500</div>
-            </div>
-
-            <div class="grid grid-cols-5">
-                <div class="py-3 px-4 font-bold text-green-800 text-center bg-green-100 rounded-bl-lg">Tomat</div>
-                <div class="py-3 px-4 text-center bg-white">Rp 8,500</div>
-                <div class="py-3 px-4 text-center bg-white">Rp 8,000</div>
-                <div class="py-3 px-4 text-center bg-white">Rp 8,300</div>
-                <div class="py-3 px-4 text-center bg-white rounded-br-lg">Rp 7,800</div>
-            </div>
-        </div>
-    </section>
-
-    <section class="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg">
-        <h2 class="text-2xl font-bold text-center text-green-700 mb-6">Harga Komoditas Hari Ini</h2>
-
-        <!-- Table Header -->
-        <div class="grid grid-cols-3 bg-green-500 text-center rounded-t-lg text-white m-4 ">
-            <div class="py-4 font-bold text-lg bg-green-600 rounded-tl-lg">Komoditas</div>
+        <div class="grid grid-cols-4 bg-green-500 text-center rounded-t-lg text-white m-4">
+            <div class="py-4 font-bold text-lg bg-custom-green rounded-tl-lg">Komoditas</div>
             <div class="py-4 font-bold text-lg">Harga Hari Ini</div>
-            <div class="py-4 font-bold text-lg bg-green-600 rounded-tr-lg">Harga Kemarin</div>
+            <div class="py-4 font-bold text-lg rounded-tr-lg">Harga Kemarin</div>
+            <div class="py-4 font-bold text-lg rounded-tr-lg">Harga lusa</div>
         </div>
-
+    
         <!-- Rows -->
-        <div class="divide-y divide-green-200">
-            <!-- Row 1: Jagung -->
-            <div class="grid grid-cols-3 bg-green-50 text-center py-4 outline outline">
-                <div class="font-semibold text-green-800">Jagung</div>
-                <div class="text-gray-600">Rp 4,700</div>
-                <div class="text-gray-600">Rp 4,500</div>
+        <div class="divide-y divide-green-200 pb-4">
+            <!-- Row 1: Example Jagung (Price Up) -->
+            <div class="grid grid-cols-4 bg-green-50 text-center outline outline-[1px] outline-gray-500 pl-6 mx-4">
+                <div class="font-semibold text-green-800 py-4">Jagung</div>
+                <div class="text-gray-600 h-full bg-green-500 py-4 flex justify-center items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 10l7-7m0 0l7 7m-7-7v18" />
+                    </svg>
+                    <span>Rp 4,700</span>
+                </div>
+                <div class="text-gray-600 py-4 bg-green-200">Rp 4,500</div>
+                <div class="text-gray-600 py-4 bg-green-200">Rp 4,500</div>
             </div>
-
-            <!-- Row 2: Cabe -->
-            <div class="grid grid-cols-3 bg-white text-center py-4">
-                <div class="font-semibold text-green-800">Cabe</div>
-                <div class="text-gray-600">Rp 36,000</div>
-                <div class="text-gray-600">Rp 35,000</div>
+    
+            <!-- Row 2: Example Padi (Price Down) -->
+            <div class="grid grid-cols-4 bg-green-50 text-center outline outline-[1px] outline-gray-500 pl-6 mx-4">
+                <div class="font-semibold text-green-800 py-4">Padi</div>
+                <div class="text-gray-600 h-full bg-red-200 py-4 flex justify-center items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                    </svg>
+                    <span>Rp 5,000</span>
+                </div>
+                <div class="text-gray-600 py-4 bg-green-200">Rp 5,200</div>
+                <div class="text-gray-600 py-4 bg-green-200">Rp 4,500</div>
             </div>
-
-            <!-- Row 3: Bawang -->
-            <div class="grid grid-cols-3 bg-green-50 text-center py-4">
-                <div class="font-semibold text-green-800">Bawang</div>
-                <div class="text-gray-600">Rp 21,000</div>
-                <div class="text-gray-600">Rp 20,000</div>
-            </div>
-
-            <!-- Row 4: Tomat -->
-            <div class="grid grid-cols-3 bg-white text-center py-4 rounded-b-lg">
-                <div class="font-semibold text-green-800">Tomat</div>
-                <div class="text-gray-600">Rp 8,500</div>
-                <div class="text-gray-600">Rp 8,000</div>
+    
+            <!-- Row 3: Example Gandum (No Change) -->
+            <div class="grid grid-cols-4 bg-green-50 text-center outline outline-[1px] outline-gray-500 pl-6 mx-4">
+                <div class="font-semibold text-green-800 py-4">Gandum</div>
+                <div class="text-gray-600 h-full bg-gray-200 py-4 flex justify-center items-center space-x-2">
+                    <span>Rp 2,500</span>
+                </div>
+                <div class="text-gray-600 py-4 bg-green-200">Rp 2,500</div>
+                <div class="text-gray-600 py-4 bg-green-200">Rp 4,500</div>
             </div>
         </div>
     </section>
-
+    
 
 
     <section id="section-2" class="w-full mx-auto bg-white">
@@ -591,38 +610,76 @@
         </div>
     </div>
 
-
-    <section class="max-w-7xl mx-auto p-2 md:p-8 mt-16 md:mt-20">
-        <div class="grid grid-cols-3 gap-2 md:gap-4">
-            <div class="relative col-span-2">
-                <img src="/src/img/petani2.jpg" alt="Keunggulan Satu"
-                    class="w-full h-full rounded-lg shadow-lg object-cover">
-                <div
-                    class="absolute bottom-2 md:bottom-4 left-2 md:left-4 bg-green-600 text-white font-bold px-1 md:px-4 py-1 md:py-2 rounded-lg text-[8px] md:text-base">
-                    Tim Teknis Lapangan Profesional
+    <section class="max-w-7xl mx-auto py-12 px-4 grid grid-cols-1 lg:grid-cols-2 gap-8 my-12">
+        <!-- Bagian Kiri: Konten Teks -->
+        <div>
+            <!-- Lencana -->
+            <div
+                class="inline-flex items-center bg-green-100 text-green-600 px-3 py-1 rounded-full text-xs font-semibold mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M8 9l3 3-3 3m5-6l3 3-3 3" />
+                </svg>
+                
+            </div>
+            <!-- Judul -->
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                <span class="text-green-600">Agritanimas</span> – Solusi Pupuk Terpercaya
+            </h2>
+            <!-- Deskripsi -->
+            <p class="text-gray-600 mb-6">
+                Agritanimas adalah penyedia pupuk terkemuka di Sumatera Utara yang telah dipercaya selama lebih dari 15
+                tahun. Kami berfokus pada edukasi petani dan menyediakan solusi pupuk yang dapat disesuaikan dengan
+                kebutuhan spesifik.
+            </p>
+            <!-- Statistik -->
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
+                <div class="bg-green-600 text-white p-4 rounded-lg text-center">
+                    <p class="text-2xl font-bold">15+</p>
+                    <p>Tahun Kepercayaan</p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg text-center outline">
+                    <p class="text-2xl font-bold">Bebas Kustomisasi</p>
+                    <p>Racikan Pupuk</p>
                 </div>
             </div>
-            <div class="grid grid-cols-1 gap-4">
-                <div class="relative">
-                    <img src="/src/img/petani2.jpg" alt="Keunggulan Dua"
-                        class="w-full h-auto rounded-lg shadow-lg object-cover">
-                    <div
-                        class="absolute bottom-2 md:bottom-8 left-2 md:left-4 bg-green-600 text-white font-bold px-1 md:px-4 py-1 md:py-2 rounded-lg text-[8px] md:text-base">
-                        Petani Pasti Senang
-                    </div>
+        </div>
+
+        <!-- Bagian Kanan: Konten Gambar -->
+        <div class="grid grid-cols-1 gap-4">
+            <div class="flex items-center space-x-4">
+                <img src="/src/img/pupukterbaik.jpeg" alt="Gambar Pupuk 1"
+                    class="w-24 h-24 object-cover rounded-lg">
+                <div>
+                    <h3 class="font-semibold text-base md:text-lg text-gray-900">Pupuk Terbaik di Sumatera Utara</h3>
+                    <p class="text-sm md:text-base text-gray-600">Produk kami telah dipercaya oleh petani di seluruh
+                        Sumatera Utara selama lebih dari 15 tahun.</p>
                 </div>
-                <div class="relative">
-                    <img src="/src/img/sayur.jpeg" alt="Keunggulan Tiga"
-                        class="w-full h-full rounded-lg shadow-lg object-cover">
-                    <div
-                        class="absolute bottom-2 md:bottom-4 left-2 md:left-4 bg-green-600 text-white font-bold px-1 md:px-4 py-1 md:py-2 rounded-lg text-[8px] md:text-base">
-                        Hasil Pasti Memuaskan
-                    </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <img src="/src/img/petanisatu.jpeg" alt="Gambar Pupuk 2"
+                    class="w-24 h-24 object-cover rounded-lg">
+                <div>
+                    <h3 class="font-semibold text-base md:text-lg text-gray-900">Edukasi Petani</h3>
+                    <p class="text-sm md:text-base text-gray-600">Kami memberikan edukasi berkelanjutan untuk membantu
+                        petani meningkatkan hasil panen mereka.</p>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <img src="/src/img/pupuknpk.jpeg" alt="Gambar Pupuk 3"
+                    class="w-24 h-24 object-cover rounded-lg">
+                <div>
+                    <h3 class="font-semibold text-base md:text-lg text-gray-900">Racikan Pupuk Kustom</h3>
+                    <p class="text-sm md:text-base text-gray-600">Petani dapat menyesuaikan racikan pupuk sesuai dengan
+                        kebutuhan spesifik tanah mereka.</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- 
+
+
+        <!-- 
 
     <section class="py-10">
         <hr class="w-12 md:w-32 h-1 bg-green-600 mb-2 mx-auto mb-4">
@@ -998,7 +1055,7 @@
     </section>
     <hr class="h-2">
 
-    <footer class="bg-custom-green py-10 text-white mt-8">
+    <footer class="bg-custom-green pb-4 pt-8 text-white mt-8">
 
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
             <div class="text-left hidden md:block">
@@ -1013,20 +1070,19 @@
                 </ul>
             </div>
             <div class="text-center flex flex-col items-center">
-                <div
-                    class="bg-green-500 w-32 h-32 rounded-full flex items-center justify-center mx-auto md:mx-0 shadow-lg">
-                    <img src="/src/img/pupuksementara.png" alt="Logo" class="w-24 h-24 object-contain">
+                <div class="w-60 h-40 rounded-full flex items-center justify-center mx-auto md:mx-0">
+                    <img src="/src/img/logoagri.png" alt="Logo" class="w-60 h-60 object-contain">
                 </div>
             </div>
             <div class="text-center md:text-right">
                 <h3 class="font-bold text-lg md:text-2xl text-white mb-4">HUBUNGI KAMI</h3>
-                <a href="tel:+6282290909090" class="text-gray-300 text-sm mb-2 flex justify-center md:justify-end ">
-                    <i class="fas fa-phone ml-2"></i>
+                <a href="tel:+6282290909090" class="text-gray-300 text-sm mb-2 flex justify-center md:justify-end">
+                    <i class="fas fa-phone mr-2"></i>
                     +62 822 9090 9090
                 </a>
                 <a href="mailto:agritanimas@gmail.com"
-                    class="text-gray-300  text-sm mb-2 flex justify-center md:justify-end">
-                    <i class="fas fa-envelope"></i>
+                    class="text-gray-300 text-sm mb-8 flex justify-center md:justify-end">
+                    <i class="fas fa-envelope mr-2"></i>
                     agritanimas@gmail.com
                 </a>
             </div>
@@ -1047,8 +1103,8 @@
         </div>
 
 
-        <div class="text-center text-gray-100 mt-8 border-t border-gray-100 pt-4">
-            <p class="text-sm">Made with passion. Copyright © PT AGRITANIMAS 2024</p>
+        <div class="text-center text-gray-100 mt-4 border-t border-gray-100 pt-4">
+            <p class="text-xs md:text-sm">Made with passion. Copyright © PT AGRITANIMAS 2024</p>
         </div>
     </footer>
 
@@ -1111,7 +1167,7 @@
                 class="mt-2 w-full bg-green-500 hover:bg-green-600 text-white p-2 rounded sm:py-1">Kirim</button>
         </div>
         <button id="whatsappButton"
-            class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg focus:outline-none sm:p-3">
+            class="bg-green-500 hover:bg-green-600 text-white  rounded-full shadow-lg focus:outline-none sm:p-3">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48"
                 class="w-8 md:w-12 h-8 md:h-12">
                 <path fill="#fff"
@@ -1225,34 +1281,7 @@
             });
         });
     </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const toggleButton = document.getElementById('mobile-menu-toggle');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const menuLinks = mobileMenu.querySelectorAll('a');
 
-            function toggleMenu() {
-                mobileMenu.classList.toggle('translate-x-full');
-                mobileMenu.classList.toggle('translate-x-0');
-
-                if (toggleButton.classList.contains('text-white')) {
-                    toggleButton.classList.remove('text-white');
-                    toggleButton.classList.add('text-black');
-                } else {
-                    toggleButton.classList.remove('text-black');
-                    toggleButton.classList.add('text-white');
-                }
-            }
-
-            toggleButton.addEventListener('click', toggleMenu);
-
-            menuLinks.forEach(function (link) {
-                link.addEventListener('click', function () {
-                    toggleMenu();
-                });
-            });
-        });
-    </script>
 
     <script>
         new WOW().init();
@@ -1282,6 +1311,24 @@
             icon.classList.toggle('rotate-180');
         }
     </script>
+
+    <script>
+        const menuCheckbox = document.getElementById('check-mobilenav');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // Listen for checkbox change to trigger the slide effect
+        menuCheckbox.addEventListener('change', function () {
+            if (this.checked) {
+                mobileMenu.classList.remove('-translate-y-full');
+                mobileMenu.classList.add('translate-y-0');
+            } else {
+                mobileMenu.classList.remove('translate-y-0');
+                mobileMenu.classList.add('-translate-y-full');
+            }
+        });
+    </script>
+
+
 </body>
 
 </html>
