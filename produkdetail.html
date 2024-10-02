@@ -35,10 +35,9 @@
 
 <body class="font-sans bg-white">
 
-    <div class="absolute top-0 left-0 w-full h-full  ">
+    <div class="absolute top-0 left-0 w-full  ">
         <nav class="fixed z-50 md:z-auto bg-gradient-to-b from-black via-gray-800/60 to-transparent md:static flex p-5 justify-between items-center w-full gap-5 overflow-hidden"
             data-aos="zoom-y-out">
-            <!-- Hamburger Icon for toggling navbar -->
             <label for="check-mobilenav" class="flex flex-col min-w-10 max-w-20 cursor-pointer md:hidden z-[999999]">
                 <input type="checkbox" id="check-mobilenav" class="peer hidden" />
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
@@ -46,7 +45,6 @@
                 </svg>
             </label>
 
-            <!-- Off-screen Mobile Navbar -->
             <div id="mobile-menu"
                 class="fixed top-0 left-0 w-full h-3/5 bg-custom-green text-white z-[9999] transform -translate-y-full transition-transform duration-300 ease-in-out">
                 <div class="flex flex-col items-center space-y-4 font-semibold pt-20 ">
@@ -96,7 +94,6 @@
 
             </div>
 
-            <!-- Brand Logo -->
             <div id="brand"
                 class="text-3xl font-bold font-montserrat text-stone-900 flex items-center transform transition duration-300 ease-in-out hover:scale-110 z-[9999]">
                 <a href="/" class="flex items-center">
@@ -106,7 +103,6 @@
                 </a>
             </div>
 
-            <!-- Desktop Navigation Links -->
             <ul class="hidden md:flex justify-start md:gap-5 lg:gap-7">
                 <li class="relative group">
                     <a href="/" class="font-semibold text-stone-100 text-xl duration-500">HOME</a>
@@ -140,7 +136,6 @@
             const menuCheckbox = document.getElementById('check-mobilenav');
             const mobileMenu = document.getElementById('mobile-menu');
 
-            // Listen for checkbox change to trigger the slide effect
             menuCheckbox.addEventListener('change', function () {
                 if (this.checked) {
                     mobileMenu.classList.remove('-translate-y-full');
@@ -161,18 +156,19 @@
                     <img id="mainImage" src="src/img/pupukcontoh.jpeg" alt="MerokeSOP KALI" class="w-96 h-96">
                 </div>
 
-                <div class="flex justify-center   mt-4 space-x-4">
-                    <img src="src/img/caracabe.jpg" alt="Small Image 1" class="w-16 h-auto cursor-pointer"
-                        onclick="changeImage('/src/img/caracabe.jpg')">
+                <div class="flex justify-center mt-4 space-x-4">
+                    <img src="/src/img/caracabe.jpg" alt="Small Image 1" class="w-16 h-auto cursor-pointer"
+                        onclick="changeImage('src/img/caracabe.jpg')">
                     <img src="/src/img/petani2.jpg" alt="Small Image 2" class="w-16 h-auto cursor-pointer"
-                        onclick="changeImage('/src/img/petani2.jpg')">
-                    <img src="src/img/caracabe.jpg" alt="Small Image 1" class="w-16 h-auto cursor-pointer"
-                        onclick="changeImage('/src/img/caracabe.jpg')">
+                        onclick="changeImage('src/img/petani2.jpg')">
+                    <img src="/src/img/caracabe.jpg" alt="Small Image 1" class="w-16 h-auto cursor-pointer"
+                        onclick="changeImage('src/img/caracabe.jpg')">
                     <img src="/src/img/petani2.jpg" alt="Small Image 2" class="w-16 h-16 cursor-pointer"
-                        onclick="changeImage('/src/img/petani2.jpg')">
-                    <img src="src/img/caracabe.jpg" alt="Small Image 1" class="w-16 h-auto cursor-pointer"
-                        onclick="changeImage('/src/img/caracabe.jpg')">
+                        onclick="changeImage('src/img/petani2.jpg')">
+                    <img src="/src/img/caracabe.jpg" alt="Small Image 1" class="w-16 h-auto cursor-pointer"
+                        onclick="changeImage('src/img/caracabe.jpg')">
                 </div>
+                
             </div>
 
             <div>
