@@ -10,7 +10,7 @@
     <meta name="keywords" content="pupuk, pupuk medan, npk, pupuk tanaman, produk pupuk, agritanimas, pertanian">
     <meta name="author" content="PT AGRITANIMAS">
 
-    <title>Produk Kami - PT AGRITANIMAS</title>
+    <title>BROSUR - PT AGRITANIMAS</title>
 
     <link href="/src/output.css" rel="stylesheet">
 
@@ -44,6 +44,13 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+    <script>
+        function changeContent(pupukName, imgSrc) {
+            document.getElementById('pupuk-title').innerText = pupukName;
+            document.getElementById('pupuk-image').src = imgSrc;
+        }
+    </script>
 </head>
 
 <body class="font-sans bg-white">
@@ -119,7 +126,7 @@
             </div>
 
             <!-- Desktop Navigation Links -->
-            <ul class="hidden md:flex justify-start md:gap-5 lg:gap-7">
+            <ul class="hidden md:flex justify-start md:gap-5 lg:gap-7 z-[999999]">
                 <li class="relative group">
                     <a href="/" class="font-semibold text-stone-100 text-xl duration-500">HOME</a>
                     <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100"></div>
@@ -163,108 +170,36 @@
             }
         });
     </script>
-    <section class="header-bg relative flex justify-center items-center text-center text-white">
-        <div class="overlay absolute inset-0"></div>
-        <div class="relative z-10">
-            <h1 class="text-5xl font-bold animate__animated animate__fadeInDown">Produk Unggulan Kami</h1>
-            <p class="mt-4 text-xl animate__animated animate__fadeInUp">Temukan berbagai pupuk berkualitas yang
-                dirancang untuk meningkatkan hasil tanaman Anda.</p>
+    <section class="header-bg relative flex justify-center items-center text-center text-white z-10">
+        <div class="overlay absolute inset-0 z-0"></div> <!-- Pastikan overlay ini tidak menutupi elemen lain -->
+        <div class="relative z-10 mt-20">
+            <h1 class="text-xl md:text-5xl font-bold animate__animated animate__fadeInDown">Produk Unggulan Kami</h1>
+            <p class="mt-4 text-sm md:text-xl animate__animated animate__fadeInUp">Temukan berbagai pupuk berkualitas yang dirancang untuk meningkatkan hasil tanaman Anda.</p>
         </div>
     </section>
-
-    <section class="max-w-7xl mx-auto p-8">
-        <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">PRODUK TERBAIK KAMI</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div
-                class="bg-white shadow-md rounded-lg p-4 text-center transform hover:scale-105 transition duration-300 ease-in-out relative">
-                <img src="/src/img/pupukcontoh.jpeg" alt="Pupuk Buah"
-                    class="mx-auto mb-4 rounded-md shadow-lg transform -translate-y-8 relative z-10">
-                <div class="relative -mt-16 bg-white p-4">
-                    <h3 class="text-xl font-bold text-gray-900 mt-4">Pupuk Buah</h3>
-                    <p class="text-gray-700 mb-4">Nutrisi seimbang untuk hasil buah yang berkualitas.</p>
-                    <a href="#"
-                        class="inline-block px-4 py-2 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
-                        Lihat selengkapnya
-                    </a>
-                </div>
-            </div>
-
-            <div
-                class="bg-white shadow-md rounded-lg p-4 text-center transform hover:scale-105 transition duration-300 ease-in-out relative ">
-                <img src="/src/img/pupukcontoh.jpeg" alt="Pupuk Padi"
-                    class="mx-auto mb-4 rounded-md shadow-lg transform -translate-y-8 relative z-10">
-                <div class="relative -mt-16 bg-white p-4 ">
-                    <h3 class="text-xl font-bold text-gray-900 mt-4">Pupuk Padi</h3>
-                    <p class="text-gray-700 mb-4">Meningkatkan produktivitas dan kualitas padi Anda.</p>
-                    <a href="#"
-                        class="inline-block px-4 py-2 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
-                        Lihat selengkapnya
-                    </a>
-                </div>
-            </div>
-            <div
-                class="bg-white shadow-md rounded-lg p-4 text-center transform hover:scale-105 transition duration-300 ease-in-out relative">
-                <img src="/src/img/pupukcontoh.jpeg" alt="Pupuk Padi"
-                    class="mx-auto mb-4 rounded-md shadow-lg transform -translate-y-8 relative z-10">
-                <div class="relative -mt-16 bg-white p-4">
-                    <h3 class="text-xl font-bold text-gray-900 mt-4">Pupuk Padi</h3>
-                    <p class="text-gray-700 mb-4">Meningkatkan produktivitas dan kualitas padi Anda.</p>
-                    <a href="#"
-                        class="inline-block px-4 py-2 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
-                        Lihat selengkapnya
-                    </a>
-                </div>
-            </div>
-
-
-        </div>
-    </section>
-
-    <section class="max-w-7xl mx-auto p-8">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">PRODUK KAMI</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div
-                class="bg-white shadow-md rounded-lg p-4 text-center transform hover:scale-105 transition duration-300 ease-in-out">
-                <img src="/src/img/pupukcontoh.jpeg" alt="Pupuk Cabai" class="mx-auto mb-4 rounded-md shadow-lg">
-                <h3 class="text-xl font-bold text-gray-900">Pupuk Cabai</h3>
-                <p class="text-gray-700 mb-4">Pupuk berkualitas untuk hasil tanaman cabai yang maksimal.</p>
-                <a href="#"
-                    class="inline-block px-4 py-2 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
-                    Lihat selengkapnya
-                </a>
-            </div>
-            <div
-                class="bg-white shadow-md rounded-lg p-4 text-center transform hover:scale-105 transition duration-300 ease-in-out">
-                <img src="/src/img/pupukcontoh.jpeg" alt="Pupuk Buah" class="mx-auto mb-4 rounded-md shadow-lg">
-                <h3 class="text-xl font-bold text-gray-900">Pupuk Buah</h3>
-                <p class="text-gray-700 mb-4">Nutrisi seimbang untuk hasil buah yang berkualitas.</p>
-                <a href="#"
-                    class="inline-block px-4 py-2 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
-                    Lihat selengkapnya
-                </a>
-            </div>
-            <div
-                class="bg-white shadow-md rounded-lg p-4 text-center transform hover:scale-105 transition duration-300 ease-in-out">
-                <img src="/src/img/pupukcontoh.jpeg" alt="Pupuk Padi" class="mx-auto mb-4 rounded-md shadow-lg">
-                <h3 class="text-xl font-bold text-gray-900">Pupuk Padi</h3>
-                <p class="text-gray-700 mb-4">Meningkatkan produktivitas dan kualitas padi Anda.</p>
-                <a href="#"
-                    class="inline-block px-4 py-2 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
-                    Lihat selengkapnya
-                </a>
-            </div>
-            <div
-                class="bg-white shadow-md rounded-lg p-4 text-center transform hover:scale-105 transition duration-300 ease-in-out">
-                <img src="/src/img/pupukcontoh.jpeg" alt="Pupuk Organik" class="mx-auto mb-4 rounded-md shadow-lg">
-                <h3 class="text-xl font-bold text-gray-900">Pupuk Organik</h3>
-                <p class="text-gray-700 mb-4">Solusi alami untuk pertumbuhan tanaman yang sehat.</p>
-                <a href="#"
-                    class="inline-block px-4 py-2 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
-                    Lihat selengkapnya
-                </a>
+    
+    <section class="container mx-auto my-12 grid grid-cols-1 md:grid-cols-2 gap-8 px-4 relative z-20">
+        <!-- Bagian Kiri (Daftar Produk) -->
+        <div class="bg-white p-4 sm:p-6 sm:border-l-4 sm:border-t-4 sm:border-b-4 relative z-20">
+            <h2 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-center">Daftar Produk</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-1 gap-3 sm:gap-4 ">
+                <div class="text-xs md:text-base cursor-pointer bg-green-800 text-white py-2 sm:py-3 px-4 sm:px-6 text-center hover:bg-green-600 transition" onclick="changeContent('Pupuk NPK 15', '/src/img/Brosur-Petro-ZA-Plus_page-0001.jpg')">Pupuk NPK 15</div>
+                <div class="text-xs md:text-base cursor-pointer bg-green-800 text-white py-2 sm:py-3 px-4 sm:px-6 text-center hover:bg-green-600 transition" onclick="changeContent('Pupuk NPK 16', '/src/img/Brosur-Petro-ZA-Plus_page-0002.jpg')">Pupuk NPK 16</div>
+                <div class="text-xs md:text-base cursor-pointer bg-green-800 text-white py-2 sm:py-3 px-4 sm:px-6 text-center hover:bg-green-600 transition" onclick="changeContent('Pupuk NPK 17', '/src/img/Brosur-Petro-ZA-Plus_page-0001.jpg')">Pupuk NPK 17</div>
+                <div class="text-xs md:text-base cursor-pointer bg-green-800 text-white py-2 sm:py-3 px-4 sm:px-6 text-center hover:bg-green-600 transition" onclick="changeContent('Pupuk NPK 18', '/src/img/Brosur-Petro-ZA-Plus_page-0002.jpg')">Pupuk NPK 18</div>
+                <div class="text-xs md:text-base cursor-pointer bg-green-800 text-white py-2 sm:py-3 px-4 sm:px-6 text-center hover:bg-green-600 transition" onclick="changeContent('Pupuk NPK 19', '/src/img/Brosur-Petro-ZA-Plus_page-0001.jpg')">Pupuk NPK 19</div>
             </div>
         </div>
+    
+        <!-- Bagian Kanan (Gambar Produk) -->
+        <div class="flex flex-col items-center bg-white p-4 sm:p-6 shadow-lg rounded-lg">
+            <h2 id="pupuk-title" class="text-xl sm:text-3xl font-bold mb-4">Pupuk NPK 15</h2>
+            <img id="pupuk-image" src="/src/img/Brosur-Petro-ZA-Plus_page-0001.jpg" alt="Pupuk NPK 15" class="w-full h-auto sm:h-full object-cover rounded-lg shadow-lg">
+        </div>
     </section>
+    
+    
+    
 
     <section class="max-w-screen mx-auto p-8 bg-gray-100">
         <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Keunggulan Produk Kami</h2>
@@ -360,7 +295,7 @@
         new WOW().init();
     </script>
 
-    
+
 
 </body>
 
