@@ -829,6 +829,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-10{
+  margin-top: 2.5rem;
+}
+
 .block{
   display: block;
 }
@@ -2121,6 +2125,10 @@ video {
     margin-top: 4rem;
   }
 
+  .sm\:flex{
+    display: flex;
+  }
+
   .sm\:h-12{
     height: 3rem;
   }
@@ -2494,6 +2502,11 @@ video {
     padding-right: 2.5rem;
   }
 
+  .md\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   .md\:px-20{
     padding-left: 5rem;
     padding-right: 5rem;
@@ -2502,11 +2515,6 @@ video {
   .md\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-
-  .md\:px-12{
-    padding-left: 3rem;
-    padding-right: 3rem;
   }
 
   .md\:pl-8{
@@ -2608,16 +2616,12 @@ video {
     gap: 1.75rem;
   }
 
-  .lg\:p-8{
-    padding: 2rem;
-  }
-
-  .lg\:p-12{
-    padding: 3rem;
-  }
-
   .lg\:p-16{
     padding: 4rem;
+  }
+
+  .lg\:p-8{
+    padding: 2rem;
   }
 
   .lg\:px-12{
