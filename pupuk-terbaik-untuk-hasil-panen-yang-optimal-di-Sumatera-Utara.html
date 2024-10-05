@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Tentang Kami - AGRITANIMAS, produsen pupuk berkualitas di Sumatera Utara. Temukan alasan kenapa harus memilih produk kami.">
+    <title>ARTIKEL | AGRITANIMAS</title>
+    <link href="/src/output.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+</head>
+
+<body class="font-sans antialiased bg-gray-100">
+
+    <div class="absolute top-0 left-0 w-full">
+        <nav class="fixed z-50 md:z-auto bg-gradient-to-b from-black via-gray-800/60 to-transparent md:static flex p-5 justify-between items-center w-full gap-5 overflow-hidden"
+            data-aos="zoom-y-out">
+            <!-- Hamburger Icon for toggling navbar -->
+            <label for="check-mobilenav" class="flex flex-col min-w-10 max-w-20 cursor-pointer md:hidden z-[999999]">
+                <input type="checkbox" id="check-mobilenav" class="peer hidden" />
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </label>
+
+            <!-- Off-screen Mobile Navbar -->
+            <div id="mobile-menu"
+                class="fixed top-0 left-0 w-full h-3/5 bg-custom-green text-white z-[9999] transform -translate-y-full transition-transform duration-300 ease-in-out">
+                <div class="flex flex-col items-center space-y-4 font-semibold pt-20 pb-4">
+                    <div class="relative group">
+                        <a href="index.html" class="font-semibold text-stone-100 text-xl duration-500">
+                            HOME
+                        </a>
+                        <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="about.html" class="font-semibold text-stone-100 text-xl duration-500">
+                            ABOUT US
+                        </a>
+                        <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="produk.html" class="font-semibold text-stone-100 text-xl duration-500">
+                            PRODUK
+                        </a>
+                        <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="brosur.html" class="font-semibold text-stone-100 text-xl duration-500">
+                            BROSUR
+                        </a>
+                        <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="artikel.html" class="font-semibold text-stone-100 text-xl duration-500">
+                            ARTIKEL
+                        </a>
+                        <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="kontak.html" class="font-semibold text-stone-100 text-xl duration-500">
+                            KONTAK
+                        </a>
+                        <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brand Logo -->
+            <div id="brand"
+                class="text-3xl font-bold font-montserrat text-stone-900 flex items-center transform transition duration-300 ease-in-out hover:scale-110 z-[9999]">
+                <a href="/" class="flex items-center">
+                    <img src="/src/img/logoagri.png" alt="PT AGRITANIMAS Logo"
+                        class="max-w-24 sm:max-w-32 shadow-lg ml-4" />
+                    <span class="sr-only">PT AGRITANIMAS</span>
+                </a>
+            </div>
+
+            <!-- Desktop Navigation Links -->
+            <ul class="hidden md:flex justify-start md:gap-5 lg:gap-7">
+                <li class="relative group">
+                    <a href="/" class="font-semibold text-stone-100 text-xl duration-500">HOME</a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100"></div>
+                </li>
+                <li class="relative group">
+                    <a href="about.html" class="font-semibold text-stone-100 text-xl duration-500">ABOUT US</a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100"></div>
+                </li>
+                <li class="relative group">
+                    <a href="produk.html" class="font-semibold text-stone-100 text-xl duration-500">PRODUK</a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100"></div>
+                </li>
+                <li class="relative group">
+                    <a href="brosur.html" class="font-semibold text-stone-100 text-xl duration-500">BROSUR</a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100"></div>
+                </li>
+                <li class="relative group">
+                    <a href="artikel.html" class="font-semibold text-stone-100 text-xl duration-500">ARTIKEL</a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100"></div>
+                </li>
+                <li class="relative group">
+                    <a href="kontak.html" class="font-semibold text-stone-100 text-xl duration-500">KONTAK</a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100"></div>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+    <script>
+        const menuCheckbox = document.getElementById('check-mobilenav');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // Listen for checkbox change to trigger the slide effect
+        menuCheckbox.addEventListener('change', function () {
+            if (this.checked) {
+                mobileMenu.classList.remove('-translate-y-full');
+                mobileMenu.classList.add('translate-y-0');
+            } else {
+                mobileMenu.classList.remove('translate-y-0');
+                mobileMenu.classList.add('-translate-y-full');
+            }
+        });
+    </script>
+    <section class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2 mt-28">
+            <div class="w-full max-h-96 overflow-hidden mb-8">
+                <img src="/src/img/petani1.jpeg" alt="Artikel Image" class="w-full h-full object-cover">
+            </div>
+
+            <h1 class="text-2xl sm:text-4xl font-bold text-gray-900 mb-4 text-center sm:text-left">
+                Pupuk Terbaik untuk Hasil Panen yang Optimal di Sumatera Utara
+            </h1>
+
+            <div class="flex flex-col sm:flex-row justify-between items-center sm:items-start mb-6 text-gray-500">
+                <p class="text-[10px] md:text-sm mb-2 sm:mb-0">
+                    Dipublikasikan pada: <span class="font-semibold">5 Agustus 2024</span>
+                </p>
+                <p class="text-[10px] md:text-sm">
+                    Penulis: <span class="font-semibold">Agung Pratama</span>
+                </p>
+            </div>
+
+            <div class="prose prose-lg max-w-none text-gray-700" id="section-2">
+                <p class="mb-6">
+                    Di Sumatera Utara, pupuk berkualitas merupakan kunci untuk mencapai hasil panen yang optimal.
+                    Sebagai produsen pupuk terpercaya
+                    selama lebih dari 15 tahun, kami AGRITANIMAS berkomitmen untuk memberikan produk pupuk terbaik yang membantu
+                    para petani meningkatkan produktivitas
+                    lahan mereka.
+                </p>
+                <p class="mb-6">
+                    Kami tidak hanya menyediakan pupuk yang berkualitas, tetapi juga melakukan edukasi kepada petani
+                    mengenai cara penggunaan pupuk yang tepat.
+                    Edukasi ini penting agar petani dapat memaksimalkan hasil panen dengan efisiensi yang tinggi. Selain
+                    itu, kami menyediakan layanan
+                    racikan pupuk khusus yang disesuaikan dengan kebutuhan tanah dan tanaman petani, menjamin
+                    keseimbangan nutrisi yang optimal.
+                </p>
+                <p class="mb-6">
+                    Dengan dukungan teknologi modern, kami terus berinovasi untuk menghasilkan produk pupuk yang ramah
+                    lingkungan dan efektif. Produk pupuk kami
+                    telah digunakan oleh ribuan petani di Sumatera Utara, memberikan dampak positif bagi pertanian dan
+                    perkebunan di wilayah ini.
+                </p>
+            </div>
+        </div>
+
+        <!-- Most Viewed Section (1/3) -->
+        <aside class="lg:col-span-1 mt-0 md:mt-56">
+            <hr class="border-0 h-[2px] bg-gray-300 my-4">
+            <h2 class="text-xl font-bold text-gray-900 mb-4">Most Viewed</h2>
+            <hr class="border-0 h-[2px] bg-gray-300 my-4">
+            <div class="mb-4">
+                <a href="detail-artikel.html" class="block">
+                    <div class="flex space-x-4 mb-4">
+                        <img src="/src/img/petani4.jpg" alt="Article 1" class="w-32 h-24 object-cover">
+                        <div>
+                            <h3 class="text-sm font-semibold">Pupuk Terbaik untuk Hasil Panen yang Optimal di Sumatera Utara</h3>
+                            <p class="text-xs text-gray-500">27 September 2024</p>
+                        </div>
+                    </div>
+                </a>
+                <hr class="border-0 h-[2px] bg-gray-300 my-4">
+            
+                <a href="detail-artikel.html" class="block">
+                    <div class="flex space-x-4 mb-4">
+                        <img src="/src/img/petani4.jpg" alt="Article 2" class="w-32 h-24 object-cover">
+                        <div>
+                            <h3 class="text-sm font-semibold">Apakah Pupuk Aman Untuk Sayuran? Yuk, Kita Cari Tahu</h3>
+                            <p class="text-xs text-gray-500">3 Oktober 2024</p>
+                        </div>
+                    </div>
+                </a>
+                <hr class="border-0 h-[2px] bg-gray-300 my-4">
+            
+                <a href="detail-artikel.html" class="block">
+                    <div class="flex space-x-4 mb-4">
+                        <img src="/src/img/petani4.jpg" alt="Article 3" class="w-32 h-24 object-cover">
+                        <div>
+                            <h3 class="text-sm font-semibold">Teknik Penyemprotan Pupuk Cair yang Efektif untuk Tanaman Padi</h3>
+                            <p class="text-xs text-gray-500">10 Sep 2024</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+        </aside>
+    </section>
+
+
+
+    <hr class="border-0 h-1 bg-gray-300 my-4">
+    <section class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
+        <hr class="w-12 h-1 bg-green-600 mb-2 mx-auto">
+        <h2 class="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-6 sm:mb-8">ARTIKEL LAINNYA</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4">
+
+            <div class="bg-white shadow-md rounded-lg" onclick="window.location.href='detail-artikel.html';">
+                <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
+                <p class="text-[10px] md:text-sm text-gray-500 pl-2">5 Agustus 2020</p>
+                <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                    berita terbaru ini bikin heboh rakyat yang membaca
+                </h3>
+                <hr class="mb-0 md:mb-2">
+                <div class="flex items-center p-2 mb-0 md:mb-4">
+                    <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                    <div>
+                        <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
+                        <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg" onclick="window.location.href='detail-artikel.html';">
+                <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
+                <p class="text-[10px] md:text-sm text-gray-500 pl-2">5 Agustus 2020</p>
+                <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                    berita terbaru ini bikin heboh rakyat yang membaca
+                </h3>
+                <hr class="mb-0 md:mb-2">
+                <div class="flex items-center p-2 mb-0 md:mb-4">
+                    <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                    <div>
+                        <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
+                        <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg" onclick="window.location.href='detail-artikel.html';">
+                <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
+                <p class="text-[10px] md:text-sm text-gray-500 pl-2">5 Agustus 2020</p>
+                <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                    berita terbaru ini bikin heboh rakyat yang membaca
+                </h3>
+                <hr class="mb-0 md:mb-2">
+                <div class="flex items-center p-2 mb-0 md:mb-4">
+                    <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                    <div>
+                        <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
+                        <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg" onclick="window.location.href='detail-artikel.html';">
+                <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
+                <p class="text-[10px] md:text-sm text-gray-500 pl-2">5 Agustus 2020</p>
+                <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                    berita terbaru ini bikin heboh rakyat yang membaca
+                </h3>
+                <hr class="mb-0 md:mb-2">
+                <div class="flex items-center p-2 mb-0 md:mb-4">
+                    <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                    <div>
+                        <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
+                        <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg" onclick="window.location.href='detail-artikel.html';">
+                <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
+                <p class="text-[10px] md:text-sm text-gray-500 pl-2">5 Agustus 2020</p>
+                <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                    berita terbaru ini bikin heboh rakyat yang membaca
+                </h3>
+                <hr class="mb-0 md:mb-2">
+                <div class="flex items-center p-2 mb-0 md:mb-4">
+                    <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                    <div>
+                        <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
+                        <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden md:block bg-white shadow-md rounded-lg"
+                onclick="window.location.href='detail-artikel.html';">
+                <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
+                <p class="text-[10px] md:text-sm text-gray-500 pl-2">5 Agustus 2020</p>
+                <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                    berita terbaru ini bikin heboh rakyat yang membaca
+                </h3>
+                <hr class="mb-0 md:mb-2">
+                <div class="flex items-center p-2 mb-0 md:mb-4">
+                    <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                    <div>
+                        <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
+                        <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden md:block bg-white shadow-md rounded-lg"
+                onclick="window.location.href='detail-artikel.html';">
+                <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
+                <p class="text-[10px] md:text-sm text-gray-500 pl-2">5 Agustus 2020</p>
+                <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                    berita terbaru ini bikin heboh rakyat yang membaca
+                </h3>
+                <hr class="mb-0 md:mb-2">
+                <div class="flex items-center p-2 mb-0 md:mb-4">
+                    <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                    <div>
+                        <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
+                        <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden md:block bg-white shadow-md rounded-lg"
+                onclick="window.location.href='detail-artikel.html';">
+                <img src="src/img/petani3.jpeg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
+                <p class="text-[10px] md:text-sm text-gray-500 pl-2">5 Agustus 2020</p>
+                <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">
+                    berita terbaru ini bikin heboh rakyat yang membaca
+                </h3>
+                <hr class="mb-0 md:mb-2">
+                <div class="flex items-center p-2 mb-0 md:mb-4">
+                    <img src="/src/img/avavava.jpeg" alt="Author" class="w-6 md:w-10 h-6 md:h-10 rounded-full mr-2">
+                    <div>
+                        <p class="text-[6px] md:text-xs font-bold text-gray-900">Agung Pratama</p>
+                        <p class="text-[6px] md:text-xs text-gray-500">AUTHOR</p>
+                    </div>
+                </div>
+            </div>
+            <a href="artikel.html"
+                class="block bg-greeno shadow-md rounded-lg flex flex-col justify-center items-center p-4 cursor-pointer hover hover:bg-custom-green">
+                <i class="fas fa-arrow-right text-5xl text-white mb-4 bounce-right-infinite"></i>
+                <h3 class="text-xs md:text-lg font-bold text-white text-center">Lihat Semua Artikel</h3>
+            </a>
+        </div>
+    </section>
+
+
+    <hr class="border-0 h-1 bg-gray-300 my-4">
+
+
+
+
+
+    <hr class="h-2">
+
+    <footer class="bg-custom-green pb-4 pt-8 text-white mt-8">
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
+            <div class="text-left hidden md:block">
+                <h3 class="font-bold text-lg md:text-2xl text-white mb-4">SITEMAP</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li><a href="/" class="hover:text-green-400 transition duration-300">HOME</a></li>
+                    <li><a href="about.html" class="hover:text-green-400 transition duration-300">ABOUT US</a></li>
+                    <li><a href="produk.html" class="hover:text-green-400 transition duration-300">PRODUK</a></li>
+                    <li><a href="brosur.html" class="hover:text-green-400 transition duration-300">BROWSUR</a></li>
+                    <li><a href="artikel.html" class="hover:text-green-400 transition duration-300">ARTIKEL</a></li>
+                    <li><a href="kontak.html" class="hover:text-green-400 transition duration-300">KONTAK</a></li>
+                </ul>
+            </div>
+            <div class="text-center flex flex-col items-center">
+                <div class="w-60 h-40 rounded-full flex items-center justify-center mx-auto md:mx-0">
+                    <img src="/src/img/logoagri.png" alt="Logo" class="w-60 h-60 object-contain">
+                </div>
+            </div>
+            <div class="text-center md:text-right">
+                <h3 class="font-bold text-lg md:text-2xl text-white mb-4">HUBUNGI KAMI</h3>
+                <a href="tel:+6282290909090" class="text-gray-300 text-sm mb-2 flex justify-center md:justify-end">
+                    <i class="fas fa-phone mr-2"></i>
+                    +62 822 9090 9090
+                </a>
+                <a href="mailto:agritanimas@gmail.com"
+                    class="text-gray-300 text-sm mb-8 flex justify-center md:justify-end">
+                    <i class="fas fa-envelope mr-2"></i>
+                    agritanimas@gmail.com
+                </a>
+            </div>
+        </div>
+        <div class="flex justify-center space-x-6">
+            <a href="https://www.instagram.com" target="_blank"
+                class="text-gray-100 hover:text-pink-500 transition transform hover:scale-110">
+                <i class="fab fa-instagram text-xl sm:text-3xl"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank"
+                class="text-gray-100 hover:text-blue-500 transition transform hover:scale-110">
+                <i class="fab fa-facebook text-xl sm:text-3xl"></i>
+            </a>
+            <a href="https://www.tiktok.com" target="_blank"
+                class="text-gray-100 hover:text-black transition transform hover:scale-110">
+                <i class="fab fa-tiktok text-xl sm:text-3xl"></i>
+            </a>
+        </div>
+
+
+        <div class="text-center text-gray-100 mt-4 border-t border-gray-100 pt-4">
+            <p class="text-xs md:text-sm">Made with passion. Copyright © PT AGRITANIMAS 2024</p>
+        </div>
+    </footer>
+    <div id="scrollTopIcon"
+        class="fixed bottom-4 left-4 flex flex-col items-start z-[999999999] transition-opacity duration-500 opacity-0 transform translate-y-4">
+        <button id="scrollTopButton"
+            class="bg-blue-400 hover:bg-blue-500 text-white p-1 rounded-full shadow-lg focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 200"
+                class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14">
+                <g fill="none" stroke="white" stroke-width="16" stroke-linecap="round">
+                    <path d="M20 80 L50 50 L80 80" />
+                    <path d="M20 120 L50 90 L80 120" />
+                    <path d="M20 160 L50 130 L80 160" />
+                </g>
+            </svg>
+        </button>
+
+    </div>
+
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var section2 = document.getElementById('section-2');
+            var scrollTopIcon = document.getElementById('scrollTopIcon');
+            var whatsappIcon = document.getElementById('whatsappIcon');
+
+            var section2Start = section2.offsetTop;
+            var section2Half = section2Start + (section2.offsetHeight / 2);
+
+            var scrollPos = window.scrollY + window.innerHeight;
+
+            if (scrollPos > section2Half) {
+                scrollTopIcon.classList.remove('opacity-0', 'translate-y-4');
+                whatsappIcon.classList.remove('opacity-0', 'translate-y-4');
+            } else {
+                scrollTopIcon.classList.add('opacity-0', 'translate-y-4');
+                whatsappIcon.classList.add('opacity-0', 'translate-y-4');
+            }
+        });
+
+        document.getElementById('scrollTopButton').addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+    </script>
+
+    <div class="fixed bottom-4 right-4 flex flex-col items-end z-[999999999] transition-opacity duration-500 opacity-0 transform translate-y-4"
+        id="whatsappIcon">
+        <div id="whatsappForm"
+            class="hidden ml-4 mb-2 bg-white p-4 rounded-lg shadow-lg max-w-xs md:max-w-64 opacity-0 transform transition-all duration-300">
+            <h2 class="mb-4 font-semibold text-md">Halo, Ada yang bisa kami bantu?</h2>
+            <textarea id="message"
+                class="p-2 border border-gray-300 rounded resize-none overflow-auto no-scrollbar sm:w-full sm:h-32 md:w-56 md:h-40"
+                placeholder="Tulis pesan Anda..."></textarea>
+            <button id="sendButton"
+                class="mt-2 w-full bg-green-500 hover:bg-green-600 text-white p-2 rounded sm:py-1">Kirim</button>
+        </div>
+        <button id="whatsappButton"
+            class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg focus:outline-none sm:p-3">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48"
+                class="sm:w-12 sm:h-12 md:w-16 md:h-16">
+                <path fill="#fff"
+                    d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z">
+                </path>
+                <path fill="#fff"
+                    d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z">
+                </path>
+                <path fill="#cfd8dc"
+                    d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z">
+                </path>
+                <path fill="#40c351"
+                    d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z">
+                </path>
+                <path fill="#fff" fill-rule="evenodd"
+                    d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </button>
+    </div>
+
+    <script>
+        document.getElementById('menuToggle').addEventListener('click', function () {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        });
+
+        document.getElementById('whatsappButton').addEventListener('click', function () {
+            var form = document.getElementById('whatsappForm');
+            if (form.classList.contains('hidden')) {
+                form.classList.remove('hidden');
+                setTimeout(function () {
+                    form.classList.remove('opacity-0', 'transform', 'translate-y-4');
+                }, 10);
+            } else {
+                form.classList.add('opacity-0', 'transform', 'translate-y-4');
+                setTimeout(function () {
+                    form.classList.add('hidden');
+                }, 300);
+            }
+        });
+
+        document.getElementById('sendButton').addEventListener('click', function () {
+            var message = document.getElementById('message').value;
+            if (message.trim() !== '') {
+                var whatsappURL = 'https://api.whatsapp.com/send?phone=6285260460580&text=' + encodeURIComponent(message);
+                window.open(whatsappURL, '_blank');
+            } else {
+                alert('Pesan tidak boleh kosong');
+            }
+        });
+
+
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleButton = document.getElementById('mobile-menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuLinks = mobileMenu.querySelectorAll('a');
+
+            function toggleMenu() {
+                mobileMenu.classList.toggle('translate-x-full');
+                mobileMenu.classList.toggle('translate-x-0');
+
+                if (toggleButton.classList.contains('text-white')) {
+                    toggleButton.classList.remove('text-white');
+                    toggleButton.classList.add('text-black');
+                } else {
+                    toggleButton.classList.remove('text-black');
+                    toggleButton.classList.add('text-white');
+                }
+            }
+
+            toggleButton.addEventListener('click', toggleMenu);
+
+            menuLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    toggleMenu();
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
