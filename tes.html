@@ -4,38 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Produk unggulan dari PT AGRITANIMAS meliputi berbagai jenis pupuk yang berkualitas tinggi untuk kebutuhan tanaman.">
-
-    <meta name="keywords" content="pupuk, pupuk medan, npk, pupuk tanaman, produk pupuk, agritanimas, pertanian">
-    <meta name="author" content="PT AGRITANIMAS">
-
-    <title>BROSUR - PT AGRITANIMAS</title>
-
-    <link href="/src/output.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-
-
+    <title>Professional Review - Coffee Talk Episode 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/output.css">
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
-
-    <style>
-        .header-bg {
-            background: url('/src/img/sawah.jpg') center/cover no-repeat;
-            height: 50vh;
-        }
-
-        .overlay {
-            background-color: rgba(0, 0, 0, 0.5);
-            height: 50vh;
+        body {
+            font-family: 'Inter', sans-serif;
         }
     </style>
 
@@ -45,17 +19,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 
-    <script>
-        function changeContent(pupukName, imgSrc) {
-            document.getElementById('pupuk-title').innerText = pupukName;
-            document.getElementById('pupuk-image').src = imgSrc;
-        }
-    </script>
 </head>
 
-<body class="font-sans bg-white">
+<body class="bg-gray-50 text-gray-800">
 
-    <div class="absolute top-0 left-0 w-full h-full">
+    <div class="absolute top-0 left-0 w-full">
         <nav class="fixed z-50 md:z-auto bg-custom-green md:static flex p-5 justify-between items-center w-full gap-5 overflow-hidden"
             data-aos="zoom-y-out">
             <!-- Hamburger Icon for toggling navbar -->
@@ -126,7 +94,7 @@
             </div>
 
             <!-- Desktop Navigation Links -->
-            <ul class="hidden md:flex justify-start md:gap-5 lg:gap-7 z-[999999]">
+            <ul class="hidden md:flex justify-start md:gap-5 lg:gap-7">
                 <li class="relative group">
                     <a href="/" class="font-semibold text-stone-100 text-xl duration-500">HOME</a>
                     <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100"></div>
@@ -159,7 +127,6 @@
         const menuCheckbox = document.getElementById('check-mobilenav');
         const mobileMenu = document.getElementById('mobile-menu');
 
-        // Listen for checkbox change to trigger the slide effect
         menuCheckbox.addEventListener('change', function () {
             if (this.checked) {
                 mobileMenu.classList.remove('-translate-y-full');
@@ -170,73 +137,161 @@
             }
         });
     </script>
-    <section class="header-bg relative flex justify-center items-center text-center text-white z-10">
-        <div class="overlay absolute inset-0 z-0"></div> <!-- Pastikan overlay ini tidak menutupi elemen lain -->
-        <div class="relative z-10 mt-20">
-            <h1 class="text-xl md:text-5xl font-bold animate__animated animate__fadeInDown">Produk Unggulan Kami</h1>
-            <p class="mt-4 text-sm md:text-xl animate__animated animate__fadeInUp">Temukan berbagai pupuk berkualitas yang dirancang untuk meningkatkan hasil tanaman Anda.</p>
+
+    <section class="mt-20">
+        <div class="container mx-auto px-6 py-12 flex space-x-8">
+            <main class="w-2/3 bg-white p-8 rounded-lg shadow-lg">
+                <div class="mb-8">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">Berapakah Takaran Pupuk yang Sesuai Untuk Tanaman
+                        Sawit?
+                    </h2>
+                    <div class="flex items-center text-sm text-gray-500 mb-4">
+                        <p>By <span class="font-semibold">Agritanimas Farmer</span> - 27 Oktober 2024</p>
+                        <span class="ml-4 flex items-center space-x-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" class="w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 17h5l-1.405 1.405C17.57 19.535 16.3 20 15 20s-2.57-.465-3.595-1.595C10.465 17.57 10 16.3 10 15s.465-2.57 1.405-3.595L15 17zM15 7h.01M8 17h5m-5-4h5m-5-4h5" />
+                            </svg>
+                            <span>283 views</span>
+                        </span>
+                    </div>
+                    <img src="/src/img/kebun3.jpg" alt="Coffee Talk Screenshot" class="w-full h-auto rounded-lg mb-6">
+                </div>
+
+                <!-- Article Body -->
+                <div class="prose max-w-none space-y-4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit distinctio repudiandae sapiente
+                        perspiciatis impedit cupiditate?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquam mauris vitae arcu
+                        facilisis...
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, numquam! Praesentium dolorem
+                        suscipit voluptatem recusandae perferendis quasi delectus minima consectetur, molestiae
+                        inventore, autem commodi aliquam. Harum sequi quisquam eligendi repudiandae officia dolor
+                        ratione possimus! Placeat iure mollitia quis, vero molestias necessitatibus hic ea qui, nisi
+                        sapiente nulla explicabo culpa! Consectetur eius praesentium repellat dignissimos corrupti sint
+                        itaque perspiciatis ullam, soluta laborum facere quia inventore, perferendis nihil excepturi
+                        exercitationem. In rem eos deleniti! Quis pariatur excepturi, voluptatum dolore minima debitis
+                        ipsam consequatur tempore corrupti hic magni quibusdam consequuntur officiis, impedit
+                        repudiandae quasi, animi aliquam ducimus? Quidem, numquam? Iure facere reprehenderit culpa.
+                    </p>
+                </div>
+            </main>
+
+            <!-- Sidebar -->
+            <aside class="w-1/3 space-y-8">
+                <!-- Update Section -->
+                <div class="bg-white p-6 rounded-lg shadow-lg space-y-6">
+                    <!-- Update Section -->
+                    <div>
+                        <h3 class="font-bold text-xl text-green-500 mb-4 uppercase tracking-wide flex items-center">
+                            Update
+                            <span class="ml-4 flex-1 border-t-4 border-green-500"></span>
+                        </h3>
+                        <img src="/src/img/sayur.jpeg" alt="Mengapa Tangkai Tanaman Harus Dipangkas?"
+                            class="rounded-md mb-4">
+                        <p class="text-gray-700 font-semibold text-lg">Mengapa tangkai tanaman harus dipangkas?</p>
+                        <p class="text-gray-600 text-sm mt-2">Pemangkasan tangkai penting untuk menjaga kesehatan
+                            tanaman, mendorong pertumbuhan, dan memastikan bunga yang lebih lebat.</p>
+                    </div>
+
+
+
+                    <!-- List of Related Items -->
+                    <div>
+                        <!-- First item -->
+                        <a href="#" class="flex items-center space-x-4 hover:bg-gray-100 p-2 rounded-lg">
+                            <img src="/src/img/hutan.jpeg" alt="Kenali Tanaman Hortikultura"
+                                class="w-16 h-16 rounded-md object-cover">
+                            <div>
+                                <p class="text-gray-800 font-semibold">Kenali Tanaman Hortikultura yang Populer di
+                                    Indonesia</p>
+                                <p class="text-sm text-gray-500">6 Oktober 2024</p>
+                            </div>
+                        </a>
+
+                        <!-- Second item -->
+                        <a href="#" class="flex items-center space-x-4 hover:bg-gray-100 p-2 rounded-lg">
+                            <img src="/src/img/hutan.jpeg" alt="Teknik Pemupukan Optimal"
+                                class="w-16 h-16 rounded-md object-cover">
+                            <div>
+                                <p class="text-gray-800 font-semibold">Teknik Pemupukan Optimal untuk Hasil Panen Lebih
+                                    Baik</p>
+                                <p class="text-sm text-gray-500">5 Oktober 2024</p>
+                            </div>
+                        </a>
+
+                        <!-- Third item -->
+                        <a href="#" class="flex items-center space-x-4 hover:bg-gray-100 p-2 rounded-lg">
+                            <img src="/src/img/hutan.jpeg" alt="Sistem Irigasi Tetes"
+                                class="w-16 h-16 rounded-md object-cover">
+                            <div>
+                                <p class="text-gray-800 font-semibold">Manfaat Sistem Irigasi Tetes dalam Pertanian
+                                    Modern</p>
+                                <p class="text-sm text-gray-500">5 Oktober 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg space-y-6 sticky top-4">
+                    <!-- Update Section -->
+                    <div>
+                        <h3 class="font-bold text-xl text-green-500 mb-4 uppercase tracking-wide flex items-center">
+                            Wajib Baca!
+                            <span class="ml-4 flex-1 border-t-4 border-green-500"></span>
+                        </h3>
+                        <img src="/src/img/sayur.jpeg" alt="Mengapa Tangkai Tanaman Harus Dipangkas?"
+                            class="rounded-md mb-4">
+                        <p class="text-gray-700 font-semibold text-lg">Mengapa tangkai tanaman harus dipangkas?</p>
+                        <p class="text-gray-600 text-sm mt-2">Pemangkasan tangkai penting untuk menjaga kesehatan
+                            tanaman, mendorong pertumbuhan, dan memastikan bunga yang lebih lebat.</p>
+                    </div>
+
+                    <!-- List of Related Items -->
+                    <div>
+                        <a href="#" class="flex items-center space-x-4 hover:bg-gray-100 p-2 rounded-lg">
+                            <img src="/src/img/hutan.jpeg" alt="Kenali Tanaman Hortikultura"
+                                class="w-16 h-16 rounded-md object-cover">
+                            <div>
+                                <p class="text-gray-800 font-semibold">Kenali Tanaman Hortikultura yang Populer di
+                                    Indonesia</p>
+                                <p class="text-sm text-gray-500">6 Oktober 2024</p>
+                            </div>
+                        </a>
+                        <a href="#" class="flex items-center space-x-4 hover:bg-gray-100 p-2 rounded-lg">
+                            <img src="/src/img/hutan.jpeg" alt="Teknik Pemupukan Optimal"
+                                class="w-16 h-16 rounded-md object-cover">
+                            <div>
+                                <p class="text-gray-800 font-semibold">Teknik Pemupukan Optimal untuk Hasil Panen Lebih
+                                    Baik</p>
+                                <p class="text-sm text-gray-500">5 Oktober 2024</p>
+                            </div>
+                        </a>
+                        <a href="#" class="flex items-center space-x-4 hover:bg-gray-100 p-2 rounded-lg">
+                            <img src="/src/img/hutan.jpeg" alt="Sistem Irigasi Tetes"
+                                class="w-16 h-16 rounded-md object-cover">
+                            <div>
+                                <p class="text-gray-800 font-semibold">Manfaat Sistem Irigasi Tetes dalam Pertanian
+                                    Modern</p>
+                                <p class="text-sm text-gray-500">5 Oktober 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Recommended Section -->
+
+            </aside>
         </div>
     </section>
-    
-    <section class="container mx-auto my-12 grid grid-cols-1 md:grid-cols-2 gap-8 px-4 relative z-20">
-        <!-- Bagian Kiri (Daftar Produk) -->
-        <div class="bg-white p-4 sm:p-6 sm:border-l-4 sm:border-t-4 sm:border-b-4 relative z-20">
-            <h2 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-center">Daftar Produk</h2>
-            <div class="grid grid-cols-2 sm:grid-cols-1 gap-3 sm:gap-4 ">
-                <div class="text-xs md:text-base cursor-pointer bg-green-800 text-white py-2 sm:py-3 px-4 sm:px-6 text-center hover:bg-green-600 transition" onclick="changeContent('Pupuk NPK 15', '/src/img/Brosur-Petro-ZA-Plus_page-0001.jpg')">Pupuk NPK 15</div>
-                <div class="text-xs md:text-base cursor-pointer bg-green-800 text-white py-2 sm:py-3 px-4 sm:px-6 text-center hover:bg-green-600 transition" onclick="changeContent('Pupuk NPK 16', '/src/img/Brosur-Petro-ZA-Plus_page-0002.jpg')">Pupuk NPK 16</div>
-                <div class="text-xs md:text-base cursor-pointer bg-green-800 text-white py-2 sm:py-3 px-4 sm:px-6 text-center hover:bg-green-600 transition" onclick="changeContent('Pupuk NPK 17', '/src/img/Brosur-Petro-ZA-Plus_page-0001.jpg')">Pupuk NPK 17</div>
-                <div class="text-xs md:text-base cursor-pointer bg-green-800 text-white py-2 sm:py-3 px-4 sm:px-6 text-center hover:bg-green-600 transition" onclick="changeContent('Pupuk NPK 18', '/src/img/Brosur-Petro-ZA-Plus_page-0002.jpg')">Pupuk NPK 18</div>
-                <div class="text-xs md:text-base cursor-pointer bg-green-800 text-white py-2 sm:py-3 px-4 sm:px-6 text-center hover:bg-green-600 transition" onclick="changeContent('Pupuk NPK 19', '/src/img/Brosur-Petro-ZA-Plus_page-0001.jpg')">Pupuk NPK 19</div>
-            </div>
-        </div>
-    
-        <!-- Bagian Kanan (Gambar Produk) -->
-        <div class="flex flex-col items-center bg-white p-4 sm:p-6 shadow-lg rounded-lg">
-            <h2 id="pupuk-title" class="text-xl sm:text-3xl font-bold mb-4">Pupuk NPK 15</h2>
-            <img id="pupuk-image" src="/src/img/Brosur-Petro-ZA-Plus_page-0001.jpg" alt="Pupuk NPK 15" class="w-full h-auto sm:h-full object-cover rounded-lg shadow-lg">
-        </div>
-    </section>
-    
-    
-    
 
-    <section class="max-w-screen mx-auto p-8 bg-gray-100">
-        <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Keunggulan Produk Kami</h2>
-        <div class="grid grid-cols-3 gap-2 md:gap-8">
-            <div
-                class="text-center p-4 bg-white shadow-lg rounded-lg transform hover:scale-105 transition duration-300">
-                <div class="mb-4">
-                    <i class="fas fa-leaf text-4xl sm:text-5xl md:text-6xl mb-4"></i>
-                </div>
-                <h3 class="text-xs md:text-xl font-bold text-gray-900">Ramah Lingkungan</h3>
-                <p class="text-gray-700 text-[8px] md:text-base">Semua produk kami diformulasikan untuk tidak merusak
-                    lingkungan.</p>
-            </div>
-            <div
-                class="text-center p-4 bg-white shadow-lg rounded-lg transform hover:scale-105 transition duration-300">
-                <div class="mb-4">
-                    <i class="fas fa-coins text-4xl sm:text-5xl md:text-6xl mb-4"></i>
-                </div>
-                <h3 class="text-xs md:text-xl font-bold text-gray-900">Harga Terjangkau</h3>
-                <p class="text-gray-700 text-[8px] md:text-base">Produk kami dapat diakses dengan harga yang terjangkau
-                    oleh para petani.</p>
-            </div>
-            <div
-                class="text-center p-4 bg-white shadow-lg rounded-lg transform hover:scale-105 transition duration-300">
-                <div class="mb-4">
-                    <i class="fas fa-chart-line text-4xl sm:text-5xl md:text-6xl mb-4"></i>
-                </div>
-                <h3 class="text-xs md:text-xl font-bold text-gray-900">Hasil Maksimal</h3>
-                <p class="text-gray-700 text-[8px] md:text-base">Pupuk kami mampu memberikan hasil panen yang lebih
-                    berkualitas.</p>
-            </div>
-        </div>
-    </section>
-
-    <hr class="h-2">
-
-    <footer class="bg-custom-green pb-4 pt-8 text-white mt-8">
+    <footer class="bg-custom-green pb-4 pt-8 text-white ">
 
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
             <div class="text-left hidden md:block">
@@ -288,14 +343,6 @@
             <p class="text-xs md:text-sm">Made with passion. Copyright © PT AGRITANIMAS 2024</p>
         </div>
     </footer>
-
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        new WOW().init();
-    </script>
-
-
 
 </body>
 
