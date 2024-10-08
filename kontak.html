@@ -26,7 +26,7 @@
             background: url('/src/img/kontak.jpg') center/cover no-repeat;
             height: 300px;
             position: relative;
-            z-index: 1;
+            z-index: -1;
         }
 
         .contact-bg::after {
@@ -44,16 +44,6 @@
             color: white;
             top: 50%;
             transform: translateY(-50%);
-        }
-
-        .contact-heading h1 {
-            font-size: 48px;
-            font-weight: bold;
-        }
-
-        .contact-heading p {
-            font-size: 18px;
-            font-weight: 300;
         }
 
         .contact-card {
@@ -179,7 +169,7 @@
                 </a>
             </div>
 
-            <ul class="hidden md:flex justify-start md:gap-5 lg:gap-7">
+            <ul class="hidden md:flex justify-start md:gap-5 lg:gap-7 z-10">
                 <li class="relative group">
                     <a href="/" class="font-semibold text-stone-100 text-xl duration-500">HOME</a>
                     <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100"></div>
@@ -222,10 +212,11 @@
             }
         });
     </script>
-    <section class="contact-bg">
-        <div class="contact-heading">
-            <h1>Kontak Tim Kami</h1>
-            <p>Temui tim profesional kami yang siap membantu Anda</p>
+    <section class="contact-bg relative flex justify-center items-center text-center text-white mt-8 md:mt-20">
+        <div class="overlay absolute inset-0"></div>
+        <div class="relative z-10 ">
+            <h1 class="text-2xl md:text-5xl font-bold animate__animated animate__fadeInDown">Kontak Tim Kami</h1>
+            <p class=" text-sm  md:text-xl animate__animated animate__fadeInUp p-3">Hubungi tim profesional kami disini!!</p>
         </div>
     </section>
 

@@ -31,6 +31,7 @@
         .header-bg {
             background: url('/src/img/sawah.jpg') center/cover no-repeat;
             height: 50vh;
+            z-index: -1;
         }
 
         .overlay {
@@ -170,17 +171,18 @@
             }
         });
     </script>
-    <section class="header-bg relative flex justify-center items-center text-center text-white z-10">
+    <section class="header-bg relative flex justify-center items-center text-center text-white z-10 mt-8 md:mt-20">
         <div class="overlay absolute inset-0 z-0"></div> <!-- Pastikan overlay ini tidak menutupi elemen lain -->
-        <div class="relative z-10 mt-20">
-            <h1 class="text-xl md:text-5xl font-bold animate__animated animate__fadeInDown">Produk Unggulan Kami</h1>
-            <p class="mt-4 text-sm md:text-xl animate__animated animate__fadeInUp">Temukan berbagai pupuk berkualitas yang dirancang untuk meningkatkan hasil tanaman Anda.</p>
+        <div class="relative z-10 mt-4">
+            <h1 class="text-xl md:text-5xl font-bold animate__animated animate__fadeInDown">Subur Bersama Agritanimas</h1>
+            <p class="mt-4 text-sm md:text-xl animate__animated animate__fadeInUp">Temukan nutrisi tepat dengan pupuk berkualitas yang dirancang khusus untuk meningkatkan hasil tanaman anda.</p>
         </div>
     </section>
     
-    <section class="container mx-auto my-12 grid grid-cols-1 md:grid-cols-2 gap-8 px-4 relative z-20">
+    <section class="container mx-auto my-4 md:my-12 grid grid-cols-1 md:grid-cols-3 gap-8 px-4 relative z-20">
         <!-- Bagian Kiri (Daftar Produk) -->
-        <div class="bg-white p-4 sm:p-6 sm:border-l-4 sm:border-t-4 sm:border-b-4 relative z-20">
+        <div class="bg-white p-4 sm:p-6 sm:border-l-4 sm:border-t-4 sm:border-b-4 relative z-20 col-span-1">
+            <hr class="w-12 h-1 bg-green-600 mb-2 mx-auto ">
             <h2 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-center">Daftar Produk</h2>
             <div class="grid grid-cols-2 sm:grid-cols-1 gap-3 sm:gap-4 ">
                 <div class="text-xs md:text-base cursor-pointer bg-green-800 text-white py-2 sm:py-3 px-4 sm:px-6 text-center hover:bg-green-600 transition" onclick="changeContent('Pupuk NPK 15', '/src/img/Brosur-Petro-ZA-Plus_page-0001.jpg')">Pupuk NPK 15</div>
@@ -192,7 +194,7 @@
         </div>
     
         <!-- Bagian Kanan (Gambar Produk) -->
-        <div class="flex flex-col items-center bg-white p-4 sm:p-6 shadow-lg rounded-lg">
+        <div class="flex flex-col items-center bg-white p-2 sm:p-6  rounded-lg col-span-2">
             <h2 id="pupuk-title" class="text-xl sm:text-3xl font-bold mb-4">Pupuk NPK 15</h2>
             <img id="pupuk-image" src="/src/img/Brosur-Petro-ZA-Plus_page-0001.jpg" alt="Pupuk NPK 15" class="w-full h-auto sm:h-full object-cover rounded-lg shadow-lg">
         </div>
@@ -201,16 +203,16 @@
     
     
 
-    <section class="max-w-screen mx-auto p-8 bg-gray-100">
-        <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Keunggulan Produk Kami</h2>
-        <div class="grid grid-cols-3 gap-2 md:gap-8">
+    <section class="max-w-screen mx-auto p-2 md:p-8 bg-gray-100">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-8 mt-8">Keunggulan Produk Kami</h2>
+        <div class="grid grid-cols-3 gap-2 md:gap-12">
             <div
                 class="text-center p-4 bg-white shadow-lg rounded-lg transform hover:scale-105 transition duration-300">
                 <div class="mb-4">
                     <i class="fas fa-leaf text-4xl sm:text-5xl md:text-6xl mb-4"></i>
                 </div>
-                <h3 class="text-xs md:text-xl font-bold text-gray-900">Ramah Lingkungan</h3>
-                <p class="text-gray-700 text-[8px] md:text-base">Semua produk kami diformulasikan untuk tidak merusak
+                <h3 class="text-xs md:text-xl font-bold text-gray-900 mb-2">Ramah Lingkungan</h3>
+                <p class="text-gray-700 text-[7px] md:text-base p-0 md:p-2">Semua produk kami diformulasikan untuk tidak merusak
                     lingkungan.</p>
             </div>
             <div
@@ -218,8 +220,8 @@
                 <div class="mb-4">
                     <i class="fas fa-coins text-4xl sm:text-5xl md:text-6xl mb-4"></i>
                 </div>
-                <h3 class="text-xs md:text-xl font-bold text-gray-900">Harga Terjangkau</h3>
-                <p class="text-gray-700 text-[8px] md:text-base">Produk kami dapat diakses dengan harga yang terjangkau
+                <h3 class="text-xs md:text-xl font-bold text-gray-900 mb-2">Harga Terjangkau</h3>
+                <p class="text-gray-700 text-[7px] md:text-base p-0  md:p-2">Produk kami dapat diakses dengan harga yang terjangkau
                     oleh para petani.</p>
             </div>
             <div
@@ -227,16 +229,14 @@
                 <div class="mb-4">
                     <i class="fas fa-chart-line text-4xl sm:text-5xl md:text-6xl mb-4"></i>
                 </div>
-                <h3 class="text-xs md:text-xl font-bold text-gray-900">Hasil Maksimal</h3>
-                <p class="text-gray-700 text-[8px] md:text-base">Pupuk kami mampu memberikan hasil panen yang lebih
+                <h3 class="text-xs md:text-xl font-bold text-gray-900 mb-2">Hasil Maksimal</h3>
+                <p class="text-gray-700 text-[7px] md:text-base p-0 md:p-2">Pupuk kami mampu memberikan hasil panen yang lebih
                     berkualitas.</p>
             </div>
         </div>
     </section>
 
-    <hr class="h-2">
-
-    <footer class="bg-custom-green pb-4 pt-8 text-white mt-8">
+    <footer class="bg-custom-green pb-4 pt-8 text-white">
 
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
             <div class="text-left hidden md:block">
