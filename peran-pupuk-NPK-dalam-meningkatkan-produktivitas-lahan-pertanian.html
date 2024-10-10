@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peran Pupuk NPK Dalam Meningkatkan Produktivitas Lahan Pertanian</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/output.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="absolute top-0 left-0 w-full">
+        <nav class="fixed z-50 md:z-auto bg-custom-green md:static flex p-5 justify-between items-center w-full gap-5 overflow-hidden"
+            data-aos="zoom-y-out">
+            <!-- Hamburger Icon for toggling navbar -->
+            <label for="check-mobilenav" class="flex flex-col min-w-10 max-w-20 cursor-pointer md:hidden z-[999999]">
+                <input type="checkbox" id="check-mobilenav" class="peer hidden" />
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </label>
+
+            <!-- Off-screen Mobile Navbar -->
+            <div id="mobile-menu"
+                class="fixed top-0 left-0 w-full h-3/5 bg-custom-green text-white z-[9999] transform -translate-y-full transition-transform duration-300 ease-in-out">
+                <div class="flex flex-col items-center space-y-4 font-semibold pt-20 pb-4">
+                    <div class="relative group">
+                        <a href="index.html" class="font-semibold text-stone-100 text-xl duration-500">
+                            HOME
+                        </a>
+                        <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="about.html" class="font-semibold text-stone-100 text-xl duration-500">
+                            ABOUT US
+                        </a>
+                        <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="produk.html" class="font-semibold text-stone-100 text-xl duration-500">
+                            PRODUK
+                        </a>
+                        <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="brosur.html" class="font-semibold text-stone-100 text-xl duration-500">
+                            BROSUR
+                        </a>
+                        <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="artikel.html" class="font-semibold text-stone-100 text-xl duration-500">
+                            ARTIKEL
+                        </a>
+                        <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="kontak.html" class="font-semibold text-stone-100 text-xl duration-500">
+                            KONTAK
+                        </a>
+                        <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brand Logo -->
+            <div id="brand"
+                class="text-3xl font-bold font-montserrat text-stone-900 flex items-center transform transition duration-300 ease-in-out hover:scale-110 z-[9999]">
+                <a href="/" class="flex items-center">
+                    <img src="/src/img/logoagri.png" alt="PT AGRITANIMAS Logo"
+                        class="max-w-24 sm:max-w-32 shadow-lg ml-4" />
+                    <span class="sr-only">PT AGRITANIMAS</span>
+                </a>
+            </div>
+
+            <!-- Desktop Navigation Links -->
+            <ul class="hidden md:flex justify-start md:gap-5 lg:gap-7">
+                <li class="relative group">
+                    <a href="/" class="font-semibold text-stone-100 text-xl duration-500">HOME</a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100"></div>
+                </li>
+                <li class="relative group">
+                    <a href="about.html" class="font-semibold text-stone-100 text-xl duration-500">ABOUT US</a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100"></div>
+                </li>
+                <li class="relative group">
+                    <a href="produk.html" class="font-semibold text-stone-100 text-xl duration-500">PRODUK</a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100"></div>
+                </li>
+                <li class="relative group">
+                    <a href="brosur.html" class="font-semibold text-stone-100 text-xl duration-500">BROSUR</a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100"></div>
+                </li>
+                <li class="relative group">
+                    <a href="artikel.html" class="font-semibold text-stone-100 text-xl duration-500">ARTIKEL</a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100"></div>
+                </li>
+                <li class="relative group">
+                    <a href="kontak.html" class="font-semibold text-stone-100 text-xl duration-500">KONTAK</a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100"></div>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+    <script>
+        const menuCheckbox = document.getElementById('check-mobilenav');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuCheckbox.addEventListener('change', function () {
+            if (this.checked) {
+                mobileMenu.classList.remove('-translate-y-full');
+                mobileMenu.classList.add('translate-y-0');
+            } else {
+                mobileMenu.classList.remove('translate-y-0');
+                mobileMenu.classList.add('-translate-y-full');
+            }
+        });
+    </script>
+
+    <section class="mt-12 md:mt-20">
+        <div class="container mx-auto px-4 sm:px-6 py-12 flex flex-col lg:flex-row lg:space-x-8 space-y-8 lg:space-y-0">
+            <main class="w-full lg:w-2/3 bg-white p-4 sm:p-8 rounded-lg shadow-lg">
+                <div class="mb-8">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+                        Peran Pupuk NPK Dalam Meningkatkan Produktivitas Lahan Pertanian
+                    </h2>
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center text-sm text-gray-500 mb-4">
+                        <p>By <span class="font-semibold">Agritanimas Farmer</span> - 20 September 2024</p>
+                        <span class="mt-2 sm:mt-0 sm:ml-4 flex items-center space-x-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" class="w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 17h5l-1.405 1.405C17.57 19.535 16.3 20 15 20s-2.57-.465-3.595-1.595C10.465 17.57 10 16.3 10 15s.465-2.57 1.405-3.595L15 17zM15 7h.01M8 17h5m-5-4h5m-5-4h5" />
+                            </svg>
+                            <span>283 views</span>
+                        </span>
+                    </div>
+                    <img src="/src/img/tanah.jpeg" alt="Coffee Talk Screenshot" class="w-full h-auto rounded-lg mb-6">
+                </div>
+
+                <div class="prose max-w-none space-y-4">
+                    <p class="text-lg leading-relaxed mb-4">
+                        Pupuk merupakan salah satu kebutuhan penting dalam kegiatan pertanian yang berfungsi menyediakan
+                        nutrisi bagi tanaman. Salah satu pupuk yang banyak digunakan oleh petani adalah pupuk NPK. Pupuk
+                        ini dikenal efektif dalam membantu meningkatkan produktivitas lahan dan mempercepat pertumbuhan
+                        tanaman. Pada artikel ini, kita akan membahas peran penting pupuk NPK dalam meningkatkan
+                        produktivitas lahan pertanian dan bagaimana cara penggunaannya yang tepat.
+                    </p>
+
+                    <h2 class="text-xl font-semibold mt-6 mb-2">Apa Itu Pupuk NPK?</h2>
+                    <p class="mb-4">
+                        Pupuk NPK adalah jenis pupuk yang mengandung tiga unsur hara makro utama yang sangat dibutuhkan
+                        oleh tanaman, yaitu:
+                    </p>
+                    <ul class="list-disc list-inside mb-4">
+                        <li><strong>Nitrogen (N):</strong> Berperan dalam mendukung pertumbuhan vegetatif, khususnya
+                            dalam pembentukan daun dan batang. Nitrogen diperlukan oleh tanaman dalam jumlah yang besar
+                            karena sangat penting untuk proses fotosintesis.</li>
+                        <li><strong>Fosfor (P):</strong> Fosfor berperan dalam pengembangan sistem perakaran yang kuat,
+                            serta mendukung pembentukan bunga dan buah. Fosfor juga penting dalam pembentukan energi di
+                            dalam sel tanaman.</li>
+                        <li><strong>Kalium (K):</strong> Kalium membantu memperkuat ketahanan tanaman terhadap penyakit
+                            dan kondisi lingkungan yang kurang menguntungkan. Selain itu, kalium juga berperan penting
+                            dalam proses pengangkutan hasil fotosintesis dari daun ke seluruh bagian tanaman.</li>
+                    </ul>
+
+                    <h2 class="text-xl font-semibold mt-6 mb-2">Peran Pupuk NPK dalam Produktivitas Lahan Pertanian</h2>
+                    <p class="mb-4">
+                        Penggunaan pupuk NPK yang tepat dapat memberikan sejumlah manfaat penting bagi lahan pertanian,
+                        antara lain:
+                    </p>
+                    <ul class="list-disc list-inside mb-4">
+                        <li><strong>Meningkatkan Pertumbuhan Tanaman:</strong> Unsur nitrogen dalam pupuk NPK membantu
+                            meningkatkan pertumbuhan daun dan batang tanaman secara optimal. Tanaman dengan daun yang
+                            hijau subur mampu melakukan fotosintesis secara lebih efektif, yang pada akhirnya
+                            meningkatkan produksi biomassa tanaman.</li>
+                        <li><strong>Memperbaiki Sistem Perakaran:</strong> Fosfor dalam pupuk NPK berperan dalam
+                            membangun sistem perakaran yang kuat dan dalam. Akar yang baik juga memungkinkan tanaman
+                            menyerap nutrisi dan air dengan lebih efisien.</li>
+                        <li><strong>Mendukung Pembentukan Bunga dan Buah:</strong> Fosfor mendukung pembentukan bunga
+                            dan buah, sementara kalium meningkatkan kualitas dan ketahanan buah setelah panen.</li>
+                        <li><strong>Meningkatkan Ketahanan Tanaman terhadap Penyakit:</strong> Kalium dalam pupuk NPK
+                            memperkuat ketahanan tanaman terhadap berbagai jenis penyakit serta kondisi lingkungan yang
+                            ekstrem.</li>
+                        <li><strong>Meningkatkan Hasil Panen dan Produktivitas Lahan:</strong> Penggunaan pupuk NPK
+                            secara seimbang dapat meningkatkan hasil panen secara signifikan, baik dari segi kuantitas
+                            maupun kualitas.</li>
+                    </ul>
+
+                    <h2 class="text-xl font-semibold mt-6 mb-2">Cara Penggunaan Pupuk NPK yang Efektif</h2>
+                    <p class="mb-4">
+                        Agar pupuk NPK bisa bekerja optimal, penting bagi petani untuk menerapkan teknik pemupukan yang
+                        tepat. Berikut ini beberapa tips untuk penggunaan pupuk NPK:
+                    </p>
+                    <ul class="list-disc list-inside mb-4">
+                        <li><strong>Analisis Tanah Terlebih Dahulu:</strong> Sebelum melakukan pemupukan, sebaiknya
+                            lakukan analisis tanah untuk mengetahui kandungan unsur hara di dalam tanah.</li>
+                        <li><strong>Pemupukan Berimbang:</strong> Pastikan proporsi nitrogen, fosfor, dan kalium sesuai
+                            dengan fase pertumbuhan tanaman. Pada fase awal pertumbuhan, lebih banyak nitrogen
+                            diperlukan, sementara pada fase pembungaan, fosfor dan kalium lebih dibutuhkan.</li>
+                        <li><strong>Waktu Pemupukan yang Tepat:</strong> Lakukan pemupukan beberapa kali sepanjang musim
+                            tanam, sesuai dengan kebutuhan tanaman pada setiap fase pertumbuhannya.</li>
+                        <li><strong>Penggunaan Teknik Aplikasi yang Tepat:</strong> Pilih metode aplikasi yang sesuai
+                            dengan jenis tanaman dan kondisi lahan, seperti penyebaran langsung atau menggunakan pupuk
+                            cair yang disemprotkan pada daun.</li>
+                    </ul>
+
+                    <p class="mb-4">
+                        Pupuk NPK memegang peranan penting dalam meningkatkan produktivitas lahan pertanian. Kombinasi
+                        unsur hara nitrogen, fosfor, dan kalium dalam pupuk ini membantu tanaman tumbuh lebih sehat,
+                        menghasilkan bunga dan buah yang lebih baik, serta meningkatkan ketahanan terhadap penyakit dan
+                        kondisi lingkungan. Namun, untuk mendapatkan hasil yang maksimal, penggunaan pupuk NPK harus
+                        disesuaikan dengan kebutuhan tanaman, kondisi tanah, dan metode aplikasi yang tepat.
+                    </p>
+                    <p class="mb-4">
+                        Dengan penggunaan pupuk NPK yang bijak, petani dapat memaksimalkan potensi lahan pertanian
+                        mereka dan meningkatkan hasil panen secara signifikan, yang pada akhirnya memberikan keuntungan
+                        ekonomi yang lebih besar.
+                    </p>
+
+                    <div class="text-sm text-gray-500 mt-8">
+                        <p><strong>Kata Kunci:</strong> pupuk NPK, unsur hara, pertanian, produktivitas lahan, pemupukan
+                            berimbang, nitrogen, fosfor, kalium, hasil panen, pertumbuhan tanaman, pupuk untuk padi,
+                            analisis tanah, pemupukan efektif</p>
+                    </div>
+                </div>
+            </main>
+
+            <aside class="w-full lg:w-1/3 space-y-8">
+                <div class="bg-white p-4 sm:p-6 rounded-lg shadow-lg space-y-6">
+                    <div>
+                        <h3 class="font-bold text-xl text-green-500 mb-4 uppercase tracking-wide flex items-center">
+                            Update
+                            <span class="ml-4 flex-1 border-t-4 border-green-500"></span>
+                        </h3>
+                        <a href="apakah-pupuk-aman-untuk-sayuran-yuk-cari-tahu.html">
+                            <img src="/src/img/pupuksayur.jpg" alt="Mengapa Tangkai Tanaman Harus Dipangkas?"
+                            class="rounded-md mb-4">
+                        <p class="text-gray-700 font-semibold text-lg">Apakah Pupuk Aman Untuk Sayuran? Yuk Cari Tahu
+                        </p>
+                        <p class="text-gray-600 text-sm mt-2">Pernah nggak sih, kamu mikir, “Sebenernya pupuk yang kita
+                            pakai di sayuran itu aman nggak, ya?”
+                            Nah,
+                            pertanyaan ini sering...</p>
+                        </a>
+                        
+                    </div>
+
+                    <div>
+                        <a href="panduan-memilih-pupuk-yang-tepat-untuk-tanaman-padi-dan-palawija.html" class="flex items-center space-x-4 hover:bg-gray-100 p-2 rounded-lg">
+                            <img src="/src/img/padi.jpeg" alt="Kenali Tanaman Hortikultura"
+                                class="w-16 h-16 rounded-md object-cover">
+                            <div>
+                                <p class="text-gray-800 font-semibold">Panduan Memilih Pupuk yang Tepat Untuk Tanaman
+                                    Padi dan Palawija</p>
+                                <p class="text-sm text-gray-500">25 September 2024</p>
+                            </div>
+                        </a>
+
+                        <a href="tips-pemupukan-efektif-untuk-meningkatkan-hasil-panen.html" class="flex items-center space-x-4 hover:bg-gray-100 p-2 rounded-lg">
+                            <img src="/src/img/pupuk43.jpeg" alt="Teknik Pemupukan Optimal"
+                                class="w-16 h-16 rounded-md object-cover">
+                            <div>
+                                <p class="text-gray-800 font-semibold">Tips Pemupukan Efektif Untuk Meningkatkan Hasil
+                                    Panen</p>
+                                <p class="text-sm text-gray-500">25 September 2024</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="flex items-center space-x-4 hover:bg-gray-100 p-2 rounded-lg">
+                            <img src="/src/img/hutan.jpeg" alt="Sistem Irigasi Tetes"
+                                class="w-16 h-16 rounded-md object-cover">
+                            <div>
+                                <p class="text-gray-800 font-semibold">Manfaat Sistem Irigasi Tetes dalam Pertanian
+                                    Modern</p>
+                                <p class="text-sm text-gray-500">5 Oktober 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white p-4 sm:p-6 rounded-lg shadow-lg space-y-6 sticky top-4">
+                    <div>
+                        <h3 class="font-bold text-xl text-green-500 mb-4 uppercase tracking-wide flex items-center">
+                            Wajib Baca!
+                            <span class="ml-4 flex-1 border-t-4 border-green-500"></span>
+                        </h3>
+                        <a href="apakah-pupuk-aman-untuk-sayuran-yuk-cari-tahu.html">
+                            <img src="/src/img/pupuksayur.jpg" alt="Mengapa Tangkai Tanaman Harus Dipangkas?"
+                            class="rounded-md mb-4">
+                        <p class="text-gray-700 font-semibold text-lg">Apakah Pupuk Aman Untuk Sayuran? Yuk Cari Tahu
+                        </p>
+                        <p class="text-gray-600 text-sm mt-2">Pernah nggak sih, kamu mikir, “Sebenernya pupuk yang kita
+                            pakai di sayuran itu aman nggak, ya?”
+                            Nah,
+                            pertanyaan ini sering...</p>
+                        </a>
+                        
+                    </div>
+
+                    <div>
+                        <a href="panduan-memilih-pupuk-yang-tepat-untuk-tanaman-padi-dan-palawija.html" class="flex items-center space-x-4 hover:bg-gray-100 p-2 rounded-lg">
+                            <img src="/src/img/padi.jpeg" alt="Kenali Tanaman Hortikultura"
+                                class="w-16 h-16 rounded-md object-cover">
+                            <div>
+                                <p class="text-gray-800 font-semibold">Panduan Memilih Pupuk yang Tepat Untuk Tanaman
+                                    Padi dan Palawija</p>
+                                <p class="text-sm text-gray-500">25 September 2024</p>
+                            </div>
+                        </a>
+
+                        <a href="tips-pemupukan-efektif-untuk-meningkatkan-hasil-panen.html" class="flex items-center space-x-4 hover:bg-gray-100 p-2 rounded-lg">
+                            <img src="/src/img/pupuk43.jpeg" alt="Teknik Pemupukan Optimal"
+                                class="w-16 h-16 rounded-md object-cover">
+                            <div>
+                                <p class="text-gray-800 font-semibold">Tips Pemupukan Efektif Untuk Meningkatkan Hasil
+                                    Panen</p>
+                                <p class="text-sm text-gray-500">25 September 2024</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="flex items-center space-x-4 hover:bg-gray-100 p-2 rounded-lg">
+                            <img src="/src/img/hutan.jpeg" alt="Sistem Irigasi Tetes"
+                                class="w-16 h-16 rounded-md object-cover">
+                            <div>
+                                <p class="text-gray-800 font-semibold">Manfaat Sistem Irigasi Tetes dalam Pertanian
+                                    Modern</p>
+                                <p class="text-sm text-gray-500">5 Oktober 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+
+    <footer class="bg-custom-green pb-4 pt-8 text-white ">
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
+            <div class="text-left hidden md:block">
+                <h3 class="font-bold text-lg md:text-2xl text-white mb-4">SITEMAP</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li><a href="/" class="hover:text-green-400 transition duration-300">HOME</a></li>
+                    <li><a href="about.html" class="hover:text-green-400 transition duration-300">ABOUT US</a></li>
+                    <li><a href="produk.html" class="hover:text-green-400 transition duration-300">PRODUK</a></li>
+                    <li><a href="brosur.html" class="hover:text-green-400 transition duration-300">BROWSUR</a></li>
+                    <li><a href="artikel.html" class="hover:text-green-400 transition duration-300">ARTIKEL</a></li>
+                    <li><a href="kontak.html" class="hover:text-green-400 transition duration-300">KONTAK</a></li>
+                </ul>
+            </div>
+            <div class="text-center flex flex-col items-center">
+                <div class="w-60 h-40 rounded-full flex items-center justify-center mx-auto md:mx-0">
+                    <img src="/src/img/logoagri.png" alt="Logo" class="w-60 h-60 object-contain">
+                </div>
+            </div>
+            <div class="text-center md:text-right">
+                <h3 class="font-bold text-lg md:text-2xl text-white mb-4">HUBUNGI KAMI</h3>
+                <a href="tel:+6282290909090" class="text-gray-300 text-sm mb-2 flex justify-center md:justify-end">
+                    <i class="fas fa-phone mr-2"></i>
+                    +62 822 9090 9090
+                </a>
+                <a href="mailto:agritanimas@gmail.com"
+                    class="text-gray-300 text-sm mb-8 flex justify-center md:justify-end">
+                    <i class="fas fa-envelope mr-2"></i>
+                    agritanimas@gmail.com
+                </a>
+            </div>
+        </div>
+        <div class="flex justify-center space-x-6">
+            <a href="https://www.instagram.com" target="_blank"
+                class="text-gray-100 hover:text-pink-500 transition transform hover:scale-110">
+                <i class="fab fa-instagram text-xl sm:text-3xl"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank"
+                class="text-gray-100 hover:text-blue-500 transition transform hover:scale-110">
+                <i class="fab fa-facebook text-xl sm:text-3xl"></i>
+            </a>
+            <a href="https://www.tiktok.com" target="_blank"
+                class="text-gray-100 hover:text-black transition transform hover:scale-110">
+                <i class="fab fa-tiktok text-xl sm:text-3xl"></i>
+            </a>
+        </div>
+
+
+        <div class="text-center text-gray-100 mt-4 border-t border-gray-100 pt-4">
+            <p class="text-xs md:text-sm">Made with passion. Copyright © PT AGRITANIMAS 2024</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

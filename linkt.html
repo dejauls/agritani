@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenGrow Fertilizers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeInUp {
+            animation: fadeInUp 0.5s ease-out forwards;
+        }
+
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+    <link rel="stylesheet" href="/src/output.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+
+<body class="min-h-screen flex flex-col items-center justify-center p-12 md:p-4 parallax"
+    style="background-image: url('/src/img/bg-link.jpeg');">
+    <div class="w-full max-w-lg h-full md:h-2/3 space-y-6 text-center bg-putih bg-opacity-60 p-8 rounded-lg shadow-lg">
+        <div class="space-y-2">
+            <img alt="GreenGrow Fertilizers Logo" class="mx-auto h-24 w-24 rounded-full border-2 border-green-500"
+                src="/src/img/logoagri.png">
+            <h1 class="text-2xl font-bold text-green-800">PT AGRITANIMAS</h1>
+            <p class="text-green-600">Nurturing the Earth, Growing the Future</p>
+        </div>
+        <div class="space-y-4 " id="button-container">
+            <button onclick="window.location.href='https://www.instagram.com/bataramahlingkungan.id/'"
+                class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 opacity-0">
+                instagram
+            </button>
+            <button onclick="window.location.href='https://www.instagram.com/bataramahlingkungan.id/'"
+                class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 opacity-0">
+                instagram
+            </button>
+            <button onclick="window.location.href='https://www.instagram.com/bataramahlingkungan.id/'"
+                class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 opacity-0">
+                instagram
+            </button>
+            <button onclick="window.location.href='https://www.instagram.com/bataramahlingkungan.id/'"
+                class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 opacity-0">
+                instagram
+            </button>
+            <button onclick="window.location.href='https://www.instagram.com/bataramahlingkungan.id/'"
+                class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 opacity-0">
+                instagram
+            </button>
+
+            
+        </div>
+        <footer class="text-sm text-green-700 pt-20">
+            © 2024 GreenGrow Fertilizers. All rights reserved.
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const buttons = document.querySelectorAll('#button-container button');
+            buttons.forEach((button, index) => {
+                setTimeout(() => {
+                    button.classList.add('animate-fadeInUp');
+                }, index * 200);
+            });
+        });
+    </script>
+</body>
+
+</html>
