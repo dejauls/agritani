@@ -813,6 +813,10 @@ video {
   margin-right: 1rem;
 }
 
+.mt-0{
+  margin-top: 0px;
+}
+
 .mt-1{
   margin-top: 0.25rem;
 }
@@ -847,10 +851,6 @@ video {
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mt-0{
-  margin-top: 0px;
 }
 
 .block{
@@ -2194,12 +2194,12 @@ video {
     margin-top: 4rem;
   }
 
-  .sm\:mt-4{
-    margin-top: 1rem;
-  }
-
   .sm\:mt-2{
     margin-top: 0.5rem;
+  }
+
+  .sm\:mt-4{
+    margin-top: 1rem;
   }
 
   .sm\:h-12{
@@ -2329,14 +2329,6 @@ video {
 
   .sm\:pt-0{
     padding-top: 0px;
-  }
-
-  .sm\:pt-4{
-    padding-top: 1rem;
-  }
-
-  .sm\:pt-2{
-    padding-top: 0.5rem;
   }
 
   .sm\:text-2xl{
