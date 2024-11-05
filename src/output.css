@@ -897,6 +897,10 @@ video {
   height: 40%;
 }
 
+.h-20{
+  height: 5rem;
+}
+
 .h-24{
   height: 6rem;
 }
@@ -955,10 +959,6 @@ video {
 
 .h-svh{
   height: 100svh;
-}
-
-.h-20{
-  height: 5rem;
 }
 
 .min-h-screen{
