@@ -937,6 +937,10 @@ video {
   height: 2rem;
 }
 
+.h-80{
+  height: 20rem;
+}
+
 .h-96{
   height: 24rem;
 }
@@ -1075,6 +1079,10 @@ video {
 
 .max-w-7xl{
   max-width: 80rem;
+}
+
+.max-w-80{
+  max-width: 20rem;
 }
 
 .max-w-lg{
@@ -1563,12 +1571,12 @@ video {
   --tw-bg-opacity: 0.8;
 }
 
-.bg-\[url\(\'\/src\/img\/kebun3\.jpg\'\)\]{
-  background-image: url('/src/img/kebun3.jpg');
-}
-
 .bg-\[url\(\'\/src\/img\/petani4\.jpg\'\)\]{
   background-image: url('/src/img/petani4.jpg');
+}
+
+.bg-\[url\(\'\/src\/img\/sawit1\.jpg\'\)\]{
+  background-image: url('/src/img/sawit1.jpg');
 }
 
 .bg-gradient-to-b{

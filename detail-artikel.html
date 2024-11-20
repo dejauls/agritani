@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rahasia Terbongkar! Cara Memilih Pupuk yang Bikin Padi dan Palawija Panen Super Melimpah!</title>
+    <title>Petani Sukses Bongkar Rahasia! Pupuk NPK Bikin Lahan Pertanian Jadi Super Produktif Tanpa Ribet!</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/src/output.css">
     <style>
@@ -156,128 +156,21 @@
         <div class="container mx-auto px-4 sm:px-6 py-12 flex flex-col lg:flex-row lg:space-x-8 space-y-8 lg:space-y-0">
             <main class="w-full lg:w-2/3 bg-white p-4 sm:p-8 rounded-lg shadow-lg">
                 <div class="mb-8">
-                    <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-                        Rahasia Terbongkar! Cara Memilih Pupuk yang Bikin Padi dan Palawija Panen Super Melimpah!
-                    </h2>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">{{ article.title }}</h2>
                     <div class="flex flex-col sm:flex-row items-start sm:items-center text-sm text-gray-500 mb-4">
-                        <p>By <span class="font-semibold">Agritanimas Farmer</span> - 25 September 2024</p>
+                        <p>By <span class="font-semibold">{{ article.author }}</span> - {{ article.date }}</p>
                         <span class="mt-2 sm:mt-0 sm:ml-4 flex items-center space-x-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                                stroke="currentColor" class="w-4 h-4">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M15 17h5l-1.405 1.405C17.57 19.535 16.3 20 15 20s-2.57-.465-3.595-1.595C10.465 17.57 10 16.3 10 15s.465-2.57 1.405-3.595L15 17zM15 7h.01M8 17h5m-5-4h5m-5-4h5" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405 1.405C17.57 19.535 16.3 20 15 20s-2.57-.465-3.595-1.595C10.465 17.57 10 16.3 10 15s.465-2.57 1.405-3.595L15 17zM15 7h.01M8 17h5m-5-4h5m-5-4h5" />
                             </svg>
-                            <span>283 views</span>
+                            <span>{{ article.views }} views</span>
                         </span>
                     </div>
-                    <img src="/src/img/padi.jpeg" alt="Coffee Talk Screenshot" class="w-full h-auto rounded-lg mb-6">
+                    <img src="{{ article.image_url }}" alt="{{ article.title }}" class="w-full h-auto rounded-lg mb-6">
                 </div>
 
                 <div class="prose max-w-none space-y-4">
-                    <p class="text-lg leading-relaxed mb-4">
-                        Tanaman padi dan palawija merupakan dua jenis tanaman yang sangat banyak dibudidayakan oleh
-                        petani, khususnya di Indonesia. Tanaman ini menjadi sumber pangan untuk rakyat Indonesia. 
-                        Oiya, kalau kamu ingin menanam tanaman tersebut, kamu wajib banget tau bagaimana penggunaan pupuk yang tepat untuk kedua tanaman tersebut. Keduanya membutuhkan nutrisi yang berbeda-beda agar dapat tumbuh
-                        subur dan menghasilkan panen yang melimpah. Salah satu cara terbaik untuk mendukung
-                        pertumbuhan tanaman padi dan palawija adalah dengan memilih pupuk yang tepat. Dalam artikel ini,
-                        kita akan membahas panduan memilih pupuk yang sesuai untuk tanaman padi dan palawija. Serta kita akan bahas 
-                        bagaimana cara penggunaannya untuk meningkatkan hasil panen.
-                    </p>
-
-                    <h2 class="text-xl font-semibold mt-6 mb-2">Apa Itu Tanaman Padi dan Palawija?</h2>
-                    <p class="mb-4">
-                        Sebelum membahas lebih lanjut mengenai pupuk, penting untuk kita memahami terlebih dahulu apa itu tanaman padi dan
-                        palawija.
-                    </p>
-                    <ul class="list-disc list-inside mb-4">
-                        <li><strong>Tanaman Padi:</strong> Termasuk dalam keluarga rumput-rumputan dan merupakan sumber
-                            makanan pokok utama. Padi tumbuh di lahan sawah yang tergenang air, tapi ada juga beberapa jenis padi yang hidup di lahan kering.</li>
-                        <li><strong>Tanaman Palawija:</strong> Tanaman selain padi seperti jagung, kacang-kacangan, ubi, 
-                            dan sayuran. Biasanya dibudidayakan di lahan kering sebagai tanaman sela atau pengganti
-                            padi.</li>
-                    </ul>
-
-                    <h2 class="text-xl font-semibold mt-6 mb-2">Pentingnya Memilih Pupuk yang Tepat</h2>
-                    <p class="mb-4">
-                        Pupuk yang tepat tentunya dapat memberikan nutrisi yang tepat yang diperlukan oleh tanaman untuk tumbuh dengan baik dan subur.
-                        Pemilihan pupuk yang salah atau pemberian dosis yang tidak sesuai bisa menyebabkan penurunan
-                        kualitas tanah dan menyebabkan pertumbuhan tanaman tidak maksimal. Berikut ini adalah panduan pemilihan pupuk yang tepat untuk padi dan palawija.
-                    </p>
-
-                    <h3 class="text-lg font-semibold mt-4 mb-2">1. Pupuk untuk Tanaman Padi</h3>
-                    <p class="mb-4">Tanaman padi membutuhkan tiga unsur hara utama yaitu nitrogen (N), fosfor (P), dan kalium
-                        (K). Berikut panduan penggunaannya:</p>
-                    <ul class="list-disc list-inside mb-4">
-                        <li><strong>Pupuk Urea (Nitrogen - N):</strong> Meningkatkan pertumbuhan daun dan batang.
-                            Berikan selama fase pertumbuhan awal hingga masa anakan.</li>
-                        <li><strong>Pupuk TSP/SP-36 (Fosfor - P):</strong> Mendukung pembentukan akar dan kematangan
-                            bulir padi. Aplikasikan pada masa awal tanam.</li>
-                        <li><strong>Pupuk KCl (Kalium - K):</strong> Meningkatkan kualitas bulir padi dan ketahanan tanaman.
-                            Gunakan pada fase pembentukan tangkai bulir padi.</li>
-                        <li><strong>Pupuk NPK Majemuk:</strong> Mengandung N, P, dan K dalam satu produk, memudahkan
-                            pemberian nutrisi lengkap secara bersamaan.</li>
-                    </ul>
-
-                    <h3 class="text-lg font-semibold mt-4 mb-2">2. Pupuk untuk Tanaman Palawija</h3>
-                    <p class="mb-4">
-                        Palawija seperti jagung dan kacang-kacangan memerlukan pupuk dengan variasi yang sesuai dengan
-                        jenisnya. Berikut jenis pupuk yang umum digunakan:
-                    </p>
-                    <ul class="list-disc list-inside mb-4">
-                        <li><strong>Pupuk Nitrogen (N):</strong> Penting untuk pertumbuhan daun, terutama pada tanaman
-                            seperti jagung. Aplikasikan saat awal pertumbuhan.</li>
-                        <li><strong>Pupuk Fosfor (P):</strong> Mendukung pengembangan akar pada tanaman kacang-kacangan
-                            dan ubi. Diberikan saat tanam sebagai pupuk dasar.</li>
-                        <li><strong>Pupuk Kalium (K):</strong> Meningkatkan kualitas hasil panen dan ketahanan tanaman.
-                            Gunakan pada masa pembentukan umbi atau biji.</li>
-                    </ul>
-
-                    <h3 class="text-lg font-semibold mt-4 mb-2">3. Pupuk Organik: Pilihan untuk Padi dan Palawija</h3>
-                    <p class="mb-4">
-                        Selain pupuk kimia, pupuk organik seperti pupuk kandang, kompos, dan pupuk hijau dapat kita gunakan
-                        untuk meningkatkan kesuburan tanah. Pupuk organik dapat memperbaiki struktur tanah, meningkatkan
-                        kandungan bahan organik, serta membuat tanah lebih subur dalam jangka panjang.
-                    </p>
-                    <ul class="list-disc list-inside mb-4">
-                        <li><strong>Pupuk Kandang:</strong> Mengandung nitrogen, fosfor, dan kalium, meskipun dalam
-                            jumlah yang lebih rendah dibandingkan pupuk kimia.</li>
-                        <li><strong>Pupuk Kompos:</strong> Terbuat dari bahan organik yang terurai, kompos meningkatkan
-                            kemampuan tanah dalam menyimpan air dan nutrisi.</li>
-                        <li><strong>Pupuk Hijau:</strong> Dibuat dari tanaman yang dikomposkan langsung ke tanah untuk
-                            menambah unsur hara organik dan memperbaiki struktur tanah.</li>
-                    </ul>
-
-                    <h3 class="text-lg font-semibold mt-4 mb-2">4. Kapan Waktu Terbaik untuk Pemupukan?</h3>
-                    <p class="mb-4">
-                        Pemupukan yang tepat tidak hanya tentang jenis pupuk, tetapi juga pada waktu aplikasi. Berikut ini adalah
-                        waktu yang ideal untuk melakukan pemupukan:
-                    </p>
-                    <ul class="list-disc list-inside mb-4">
-                        <li><strong>Pra-tanam:</strong> Lakukan pemupukan dasar dengan pupuk organik atau pupuk fosfor
-                            (SP-36).</li>
-                        <li><strong>Awal Pertumbuhan:</strong> Berikan pupuk nitrogen (urea) pada masa pertumbuhan
-                            vegetatif.</li>
-                        <li><strong>Fase Pembentukan Bunga/Bulir:</strong> Tanaman membutuhkan lebih banyak kalium untuk
-                            meningkatkan kualitas hasil panen.</li>
-                        <li><strong>Pemupukan Susulan:</strong> Lakukan pemupukan susulan pada fase anakan pada padi
-                            atau fase pembentukan umbi pada palawija.</li>
-                    </ul>
-
-                    <p class="mb-4">
-                        Memilih pupuk yang tepat untuk tanaman padi dan palawija adalah kunci utama untuk meningkatkan
-                        hasil panen dan menjaga kesuburan tanah. Dengan memahami kebutuhan nutrisi tanaman dan
-                        menggunakan pupuk secara bijak, kita dapat meningkatkan produktivitas lahan secara
-                        signifikan. Jangan lupa untuk memperhatikan dosis dan waktu penggunaan yang tepat agar hasil yang
-                        diperoleh dapat optimal.
-                    </p>
-
-                    <div class="text-sm text-gray-500 mt-8">
-                        <p><strong>Kata Kunci:</strong> pupuk untuk padi, pupuk untuk palawija, pupuk urea untuk padi,
-                            pupuk terbaik untuk padi, pemupukan tanaman palawija, pupuk organik untuk padi, pupuk NPK
-                            untuk padi, cara memilih pupuk padi, jenis pupuk untuk tanaman padi, pupuk kimia untuk
-                            palawija, waktu pemupukan padi, cara meningkatkan hasil padi, pemupukan padi sawah, pupuk
-                            nitrogen untuk padi, pupuk palawija yang efektif, pemupukan palawija</p>
-                    </div>
+                    {{ article.content | safe }}
                 </div>
             </main>
 
@@ -302,12 +195,12 @@
                     </div>
 
                     <div>
-                        <a href="petani-sukses-bongkar-rahasia-pupuk-NPK-bikin-lahan-pertanian-jadi-super-produktif-tanpa-ribet.html" class="flex items-center space-x-4 hover:bg-gray-100 p-2 rounded-lg">
-                            <img src="/src/img/tanah.jpeg" alt="Kenali Tanaman Hortikultura"
+                        <a href="rahasia-terbongkar-cara-memilih-pupuk-yang-bikin-padi-dan-palawija-panen-super-melimpah.html" class="flex items-center space-x-4 hover:bg-gray-100 p-2 rounded-lg">
+                            <img src="/src/img/padi.jpeg" alt="Kenali Tanaman Hortikultura"
                                 class="w-16 h-16 rounded-md object-cover">
                             <div>
-                                <p class="text-gray-800 font-semibold">Petani Sukses Bongkar Rahasia Pupuk NPK Bikin Lahan Pertanian Jadi Super Produktif Tanpa Ribet</p>
-                                <p class="text-sm text-gray-500">20 September 2024</p>
+                                <p class="text-gray-800 font-semibold">Rahasia Terbongkar! Cara Memilih Pupuk yang Bikin Padi dan Palawija Panen Super Melimpah</p>
+                                <p class="text-sm text-gray-500">25 September 2024</p>
                             </div>
                         </a>
 
@@ -351,12 +244,12 @@
                     </div>
 
                     <div>
-                        <a href="petani-sukses-bongkar-rahasia-pupuk-NPK-bikin-lahan-pertanian-jadi-super-produktif-tanpa-ribet.html" class="flex items-center space-x-4 hover:bg-gray-100 p-2 rounded-lg">
-                            <img src="/src/img/tanah.jpeg" alt="Kenali Tanaman Hortikultura"
+                        <a href="rahasia-terbongkar-cara-memilih-pupuk-yang-bikin-padi-dan-palawija-panen-super-melimpah.html" class="flex items-center space-x-4 hover:bg-gray-100 p-2 rounded-lg">
+                            <img src="/src/img/padi.jpeg" alt="Kenali Tanaman Hortikultura"
                                 class="w-16 h-16 rounded-md object-cover">
                             <div>
-                                <p class="text-gray-800 font-semibold">Petani Sukses Bongkar Rahasia Pupuk NPK Bikin Lahan Pertanian Jadi Super Produktif Tanpa Ribet</p>
-                                <p class="text-sm text-gray-500">20 September 2024</p>
+                                <p class="text-gray-800 font-semibold">Rahasia Terbongkar! Cara Memilih Pupuk yang Bikin Padi dan Palawija Panen Super Melimpah</p>
+                                <p class="text-sm text-gray-500">25 September 2024</p>
                             </div>
                         </a>
 
@@ -380,7 +273,6 @@
                         </a>
                     </div>
                 </div>
-
             </aside>
         </div>
     </section>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refugia - Solusi Cerdas Mengurangi Hama</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="absolute top-0 left-0 w-full">
+        <nav class="fixed z-50 md:z-auto bg-custom-green md:static flex p-5 justify-between items-center w-full gap-5 overflow-hidden"
+            data-aos="zoom-y-out">
+            <!-- Hamburger Icon for toggling navbar -->
+            <label for="check-mobilenav" class="flex flex-col min-w-10 max-w-20 cursor-pointer md:hidden z-[999999]">
+                <input type="checkbox" id="check-mobilenav" class="peer hidden" />
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </label>
+
+            <!-- Off-screen Mobile Navbar -->
+            <div id="mobile-menu"
+                class="fixed top-0 left-0 w-full h-3/5 bg-custom-green text-white z-[9999] transform -translate-y-full transition-transform duration-300 ease-in-out block md:hidden">
+                <div class="flex flex-col items-center space-y-4 font-semibold pt-20 pb-4">
+                    <div class="relative group">
+                        <a href="index.html" class="font-semibold text-stone-100 text-xl duration-500">
+                            HOME
+                        </a>
+                        <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="about.html" class="font-semibold text-stone-100 text-xl duration-500">
+                            ABOUT US
+                        </a>
+                        <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="produk.html" class="font-semibold text-stone-100 text-xl duration-500">
+                            PRODUK
+                        </a>
+                        <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                        </div>
+                    </div>
+                    <div href="javascript:void(0)" class="relative group">
+                        <a href="implementasi.html" class="font-semibold text-stone-100 text-xl duration-500">
+                            IMPLEMENTASI PRODUK
+                        </a>
+                        <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="brosur.html" class="font-semibold text-stone-100 text-xl duration-500">
+                            BROSUR
+                        </a>
+                        <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="artikel.html" class="font-semibold text-stone-100 text-xl duration-500">
+                            ARTIKEL
+                        </a>
+                        <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="kontak.html" class="font-semibold text-stone-100 text-xl duration-500">
+                            KONTAK
+                        </a>
+                        <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brand Logo -->
+            <div id="brand"
+                class="text-3xl font-bold font-montserrat text-stone-900 flex items-center transform transition duration-300 ease-in-out hover:scale-110 z-[9999]">
+                <a href="/" class="flex items-center">
+                    <img src="/src/img/logoagri.png" alt="PT AGRITANIMAS Logo"
+                        class="max-w-24 sm:max-w-32 shadow-lg ml-4" />
+                    <span class="sr-only">PT AGRITANIMAS</span>
+                </a>
+            </div>
+
+            <!-- Desktop Navigation Links -->
+            <ul class="hidden md:flex justify-start md:gap-5 lg:gap-7">
+                <li class="relative group">
+                    <a href="/" class="font-semibold text-stone-100 text-xl duration-500">HOME</a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100"></div>
+                </li>
+                <li class="relative group">
+                    <a href="about.html" class="font-semibold text-stone-100 text-xl duration-500">ABOUT US</a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100"></div>
+                </li>
+                <li class="relative group">
+                    <a href="produk.html" class="font-semibold text-stone-100 text-xl duration-500">PRODUK</a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100"></div>
+                </li>
+                <li href="javascript:void(0)" class="relative group">
+                    <a href="implementasi.html" class="font-semibold text-stone-100 text-xl duration-500">
+                        IMPLEMENTASI PRODUK
+                    </a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100">
+                    </div>
+                </li>
+                <li class="relative group">
+                    <a href="brosur.html" class="font-semibold text-stone-100 text-xl duration-500">BROSUR</a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100"></div>
+                </li>
+                <li class="relative group">
+                    <a href="artikel.html" class="font-semibold text-stone-100 text-xl duration-500">ARTIKEL</a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100"></div>
+                </li>
+                <li class="relative group">
+                    <a href="kontak.html" class="font-semibold text-stone-100 text-xl duration-500">KONTAK</a>
+                    <div class="absolute -bottom-2 left-0 w-0 duration-500 group-hover:w-full h-1 bg-stone-100"></div>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+    <script>
+        const menuCheckbox = document.getElementById('check-mobilenav');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuCheckbox.addEventListener('change', function () {
+            if (this.checked) {
+                mobileMenu.classList.remove('-translate-y-full');
+                mobileMenu.classList.add('translate-y-0');
+            } else {
+                mobileMenu.classList.remove('translate-y-0');
+                mobileMenu.classList.add('-translate-y-full');
+            }
+        });
+    </script>
+
+    <section class="mt-12 md:mt-20">
+        <div class="container mx-auto px-4 sm:px-6 py-12 flex flex-col lg:flex-row lg:space-x-8 space-y-8 lg:space-y-0">
+            <main class="w-full lg:w-2/3 bg-white p-4 sm:p-8 rounded-lg shadow-lg">
+                <div class="mb-8">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+                        Refugia : Solusi cerdas Mengurangi Hama
+                    </h2>
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center text-sm text-gray-500 mb-4">
+                        <p>By <span class="font-semibold">Agritanimas Farmer</span> - 25 oktober 2024</p>
+                        <span class="mt-2 sm:mt-0 sm:ml-4 flex items-center space-x-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" class="w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 17h5l-1.405 1.405C17.57 19.535 16.3 20 15 20s-2.57-.465-3.595-1.595C10.465 17.57 10 16.3 10 15s.465-2.57 1.405-3.595L15 17zM15 7h.01M8 17h5m-5-4h5m-5-4h5" />
+                            </svg>
+                            <span>229 views</span>
+                        </span>
+                    </div>
+                    <img src="/src/img/refugia.png" alt="Coffee Talk Screenshot" class="w-full  h-96 object-cover rounded-lg mb-6">
+                </div>
+
+                <div class="prose max-w-none space-y-4">
+                    <p class="   mb-4">
+                        Bagi para petani, Hama adalah pengganggu tanaman yang wajib di hempaskan dari lahan. Berbagai
+                        macam cara akan dilakukan untuk menaklukan hama pada lahan pertaniannya. Upaya peningkatan
+                        produksi pertanian memerlukan teknik yang profesional dan strategis untuk melindungi tanaman
+                        dari ancaman <span class="font-semibold">Organisme Pengganggu Tumbuhan (OPT)</span> . Salah satu
+                        cara yang efektif adalah melalui
+                        konsep <span class="font-semibold">Pengendalian Hama Terpadu (PHT)</span>. Strategi ini mencakup
+                        langkah pengamanan produksi, salah
+                        satunya dengan menanam tanaman refugia di sekitar lahan sawah dan sayuran.
+                    </p>
+
+                    <h2 class="text-xl font-semibold mt-6 mb-2">Apa itu Tanaman Refugia?</h2>
+                    <p class="mb-4">
+                        Tanaman refugia adalah kelompok tanaman tertentu yang berfungsi sebagai habitat mikro bagi musuh
+                        alami OPT, seperti predator dan parasitoid. Menurut para ahli, tanaman refugia dapat menyediakan
+                        tempat perlindungan, sumber pakan, serta sumber daya lainnya bagi seranga musuh alami. <br>
+                        Refugia memiliki peran penting dalam konservasi lingkungan pertanian dengan mendukung
+                        keseimbangan ekosistem disekitarnya. Kehadirannya sangat membantu serangga musuh alami tetap
+                        bertahan dan berkembang sebelum adanya populasi hama yang signifikan di area pertanaman. Refugia
+                        ini menjadi alternatif alami membasmi hama tanpa pestisida untuk tanaman. Selain berguna untuk
+                        mengusir hama, refugia ini dapat membuat tampilan lahan pertanian menjadi lebih cantik dan
+                        menarik mata. Tanaman refugia ini sangat direkomendasikan untuk ditanam di pinggir lahan
+                        persawahan.
+                    </p>
+                    <h2 class="text-xl font-semibold mt-6 mb-2">Manfaat Tanaman Refugia</h2>
+                    <p class="mb-4">
+                        Penanaman tanaman refugia menawarkan berbagai manfaat, antara lain:
+                    </p>
+
+                    <ul class="list-disc list-inside mb-4">
+                        <li><strong>Habitat Mikro bagi Serangga Musuh Alami:</strong> <br> Refugia menjadi tempat
+                            berlindung
+                            yang ideal bagi predator dan parasitoid, yang secara alami dapat mengontrol populasi
+                            OPT(organisme pengganggu tanaman).</li>
+                        <li><strong>Sumber Nectar bagi Serangga Musuh Alami:</strong> <br>Tanaman refugia menyediakan
+                            nectar sebagai sumber pakan penting bagi musuh alami, terutama sebelum populasi hama mulai
+                            berkembang.
+                        </li>
+                        <li><strong>Konservasi Ekosistem Pertanian:</strong> <br>Dengan mendukung keberadaan serangga
+                            musuh alami, refugia membantu menjaga keseimbangan ekosistem dan mengurangi kebutuhan akan
+                            penggunaan pestisida kimia yang berlebihan.
+                        </li>
+                        <li><strong>Meningkatkan Hasil Produksi Pertanian:</strong> <br>Dengan menekan perkembangan hama
+                            secara alami, tanaman refugia akan turut berkontribusi dalam meningkatkan produktivitas
+                            hasil pertanian.
+                        </li>
+                    </ul>
+
+                    <h2 class="text-xl font-semibold mt-6 mb-2">Jenis-Jenis Tanaman Refugia</h2>
+                    <p class="mb-4">
+                        Beberapa jenis tanaman yang berpotensi besar dijadikan refugia dan mudah dikembangkan meliputi:
+                    </p>
+                    <ul>
+                        <li><strong>Bunga Matahari</strong> (<em>Helianthus annuus</em>): Menarik berbagai jenis
+                            serangga pemangsa hama.</li>
+                        <li><strong>Bunga Tapak Dara</strong> (<em>Catharanthus roseus</em>): Sumber pakan yang baik
+                            untuk parasitoid.</li>
+                        <li><strong>Bunga Kenikir</strong> (<em>Cosmos caudatus</em>): Habitat alami bagi serangga
+                            predator.</li>
+                        <li><strong>Kacang Panjang</strong> (<em>Vigna unguiculata</em>): Menyediakan tempat
+                            perlindungan bagi musuh alami.</li>
+                        <li><strong>Bunga Gumitir</strong> (<em>Tagetes erecta</em>): Mampu menarik serangga penyerbuk
+                            sekaligus musuh alami hama.</li>
+                        <li><strong>Bunga Pacar Air</strong> (<em>Impatiens balsamina</em>): Habitat mikro yang menarik
+                            banyak serangga berguna.</li>
+                        <li><strong>Bunga Kertas</strong> (<em>Zinnia elegans</em>): Sumber nectar dan tempat berlindung
+                            bagi predator.</li>
+                        <li><strong>Bunga Jengger Ayam</strong> (<em>Celosia argentea</em>): Habitat bagi berbagai
+                            serangga pemangsa.</li>
+                        <li><strong>Bayam</strong> (<em>Amaranthus spp.</em>): Menyediakan perlindungan tambahan bagi
+                            serangga musuh alami.</li>
+                    </ul>
+
+                    <p class="mb-4">Penanaman habitat konservasi serangga musuh alami refugia merupakan langkah
+                        strategis terbaru dalam penerapan Pengendalian Hama Terpadu (PHT) yang berorientasi pada
+                        keberlanjutan ekosistem. Dengan memanfaatkan tanaman refugia, petani tidak hanya melindungi
+                        hasil panen dari gangguan hama, tetapi juga turut berkontribusi dalam menjaga keseimbangan
+                        ekosistem pertanian dengan tidak memakai bahan kimia secara berlebihan.
+                        Pemilihan tanaman refugia yang tepat dan pengelolaannya yang baik akan memberikan hasil optimal
+                        dalam meningkatkan produksi pertanian secara alami dan juga mempercantik lahan pertanian. Oleh
+                        karena itu, penerapan konsep ini layak untuk didorong di berbagai wilayah pertanian.
+                    </p>
+                    <div class="text-sm text-gray-500 mt-8">
+                        <p><strong>Kata Kunci:</strong> refugia, tanaman refugia, pengendalian hama terpadu, pengendalian hama tanaman, organisme pengganggu tumbuhan, sawah, predator, parasitoid, bunga matahari, bunga tapak dara, bunga kenikir, kacang panjang, bunga gumitir, bunga pacar air, bunga kertas, bunga jengger ayam, bayam, konservasi musuh alami, ekosistem pertanian.</p>
+                    </div>
+                    
+                </div>
+            </main>
+
+            <aside class="w-full lg:w-1/3 space-y-8">
+                <div class="bg-white p-4 sm:p-6 rounded-lg shadow-lg space-y-6">
+                    <div>
+                        <h3 class="font-bold text-xl text-green-500 mb-4 uppercase tracking-wide flex items-center">
+                            Update
+                            <span class="ml-4 flex-1 border-t-4 border-green-500"></span>
+                        </h3>
+                        <a href="benarkah-pupuk-aman-untuk-sayuran-fakta-mengejutkan-yang-haruskamu-tahu.html">
+                            <img src="/src/img/pupuksayur.jpg" alt="Mengapa Tangkai Tanaman Harus Dipangkas?"
+                                class="rounded-md mb-4">
+                            <p class="text-gray-700 font-semibold text-lg">Benarkan Pupuk Aman Untuk Sayuran? Fakta
+                                Mengejutkan yang Harus Kamu Tahu!
+                            </p>
+                            <p class="text-gray-600 text-sm mt-2">Pernah nggak sih, kamu mikir, “Sebenernya pupuk yang
+                                kita
+                                pakai di sayuran itu aman nggak, ya?”
+                                Nah,
+                                pertanyaan ini sering...</p>
+                        </a>
+
+                    </div>
+
+                    <div>
+                        <a href="petani-sukses-bongkar-rahasia-pupuk-NPK-bikin-lahan-pertanian-jadi-super-produktif-tanpa-ribet.html"
+                            class="flex items-center space-x-4 hover:bg-gray-100 p-2 rounded-lg">
+                            <img src="/src/img/tanah.jpeg" alt="Kenali Tanaman Hortikultura"
+                                class="w-16 h-16 rounded-md object-cover">
+                            <div>
+                                <p class="text-gray-800 font-semibold">Petani Sukses Bongkar Rahasia Pupuk NPK Bikin
+                                    Lahan Pertanian Jadi Super Produktif Tanpa Ribet</p>
+                                <p class="text-sm text-gray-500">20 September 2024</p>
+                            </div>
+                        </a>
+
+                        <a href="terungkap-cara-pemupukan-ajaib-yang-bikin-petani-panen-banyak.html"
+                            class="flex items-center space-x-4 hover:bg-gray-100 p-2 rounded-lg">
+                            <img src="/src/img/pupuk43.jpeg" alt="Teknik Pemupukan Optimal"
+                                class="w-16 h-16 rounded-md object-cover">
+                            <div>
+                                <p class="text-gray-800 font-semibold">Terungkap Cara Pemupukan Ajaib yang Bikin Petani
+                                    Panen Banyak</p>
+                                <p class="text-sm text-gray-500">25 September 2024</p>
+                            </div>
+                        </a>
+
+                        <a href="/artikel/perubahan-cuaca-adalah-tantangan-para-petani.html" class="flex items-center space-x-4 hover:bg-gray-100 p-2 rounded-lg">
+                            <img src="/src/img/d.jpeg" alt="Sistem Irigasi Tetes"
+                                class="w-16 h-16 rounded-md object-cover">
+                            <div>
+                                <p class="text-gray-800 font-semibold">Perubahan Cuaca Adalah Tantangan Para Petani</p>
+                                <p class="text-sm text-gray-500">5 Oktober 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white p-4 sm:p-6 rounded-lg shadow-lg space-y-6 sticky top-4">
+                    <div>
+                        <h3 class="font-bold text-xl text-green-500 mb-4 uppercase tracking-wide flex items-center">
+                            Wajib Baca!
+                            <span class="ml-4 flex-1 border-t-4 border-green-500"></span>
+                        </h3>
+                        <a href="benarkah-pupuk-aman-untuk-sayuran-fakta-mengejutkan-yang-haruskamu-tahu.html">
+                            <img src="/src/img/pupuksayur.jpg" alt="Mengapa Tangkai Tanaman Harus Dipangkas?"
+                                class="rounded-md mb-4">
+                            <p class="text-gray-700 font-semibold text-lg">Benarkan Pupuk Aman Untuk Sayuran? Fakta
+                                Mengejutkan yang Harus Kamu Tahu!
+                            </p>
+                            <p class="text-gray-600 text-sm mt-2">Pernah nggak sih, kamu mikir, “Sebenernya pupuk yang
+                                kita
+                                pakai di sayuran itu aman nggak, ya?”
+                                Nah,
+                                pertanyaan ini sering...</p>
+                        </a>
+
+                    </div>
+
+                    <div>
+                        <a href="petani-sukses-bongkar-rahasia-pupuk-NPK-bikin-lahan-pertanian-jadi-super-produktif-tanpa-ribet.html"
+                            class="flex items-center space-x-4 hover:bg-gray-100 p-2 rounded-lg">
+                            <img src="/src/img/tanah.jpeg" alt="Kenali Tanaman Hortikultura"
+                                class="w-16 h-16 rounded-md object-cover">
+                            <div>
+                                <p class="text-gray-800 font-semibold">Petani Sukses Bongkar Rahasia Pupuk NPK Bikin
+                                    Lahan Pertanian Jadi Super Produktif Tanpa Ribet</p>
+                                <p class="text-sm text-gray-500">20 September 2024</p>
+                            </div>
+                        </a>
+
+                        <a href="terungkap-cara-pemupukan-ajaib-yang-bikin-petani-panen-banyak.html"
+                            class="flex items-center space-x-4 hover:bg-gray-100 p-2 rounded-lg">
+                            <img src="/src/img/pupuk43.jpeg" alt="Teknik Pemupukan Optimal"
+                                class="w-16 h-16 rounded-md object-cover">
+                            <div>
+                                <p class="text-gray-800 font-semibold">Terungkap Cara Pemupukan Ajaib yang Bikin Petani
+                                    Panen Banyak</p>
+                                <p class="text-sm text-gray-500">25 September 2024</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="flex items-center space-x-4 hover:bg-gray-100 p-2 rounded-lg">
+                            <img src="/src/img/hutan.jpeg" alt="Sistem Irigasi Tetes"
+                                class="w-16 h-16 rounded-md object-cover">
+                            <div>
+                                <p class="text-gray-800 font-semibold">Manfaat Sistem Irigasi Tetes dalam Pertanian
+                                    Modern</p>
+                                <p class="text-sm text-gray-500">5 Oktober 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </aside>
+        </div>
+    </section>
+
+
+    <footer class="bg-custom-green pb-4 pt-8 text-white ">
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
+            <div class="text-left hidden md:block">
+                <h3 class="font-bold text-lg md:text-2xl text-white mb-4">SITEMAP</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li><a href="/" class="hover:text-green-400 transition duration-300">HOME</a></li>
+                    <li><a href="about.html" class="hover:text-green-400 transition duration-300">ABOUT US</a></li>
+                    <li><a href="produk.html" class="hover:text-green-400 transition duration-300">PRODUK</a></li>
+                    <li><a href="brosur.html" class="hover:text-green-400 transition duration-300">BROWSUR</a></li>
+                    <li><a href="artikel.html" class="hover:text-green-400 transition duration-300">ARTIKEL</a></li>
+                    <li><a href="kontak.html" class="hover:text-green-400 transition duration-300">KONTAK</a></li>
+                </ul>
+            </div>
+            <div class="text-center flex flex-col items-center">
+                <div class="w-60 h-40 rounded-full flex items-center justify-center mx-auto md:mx-0">
+                    <img src="/src/img/logoagri.png" alt="Logo" class="w-60 h-60 object-contain">
+                </div>
+            </div>
+            <div class="text-center md:text-right">
+                <h3 class="font-bold text-lg md:text-2xl text-white mb-4">HUBUNGI KAMI</h3>
+                <a href="tel:+6282290909090" class="text-gray-300 text-sm mb-2 flex justify-center md:justify-end">
+                    <i class="fas fa-phone mr-2"></i>
+                    +62 822 9090 9090
+                </a>
+                <a href="mailto:agritanimas@gmail.com"
+                    class="text-gray-300 text-sm mb-8 flex justify-center md:justify-end">
+                    <i class="fas fa-envelope mr-2"></i>
+                    agritanimas@gmail.com
+                </a>
+            </div>
+        </div>
+        <div class="flex justify-center space-x-6">
+            <a href="https://www.instagram.com" target="_blank"
+                class="text-gray-100 hover:text-pink-500 transition transform hover:scale-110">
+                <i class="fab fa-instagram text-xl sm:text-3xl"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank"
+                class="text-gray-100 hover:text-blue-500 transition transform hover:scale-110">
+                <i class="fab fa-facebook text-xl sm:text-3xl"></i>
+            </a>
+            <a href="https://www.tiktok.com" target="_blank"
+                class="text-gray-100 hover:text-black transition transform hover:scale-110">
+                <i class="fab fa-tiktok text-xl sm:text-3xl"></i>
+            </a>
+        </div>
+
+
+        <div class="text-center text-gray-100 mt-4 border-t border-gray-100 pt-4">
+            <p class="text-xs md:text-sm">Made with passion. Copyright © PT AGRITANIMAS 2024</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
