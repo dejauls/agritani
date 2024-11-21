@@ -55,6 +55,59 @@
         }
     </style>
 
+    <style>
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .slideshow-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            animation: fade 9s infinite;
+            /* Durasi total 9s */
+        }
+
+        .bg1 {
+            background-image: url('/src/img/sawitw.jpg');
+            animation-delay: 0s;
+        }
+
+        .bg2 {
+            background-image: url('/src/img/kebunpisang2.jpg');
+            animation-delay: 3s;
+            /* Mulai setelah bg1 */
+        }
+
+        .bg3 {
+            background-image: url('/src/img/sawitbenih.jpg');
+            animation-delay: 6s;
+            /* Mulai setelah bg2 */
+        }
+
+        /* Efek transisi opacity */
+        @keyframes fade {
+
+            0%,
+            20% {
+                opacity: 0;
+            }
+
+            25%,
+            75% {
+                opacity: 1;
+            }
+        }
+    </style>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
@@ -104,7 +157,10 @@
     </nav> -->
 
 
-    <section class="relative bg-[url('/src/img/sawit1.jpg')] bg-fixed w-full h-svh bg-cover bg-center overflow-hidden">
+    <section class="relative w-full h-screen overflow-hidden slideshow-container">
+        <div class="slideshow-bg bg1"></div>
+        <div class="slideshow-bg bg2"></div>
+        <div class="slideshow-bg bg3"></div>
 
         <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/50 to-transparent">
             <nav class="fixed z-50 md:z-auto bg-custom-green md:static flex p-5  justify-between items-center w-full gap-5 overflow-hidden "
@@ -514,7 +570,7 @@
                 </a>
             </div>
             <div class="w-full h-full order-1 md:order-2 wow animate__animated animate__slideInRight">
-                <img src="/src/img/petani1.jpeg" alt="Farmer Image" class="w-full h-full object-cover">
+                <img src="/src/img/agripupuk1.jpg" alt="Farmer Image" class="w-full h-full object-cover">
             </div>
         </div>
     </section>
@@ -522,7 +578,7 @@
     <section class="w-full mx-auto hidden md:block bg-gray-100">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-0 items-center min-h-screen">
             <div class="w-full h-full wow animate__animated animate__slideInRight">
-                <img src="src/img/petani2.jpg" alt="Farmer Image" class="w-full h-full object-cover">
+                <img src="src/img/agripupuk2.jpg" alt="Farmer Image" class="w-full h-full object-cover">
             </div>
             <div class="text-left p-8 md:p-16">
                 <hr class="w-12 h-1 bg-green-600 mb-2 wow animate__animated animate__slideInLeft">
@@ -1157,7 +1213,9 @@
                 </button>
                 <div id="answer3" class="hidden p-4 pl-8 bg-[#008352]">
                     <p class="text-white text-xs md:text-sm">Kami menyediakan berbagai jenis pupuk yang dapat
-                        disesuaikan dengan kebutuhan petani demi hasil produksi tanaman yang maksimal. Kami juga membekali tim lapangan yang akan meninjau langsung area dan melakukan edukasi kepada petani untuk menciptakan hasil yang melimpah.</p>
+                        disesuaikan dengan kebutuhan petani demi hasil produksi tanaman yang maksimal. Kami juga
+                        membekali tim lapangan yang akan meninjau langsung area dan melakukan edukasi kepada petani
+                        untuk menciptakan hasil yang melimpah.</p>
                 </div>
             </div>
 
@@ -1259,7 +1317,8 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-white shadow-md rounded-lg" onclick="window.location.href='/artikel/tak-perlu-kepasar-5-tanaman-bumbu-ini-cocok-ditanam-di-pot.html';">
+            <div class="bg-white shadow-md rounded-lg"
+                onclick="window.location.href='/artikel/tak-perlu-kepasar-5-tanaman-bumbu-ini-cocok-ditanam-di-pot.html';">
                 <img src="src/img/bawangpot2.jpg" alt="Artikel 3" class="w-full h-2/5 md:h-3/5 rounded-lg mb-4">
                 <p class="text-[10px] md:text-sm text-gray-500 pl-2">6 November 2024</p>
                 <h3 class="text-xs md:text-lg font-bold text-gray-900 mb-2 pl-2">

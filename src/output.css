@@ -961,6 +961,10 @@ video {
   height: 100%;
 }
 
+.h-screen{
+  height: 100vh;
+}
+
 .h-svh{
   height: 100svh;
 }
@@ -1573,10 +1577,6 @@ video {
 
 .bg-\[url\(\'\/src\/img\/petani4\.jpg\'\)\]{
   background-image: url('/src/img/petani4.jpg');
-}
-
-.bg-\[url\(\'\/src\/img\/sawit1\.jpg\'\)\]{
-  background-image: url('/src/img/sawit1.jpg');
 }
 
 .bg-gradient-to-b{
