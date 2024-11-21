@@ -1661,6 +1661,10 @@ video {
   padding: 2rem;
 }
 
+.p-36{
+  padding: 9rem;
+}
+
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -2482,6 +2486,10 @@ video {
 
   .md\:mt-8{
     margin-top: 2rem;
+  }
+
+  .md\:mt-16{
+    margin-top: 4rem;
   }
 
   .md\:block{
