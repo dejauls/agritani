@@ -2,7 +2,7 @@
 module.exports = {
   content: ['./index.html', './about.html', './brosur.html', './produk.html',
      './artikel.html', './detail-artikel.html', './produkdetail.html', './kontak.html', './implementasi.html', './linkt.html',
-     './artikel/**/*.html',
+     './artikel/**/*.html', './*.html'
   ],
   theme: {
     extend: {

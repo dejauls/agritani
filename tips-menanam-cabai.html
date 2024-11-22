@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRODUK DETAIL</title>
+    <title>Tips Menanam Cabai</title>
     <link href="/src/output.css" rel="stylesheet">
 
 
@@ -33,11 +33,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 </head>
 
-<body class="font-sans bg-gray-100">
+<body class="font-sans bg-white">
 
-    <div class="absolute top-0 left-0 w-full  ">
+    <div class="absolute top-0 left-0 w-full">
         <nav class="fixed z-50 md:z-auto bg-custom-green md:static flex p-3 justify-between items-center w-full gap-5 overflow-hidden"
             data-aos="zoom-y-out">
+            <!-- Hamburger Icon for toggling navbar -->
             <label for="check-mobilenav" class="flex flex-col min-w-10 max-w-20 cursor-pointer md:hidden z-[999999]">
                 <input type="checkbox" id="check-mobilenav" class="peer hidden" />
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
@@ -45,9 +46,10 @@
                 </svg>
             </label>
 
+            <!-- Off-screen Mobile Navbar -->
             <div id="mobile-menu"
-                class="fixed top-0 left-0 w-full h-3/5 bg-custom-green text-white z-[9999] transform -translate-y-full transition-transform duration-300 ease-in-out  block md:hidden">
-                <div class="flex flex-col items-center space-y-4 font-semibold pt-20 ">
+                class="fixed top-0 left-0 w-full h-3/5 bg-custom-green text-white z-[9999] transform -translate-y-full transition-transform duration-300 ease-in-out block md:hidden">
+                <div class="flex flex-col items-center space-y-4 font-semibold pt-20 pb-4">
                     <div class="relative group">
                         <a href="index.html" class="font-semibold text-stone-100 text-xl duration-500">
                             HOME
@@ -98,19 +100,20 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
+            <!-- Brand Logo -->
             <div id="brand"
                 class="text-3xl font-bold font-montserrat text-stone-900 flex items-center transform transition duration-300 ease-in-out hover:scale-110 z-[9999]">
                 <a href="/" class="flex items-center">
                     <img src="/src/img/logoagrinew.jpg" alt="PT AGRITANIMAS Logo"
-                        class="max-w-12 rounded-full  shadow-lg ml-4" />
-                    <p class="text-xl text-white font-semibold ml-2">PT AGRITANIMAS SELARAS</p>
+                            class="max-w-12 rounded-full  shadow-lg ml-4" />
+                        <p class="text-xl text-white font-semibold ml-2" >PT AGRITANIMAS SELARAS</p>
                     <span class="sr-only">PT AGRITANIMAS</span>
                 </a>
             </div>
 
+            <!-- Desktop Navigation Links -->
             <ul class="hidden md:flex justify-start md:gap-5 lg:gap-7 mr-4">
                 <li class="relative group">
                     <a href="/" class="font-semibold text-stone-100 text-base duration-500">HOME</a>
@@ -146,73 +149,105 @@
             </ul>
 
         </nav>
-
-        <script>
-            const menuCheckbox = document.getElementById('check-mobilenav');
-            const mobileMenu = document.getElementById('mobile-menu');
-
-            menuCheckbox.addEventListener('change', function () {
-                if (this.checked) {
-                    mobileMenu.classList.remove('-translate-y-full');
-                    mobileMenu.classList.add('translate-y-0');
-                } else {
-                    mobileMenu.classList.remove('translate-y-0');
-                    mobileMenu.classList.add('-translate-y-full');
-                }
-            });
-        </script>
     </div>
+    <script>
+        const menuCheckbox = document.getElementById('check-mobilenav');
+        const mobileMenu = document.getElementById('mobile-menu');
 
-    <section class="  relative flex justify-center items-center text-center text-white"></section>
-    <section class="py-10 px-4 md:px-10 lg:px-20 mt-12 md:mt-32">
+        // Listen for checkbox change to trigger the slide effect
+        menuCheckbox.addEventListener('change', function () {
+            if (this.checked) {
+                mobileMenu.classList.remove('-translate-y-full');
+                mobileMenu.classList.add('translate-y-0');
+            } else {
+                mobileMenu.classList.remove('translate-y-0');
+                mobileMenu.classList.add('-translate-y-full');
+            }
+        });
+    </script>
+
+    <section class="py-10 px-4 md:px-10 lg:px-20 mt-16">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-                <div class="flex justify-center ">
-                    <img id="mainImage" src="src/img/pupukcontoh.jpeg" alt="MerokeSOP KALI" class="w-96 h-96">
+                <div class="flex justify-center">
+                    <img id="mainImage" src="src/img/chili1.jpeg" alt="Pupuk untuk Cabai" class="w-96 h-96">
                 </div>
 
-                <div class="flex justify-center mt-4 space-x-2 md:space-x-4">
-                    <img src="/src/img/caracabe.jpg" alt="Small Image 1" class="w-16 h-auto cursor-pointer"
-                        onclick="changeImage('src/img/caracabe.jpg')">
-                    <img src="/src/img/petani2.jpg" alt="Small Image 2" class="w-16 h-auto cursor-pointer"
-                        onclick="changeImage('src/img/petani2.jpg')">
-                    <img src="/src/img/caracabe.jpg" alt="Small Image 1" class="w-16 h-auto cursor-pointer"
-                        onclick="changeImage('src/img/caracabe.jpg')">
-                    <img src="/src/img/petani2.jpg" alt="Small Image 2" class="w-16 h-16 cursor-pointer"
-                        onclick="changeImage('src/img/petani2.jpg')">
-                    <img src="/src/img/caracabe.jpg" alt="Small Image 1" class="w-16 h-auto cursor-pointer"
-                        onclick="changeImage('src/img/caracabe.jpg')">
+                <div class="flex justify-center mt-4 space-x-4">
+                    <img src="src/img/chili2.jpeg" alt="Small Image 1" class="w-16 h-20 cursor-pointer"
+                        onclick="changeImage('src/img/chili2.jpeg')">
+                    <img src="src/img/chili4.jpeg" alt="Small Image 2" class="w-16 h-20 cursor-pointer"
+                        onclick="changeImage('src/img/chili4.jpeg')">
+                    <img src="src/img/chili3.jpeg" alt="Small Image 3" class="w-16 h-20 cursor-pointer"
+                        onclick="changeImage('src/img/chili3.jpeg')">
+                    <img src="src/img/pupukcontoh.jpeg" alt="Small Image 4" class="w-16 h-20 cursor-pointer"
+                        onclick="changeImage('src/img/pupukcontoh.jpeg')">
                 </div>
-
             </div>
 
             <div>
-                <h4 class="text-gray-600 text-lg font-medium">Pupuk NP</h4>
+                <h4 class="text-gray-600 text-lg font-medium">Tips Menanam Cabai</h4>
                 <hr class="w-12 h-1 bg-green-600 mt-1 mb-4">
-                <h2 class="text-3xl font-bold text-gray-800 mt-2">NP MANTAP KALI</h2>
+                <h2 class="text-3xl font-bold text-gray-800 mt-2">Tanaman Cabai</h2>
                 <p class="text-gray-500 mt-4">
-                    Pupuk NP adalah pupuk majemuk pemberi unsur S tinggi (selain Kalium) yang sangat cocok untuk
-                    tanaman keluarga Brassicaceae (Kubis, Brokoli), dan bawang-bawangan (bawang merah, bawang prei)
-                    serta tanaman lainnya yang menghasilkan minyak atsiri.
+                    Tanaman cabai membutuhkan nutrisi yang seimbang untuk mendukung pertumbuhannya, terutama nitrogen
+                    (N), fosfor (P), dan kalium (K). Nitrogen sangat penting untuk mendorong pertumbuhan daun dan batang
+                    yang sehat, yang sangat dibutuhkan pada fase vegetatif. Fosfor berperan dalam perkembangan akar yang
+                    kuat serta pembentukan bunga, sehingga tanaman cabai dapat menghasilkan lebih banyak buah. Kalium
+                    berfungsi untuk meningkatkan ketahanan tanaman terhadap penyakit dan membantu pembentukan buah cabai
+                    yang lebih besar dan berkualitas tinggi. Selain itu, unsur hara mikro seperti kalsium dan magnesium
+                    juga diperlukan untuk mendukung fotosintesis dan proses metabolisme lainnya.
+                </p>
+
+                <p class="text-gray-500 mt-4">
+                    Tanaman cabai yang kekurangan nutrisi penting dapat mengalami pertumbuhan yang lambat, daun
+                    menguning, dan produksi buah yang rendah. Oleh karena itu, pemberian pupuk yang mengandung unsur
+                    hara makro dan mikro sangat dianjurkan untuk menjaga keseimbangan nutrisi di dalam tanah. Pemberian
+                    pupuk sebaiknya dilakukan pada fase pertumbuhan awal dan saat tanaman memasuki fase pembentukan buah
+                    untuk mendukung hasil panen yang maksimal.
                 </p>
 
                 <div class="mt-6">
-                    <h3 class="text-lg font-semibold text-gray-800">Manfaat:</h3>
+                    <h3 class="text-lg font-semibold text-gray-800">Tips Penanaman Cabai yang Optimal:</h3>
                     <ul class="list-disc list-inside text-gray-600 mt-2 space-y-2">
-                        <li>Tanaman tumbuh dengan sehat dan memaksimalkan produktivitas jangka panjang.</li>
-                        <li>Hasil produksi meningkat dengan meningkatkan jumlah dan juga ukuran buah atau umbi.</li>
-                        <li>Meningkatkan kualitas, rasa, warna kesegaran dan daya simpan buah atau umbi.</li>
+                        <li>Pilih lokasi yang mendapatkan sinar matahari penuh minimal 6-8 jam sehari untuk mendorong
+                            pertumbuhan yang optimal.</li>
+                        <li>Gunakan tanah yang gembur dan kaya akan bahan organik. Penggunaan pupuk organik sebelum
+                            tanam dapat membantu memperbaiki struktur tanah dan menyediakan nutrisi awal bagi tanaman.
+                        </li>
+                        <li>Jaga kelembapan tanah dengan penyiraman yang teratur, namun hindari genangan air agar akar
+                            tidak membusuk.</li>
+                        <li>Rotasi tanaman setiap musim tanam untuk mencegah penumpukan penyakit dan menjaga kesehatan
+                            tanah.</li>
+                        <li>Perhatikan hama dan penyakit, lakukan pemantauan secara berkala dan gunakan pestisida alami
+                            jika diperlukan untuk menjaga kesehatan tanaman.</li>
+                    </ul>
+                </div>
+
+                <p class="text-gray-800 mt-4 font-semibold">
+                    Untuk memaksimalkan hasil tanaman cabai anda, gunakan pupuk NPK agritanimas.
+                </p>
+                <p class="text-gray-500 mt-4">
+                    Pupuk ini dirancang khusus untuk tanaman cabai agar menghasilkan tanaman yang subur dan meningkatkan
+                    produksi buah cabai secara signifikan. Dengan kandungan unsur hara yang tepat, pupuk ini sangat
+                    cocok
+                    untuk semua jenis tanah dan kondisi iklim.
+                </p>
+
+                <div class="mt-6">
+                    <h3 class="text-lg font-semibold text-gray-800">Manfaat Pupuk untuk Tanaman Cabai:</h3>
+                    <ul class="list-disc list-inside text-gray-600 mt-2 space-y-2">
+                        <li>Memperkuat akar tanaman sehingga tahan terhadap kekeringan dan cuaca ekstrim.</li>
+                        <li>Meningkatkan hasil panen dengan buah cabai yang lebih besar dan lebih berat.</li>
+                        <li>Mengurangi risiko penyakit dan serangan hama.</li>
                     </ul>
                 </div>
 
                 <div class="mt-6">
-                    <h3 class="text-lg font-semibold text-gray-800">Keuntungan:</h3>
+                    <h3 class="text-lg font-semibold text-gray-800">Cara Penggunaan:</h3>
                     <p class="text-gray-500 mt-2">
-                        Mengandung Kalium (K) yang tinggi dan Sulfat (S) menjadi pilihan yang sesuai untuk tanaman
-                        hortikultura secara luas.
-                        Kandungan rasio Kalium dan Sulfur yang seimbang dapat meningkatkan fungsi enzim, sintesa protein
-                        dan pembentukan umbi sehingga hasil panen dan kualitas meningkat serta memperkaya rasa dan
-                        warna.
+                        Aplikasikan pupuk secara berkala sesuai dengan dosis yang direkomendasikan. Gunakan saat
+                        tanaman memasuki fase vegetatif dan generatif untuk hasil yang optimal.
                     </p>
                 </div>
             </div>
@@ -226,7 +261,7 @@
     </script>
 
     <section class="py-10 px-4 md:px-10 lg:px-20 relative overflow-hidden">
-        <h2 class="text-center text-2xl font-bold mb-6">Produk Lainnya</h2>
+        <h2 class="text-center text-2xl font-bold mb-6">Tips Tanaman Lainnya</h2>
         <div class="relative">
             <button onclick="scrollLeftAction()"
                 class="absolute left-0 md:left-[-4rem] top-1/2 transform -translate-y-1/2 bg-green-300 hover:bg-green-400 text-white py-2 px-4 rounded-full z-10 shadow-lg">
@@ -234,67 +269,42 @@
             </button>
 
             <div id="productContainer" class="flex overflow-x-scroll no-scrollbar space-x-6 scroll-smooth">
-                <a href="/produkdetail.html">
-                    <div
-                        class="w-[250px] md:w-[250px] flex-shrink-0 border p-4 rounded-lg hover:shadow-lg transition-shadow">
-                        <img src="/src/img/pupukcontoh.jpeg" alt="Product 1" class="w-full h-auto">
-                        <h3 class="text-sm text-gray-500 mt-4">Pupuk Majemuk</h3>
-                        <h2 class="text-lg font-bold">NPK MUTIARA</h2>
-                    </div>
-                </a>
-                <a href="/produkdetail.html">
-                    <div
-                        class="w-[250px] md:w-[250px] flex-shrink-0 border p-4 rounded-lg hover:shadow-lg transition-shadow">
-                        <img src="/src/img/pupukcontoh.jpeg" alt="Product 1" class="w-full h-auto">
-                        <h3 class="text-sm text-gray-500 mt-4">Pupuk Majemuk</h3>
-                        <h2 class="text-lg font-bold">MerokeFOSFAT</h2>
-                    </div>
-                </a>
-                <a href="/produkdetail.html">
-                    <div
-                        class="w-[250px] md:w-[250px]  flex-shrink-0 border p-4 rounded-lg hover:shadow-lg transition-shadow">
-                        <img src="/src/img/pupukcontoh.jpeg" alt="Product 1" class="w-full h-auto">
-                        <h3 class="text-sm text-gray-500 mt-4">Pupuk Majemuk</h3>
-                        <h2 class="text-lg font-bold">NPK MUTIARA</h2>
-                    </div>
-                </a>
-                <a href="/produkdetail.html">
-                    <div
-                        class="w-[250px] md:w-[250px]  flex-shrink-0 border p-4 rounded-lg hover:shadow-lg transition-shadow">
-                        <img src="/src/img/pupukcontoh.jpeg" alt="Product 1" class="w-full h-auto">
-                        <h3 class="text-sm text-gray-500 mt-4">Pupuk Majemuk</h3>
-                        <h2 class="text-lg font-bold">MerokeFOSFAT</h2>
-                    </div>
-                </a>
-                <a href="/produkdetail.html">
-                    <div
-                        class="w-[250px] md:w-[250px]  flex-shrink-0 border p-4 rounded-lg hover:shadow-lg transition-shadow">
-                        <img src="/src/img/pupukcontoh.jpeg" alt="Product 1" class="w-full h-auto">
-                        <h3 class="text-sm text-gray-500 mt-4">Pupuk Majemuk</h3>
-                        <h2 class="text-lg font-bold">NPK MUTIARA</h2>
-                    </div>
-                </a>
-                <a href="/produkdetail.html">
-                    <div
-                        class="w-[250px] md:w-[250px]  flex-shrink-0 border p-4 rounded-lg hover:shadow-lg transition-shadow">
-                        <img src="/src/img/pupukcontoh.jpeg" alt="Product 1" class="w-full h-auto">
-                        <h3 class="text-sm text-gray-500 mt-4">Pupuk Majemuk</h3>
-                        <h2 class="text-lg font-bold">MerokeFOSFAT</h2>
-                    </div>
-                </a>
-                <a href="/produkdetail.html">
-                    <div
-                        class="w-[250px] md:w-[250px]  flex-shrink-0 border p-4 rounded-lg hover:shadow-lg transition-shadow">
-                        <img src="/src/img/pupukcontoh.jpeg" alt="Product 1" class="w-full h-auto">
-                        <h3 class="text-sm text-gray-500 mt-4">Pupuk Majemuk</h3>
-                        <h2 class="text-lg font-bold">NPK MUTIARA</h2>
-                    </div>
-                </a>
+                <!-- First Product -->
+                <div
+                    class="bg-white shadow-md rounded-lg p-4 text-center snap-center flex-shrink-0 w-[calc(100%-50%)] sm:w-80 flex flex-col items-center mb-4">
+                    <img src="src/img/jagung.jpeg" alt="Pupuk Buah" class="w-56 md:w-68 h-40 md:h-68 rounded-md mb-4">
+                    <h3 class="text-base sm:text-xl font-bold text-gray-900">Tanaman Jagung</h3>
+                    <p class="text-gray-700 mb-4 text-[10px] md:text-sm text-center">
+                        Siap panen jagung yang lebih besar dan berkualitas? Lihat bagaimana tanaman jagung bisa
+                        menghasilkan
+                        lebih banyak dan lebih baik untuk kebutuhan Anda!
+                    </p>
+                    <a href="implementasi.html"
+                        class="inline-block px-4 py-2 bg-green-600 text-xs text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
+                        Details
+                    </a>
+                </div>
 
+                <!-- Second Product -->
+                <div
+                    class="bg-white shadow-md rounded-lg p-4 text-center snap-center flex-shrink-0 w-[calc(100%-50%)] sm:w-80 flex flex-col items-center mb-4">
+                    <img src="src/img/kentang.jpeg" alt="Pupuk Buah" class="w-56 md:w-68 h-40 md:h-68 rounded-md mb-4">
+                    <h3 class="text-base sm:text-xl font-bold text-gray-900">Tanaman Kentang</h3>
+                    <p class="text-gray-700 mb-4 text-[10px] md:text-sm text-center">
+                        Ingin kentang dengan umbi yang lebih besar dan seragam? Temukan rahasianya di balik pertumbuhan
+                        kentang yang optimal di sini!
+
+                    </p>
+                    <a href="implementasi.html"
+                        class="inline-block px-4 py-2 bg-green-600 text-xs text-white font-bold rounded-full hover:bg-green-700 transition duration-300">
+                        Details
+                    </a>
+                </div>
             </div>
 
+
             <button onclick="scrollRightAction()"
-                class="absolute right-0  md:right-[-4rem] top-1/2 transform -translate-y-1/2 bg-green-300 hover:bg-green-400 text-white py-2 px-4 rounded-full z-10 shadow-lg">
+                class="absolute right-0 md:right-[-4rem] top-1/2 transform -translate-y-1/2 bg-green-300 hover:bg-green-400 text-white py-2 px-4 rounded-full z-10 shadow-lg">
                 <i class="fas fa-chevron-right"></i>
             </button>
         </div>
@@ -408,6 +418,10 @@
             });
         });
     </script>
+    <script>
+        new WOW().init();
+    </script>
+
 </body>
 
 </html>
