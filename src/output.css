@@ -793,6 +793,10 @@ video {
   margin-left: 0px;
 }
 
+.ml-12{
+  margin-left: 3rem;
+}
+
 .ml-4{
   margin-left: 1rem;
 }
