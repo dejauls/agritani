@@ -865,6 +865,13 @@ video {
   margin-top: 2rem;
 }
 
+.line-clamp-2{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
 .block{
   display: block;
 }
@@ -2481,10 +2488,6 @@ video {
 
   .md\:mb-12{
     margin-bottom: 3rem;
-  }
-
-  .md\:mb-2{
-    margin-bottom: 0.5rem;
   }
 
   .md\:mb-4{
